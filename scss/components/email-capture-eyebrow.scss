@@ -1,0 +1,881 @@
+.border--blue {
+    border-top: 2px solid #00a6ca;
+    border-bottom: 2px solid #00a6ca;
+  }
+  
+  // -------------
+  // #Newsletter Eyebrow
+  // -------------
+  
+  .eyebrow-newsletter {
+    margin: 20px 0;
+  }
+  
+  .eyebrow-newsletter .form-newsletter {
+    position: relative;
+    margin: 20px 0;
+    padding: 0 35px 10px;
+  
+    .form-newsletter__copy{
+      width: 100%;
+        .newsletterIcon {
+            height: 35px;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        h5 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #000;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: Intro, 'Trebuchet MS', Helvetica, Arial, sans-serif;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #a9a9a9;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 1;
+            text-transform: uppercase;
+            width: 100%;
+            }
+        }
+    .form-group {
+        opacity: 1;
+        width: 100%;
+        .form-newsletter__email {
+            .form-control { 
+                height: 57px;
+                outline: 0;
+                margin: 0 0 40px;
+                border: 1px solid #A9A9A9;
+                background: #fff;
+                box-shadow: none;
+                &:focus {
+                  border-color: #00A6CA;
+                  border-width: 2px;
+                  box-shadow: none;
+                  outline: none;
+                }
+            }
+            .error {
+                display: none;
+                text-align: left;
+                position: relative;
+                width: 100%;
+                padding: 4px 5px;
+                margin-top: -1px;
+                color: #B50000;
+                font-weight: normal;
+                border: 1px solid #B50000;
+                }
+            }
+        .submitButton {
+            display: inline-block;
+            width: 120px;
+            height: auto;
+            font-size: 16px;
+            padding: 17px 20px 16px 20px;
+            }
+        }
+    // Animation triggered
+    &.submitted {
+      overflow: hidden;
+    }
+  
+    &.success {
+      padding: 0;
+  
+      .form-newsletter__copy,
+      .form-group {
+        display: none;
+      }
+  
+      .form-newsletter--success {
+        display: table;
+      }
+    }
+  
+    input[type='text'],
+    input[type='email'] {
+  
+      &.error {
+        //border: 2px solid $color-red;
+      }
+    }
+  
+    label.error {
+    width: 100%;
+      &::before{
+        right: 9px;
+        border-bottom-color: #B50000;
+        border-width: 7px;
+        bottom: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+      &::after{
+        right: 10px;
+        border-bottom-color: #ffffff;
+        border-width: 6px;
+        bottom: 100%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+    }
+
+  }
+  
+  
+  .cta-eyebrow {
+    margin: 20px 0;
+    padding: 20px 10px;
+    text-align: left;
+  }
+    .cta-eyebrow__text-holder {
+       text-align: middle;
+    }
+  
+    .cta-eyebrow__btn-holder {
+      text-align: center;
+    }
+  
+    .cta-eyebrow__text {
+      font-size: 15px;
+      margin: 8px 0;
+      text-align: center;
+      vertical-align: middle;
+  
+      .cta-eyebrow__text--strong {
+        display: block;
+        font-size: 17px;
+        font-weight: 700;
+      }
+    }
+  
+    .cta-eyebrow__btn {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      height: auto;
+    }
+
+    .bar {
+        background: #fcd800;
+      }
+      
+      .bar__left,
+      .bar__right {
+        position: absolute;
+        top: 0;
+        width: 4px;
+        height: 100%;
+      }
+      
+      .bar__left { left: 0; }
+      .bar__right { right: 0; }
+      
+      .bar__top,
+      .bar__bottom {
+        position: absolute;
+        width: 100%;
+        height: 4px;
+      }
+      
+      .bar__top { top: 0; }
+      .bar__bottom { bottom: 0; }
+      
+      @media( min-width: 768px ) {
+        .bar__left,
+        .bar__right {
+          width: 10px;
+        }
+      
+        .bar__top,
+        .bar__bottom {
+          height: 10px;
+         }
+      }
+      
+      .form-newsletter {
+
+        .form-group {
+          margin: 0;
+          text-align: center;
+        }
+      }
+      
+        .form-newsletter__copy {
+      
+          h5,
+          p {
+            text-align: left;
+          }
+      
+          h5 {
+            margin-top: 0;
+            font-family: Intro, 'Trebuchet MS', Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+          }
+      
+          p {
+            margin-bottom: 20px;
+            color: #000;
+            font-size: 18px;
+            font-weight: 300;
+            text-transform: none;
+          }
+        }
+      
+        .form-newsletter__icon {
+          display: block;
+          font-size: 45px;
+          text-align: center;
+        }
+      
+        .form-newsletter__email {
+          width: 100%;
+        }
+      
+        .form-newsletter button {
+          display: inline-block;
+          width: 120px;
+          margin-top: 10px;
+        }
+      
+        .form-newsletter--success {
+          display: none;
+          position: relative;
+          width:  40%; // Gets set in JS
+          height: 100%;
+          margin: 0 auto;
+        }
+      
+        .form-newsletter--success__message,
+        .form-newsletter--fail__message {
+          display: none;
+          text-align: center;
+          opacity: 0;
+          vertical-align: middle;
+        }
+      
+      @media( min-width: 768px ) {
+        .eyebrow-newsletter {
+            .form-newsletter {
+                 .form-newsletter__copy {
+                     .newsletterIcon {
+                        position: absolute;
+                        left: 0;
+                        height: 60px;
+                        width: 60px;
+                     }
+                      h5 {
+                          text-align: left;
+                      }
+                      p {
+                          color: #000;
+                          font-size: 18px;
+                          font-weight: 300;
+                          text-transform: none;
+                          text-align: left;
+                      }
+                    }
+                }
+            }
+        .form-newsletter {
+          .form-group {
+            position: relative;
+          }
+        }
+      
+        .form-newsletter__copy {
+          position: relative;
+      
+          h5,
+          p {
+            margin-left: 100px;
+            text-align: left;
+          }
+      
+          p {
+            color: #000;
+            font-size: 18px;
+            font-weight: 300;
+            text-transform: none;
+          }
+        }
+      
+        .form-newsletter__icon {
+          position: absolute;
+          top: -17px;
+          left: 0;
+          font-size: 72px;
+        }
+      
+        .form-newsletter__email {
+          width: calc(100% - 120px);
+          height: 36px; // Keep error message from the flow
+          padding: 0 10px 0 0;
+        }
+      
+        .form-newsletter__email,
+        .form-newsletter button {
+          float: left;
+        }
+      
+        .form-newsletter button {
+          margin-top: 0;
+        }
+      }
+      
+  
+  // -------------
+  // #Ad Eyebrow
+  // -------------
+  
+  .ad-eyebrow {
+    margin: 20px 0;
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+    .ad-eyebrow__col-wrap {
+      // Moved to max-width rule because IE
+      display: none;
+    }
+  
+    .ad-eyebrow__slider-wrapper {
+      width: 1230px;
+      overflow: hidden;
+    }
+  
+    .ad-eyebrow__title {
+      margin-top: 0;
+      font-size: 22px;
+      font-weight: 300;
+    }
+  
+    .ad-eyebrow__image {
+      max-width: 100%;
+    }
+  
+    .ad-eyebrow__subtext {
+      display: block;
+      color: #707070; // TODO: Check this color
+      font-size: 8px;
+    }
+  
+    .ad-eyebrow__col {
+      margin-right: 5px;
+      margin-left: 5px;
+      float: left;
+  
+      &:first-child {
+        margin-left: 0;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  
+    .ad-eyebrow__content {
+      position: relative;
+      width: 300px;
+      height: 250px;
+      padding: 20px;
+      background-color: #494949;
+  
+      a {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+      }
+    }
+  
+    .ad-eyebrow__header {
+      display: table;
+      width: 100%;
+      height: 50px;
+      margin: 0 0 20px;
+    }
+  
+    .ad-eyebrow__header-text {
+      display: table-cell;
+      vertical-align: bottom;
+    }
+  
+    .ad-eyebrow__text {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  
+    .ad-eyebrow__content--spacer {
+      background-color: #fff;
+    }
+  
+    .ad-eyebrow__slider-controls {
+      width: 100%;
+    }
+  
+    .ad-eyebrow__control-item {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #a9a9a9;
+      cursor: pointer;
+    }
+  
+    .ad-eyebrow__control-item--active {
+      background: #494949;
+    }
+  
+  
+  // -------------
+  // #Evergreen Eyebrow
+  // -------------
+  
+  .evergreen-eyebrow {
+    margin: 40px 0;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  
+    .evergreen-eyebrow__icon,
+    .evergreen-eyebrow__stat,
+    .evergreen-eyebrow__text {
+      display: inline-block;
+    }
+  
+    .evergreen-eyebrow__icon {
+      font-size: 60px;
+    }
+  
+    .evergreen-eyebrow__stat {
+      font-size: 55px;
+    }
+  
+    .evergreen-eyebrow__text {
+      margin: 20px 0 0 ;
+      text-align: left;
+  
+      p.text--desc {
+        margin: 0;
+        font-weight: 700;
+      }
+  
+      p.text--source {
+        margin: 0;
+        font-size: 14px;
+      }
+    }
+  
+  // -------------
+  // #Promotion Eyebrow
+  // -------------
+  
+  .promotion-eyebrow {
+    position: relative;
+    min-height: 168px;
+    margin: 20px 0;
+  
+    .bar__left,
+    .bar__right {
+      width: 10px;
+    }
+  }
+  
+  .promotion-eyebrow-final {
+    padding: 22px 0;
+    text-align: center;
+    opacity: 1;
+  
+    a {
+      padding: 9px 57px 12px 42px !important;
+      color: #fff;
+    }
+  
+    a span {
+      line-height: 2.5em !important;
+    }
+  }
+  
+  .promotion-eyebrow-header {
+    width: 100%;
+  
+    h3 {
+      max-width: 220px;
+      margin: 0 auto 12px;
+      color: #000;
+      font-size: 26px;
+      font-weight: 300;
+    }
+  }
+  
+  .promotion-eyebrow-initial {
+    display: none;
+  }
+  
+  .promotion-eyebrow-initial__message {
+    margin: 70px 14px 0;
+    color: #000;
+    font-size: 26px;
+  }
+  
+  // -------------
+  // #Action Eyebrow
+  // -------------
+  .action-eyebrow {
+    text-align: center;
+    margin: 50px 0 100px;
+  
+    h2 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+  }
+  
+  .action-eyebrow__list {
+    text-align: center;
+  }
+  
+  .action-eyebrow__list li {
+    display: inline-block;
+    padding: 0 11px;
+    text-align: center;
+  }
+  
+  .action-eyebrow__description {
+    max-width: 230px;
+    margin: 42px auto 5px;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .action-eyebrow__btn {
+    width: 100%;
+    padding: 16px 0 34px;
+  }
+  
+  // -------------
+  // #File Download Eyebrow
+  // -------------
+  
+  .file-download-eyebrow__list {
+    margin: 60px 0;
+    text-align: center;
+    overflow: auto;
+  }
+  
+  .file-download-eyebrow__list li:only-child .file-download-eyebrow__text {
+    display: inline;
+    width: 100%;
+  }
+  
+  .file-download-eyebrow__list li:only-child .file-download-eyebrow__icon {
+    display: inline;
+  }
+  
+  .file-download-eyebrow__list li:only-child {
+    padding: 0;
+    margin: 0;
+    float: none;
+    display: inline-block;
+  }
+  
+  .file-download-eyebrow__list li {
+    display: block;
+    padding: 0 0 21px;
+    text-align: center;
+  }
+  
+  .file-download-eyebrow__link {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+  
+    &.active,
+    &:hover,
+    &:focus {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  
+  .file-download-eyebrow__text {
+    width: 220px;
+    margin: 7px 0 0;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 100;
+    line-height: 1.4;
+  }
+  
+  .file-download-eyebrow__text,
+  .file-download-eyebrow__icon {
+    display: inline-block;
+  }
+  
+  .file-download-eyebrow__icon {
+    margin-right: 19px;
+    color: #00a6ca;
+    font-size: 40px;
+    vertical-align: middle;
+  }
+  
+  .file-download-eyebrow__icon--zip::before {
+    content: '\f114';
+  }
+  
+  .file-download-eyebrow__icon--ppt::before {
+    content: '\f019';
+  }
+  
+  .file-download-eyebrow__icon--video::before {
+    content: '\f01d';
+  }
+  
+  
+  
+  // -------------
+  // #Media
+  // -------------
+  
+  
+  @media(max-width: 767px) {
+    .full-width {
+      margin-right: -16px;
+      margin-left: -16px;
+  
+      [class*='col-'] {
+        padding: 0;
+      }
+    }
+  }
+  
+  @media( min-width: 768px ) {
+  
+    .eyebrow-newsletter {
+      margin: 20px 0 40px;
+  
+      .form-newsletter {
+        margin: 0;
+        padding: 30px 60px;
+      }
+    }
+  
+    .cta-eyebrow {
+      margin: 20px 0 40px;
+      padding: 40px 0;
+      text-align: center;
+    }
+  
+      .cta-eyebrow__text {
+        font-size: 16px;
+  
+        .cta-eyebrow__text--strong {
+          display: inline;
+          font-size: 16px;
+          line-height: 1;
+        }
+      }
+  
+      .cta-eyebrow__btn {
+        font-size: 14px;
+      }
+  
+  // -------------
+  // #Ad Eyebrow
+  // -------------
+  
+    .ad-eyebrow {
+      margin: 20px 0 40px;
+      padding: 60px 0;
+    }
+  
+      .ad-eyebrow__title {
+        margin-bottom: 30px;
+        font-size: 34px;
+        font-weight: 600;
+      }
+  
+      .ad-eyebrow__subtext {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+  
+      .ad-eyebrow__col-wrap {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: auto;
+        -js-display: flex;
+      }
+  
+      .ad-eyebrow__col-wrap--mobile {
+        display: none;
+      }
+  
+      .ad-eyebrow__col {
+        margin-right: 30px;
+        margin-left: 30px;
+  
+        &:last-child {
+          display: none;
+        }
+      }
+  
+  
+    .evergreen-eyebrow {
+      margin: 90px 0;
+      padding: 60px 0;
+    }
+  
+      .evergreen-eyebrow__text {
+        margin: 0 0 0 20px;
+      }
+  
+    .promotion-eyebrow-header {
+      h3 {
+        max-width: initial;
+      }
+    }
+  
+  // -------------
+  // #Promotion Eyebrow
+  // -------------
+  
+    .promotion-eyebrow-final {
+      a {
+        padding: 9px 77px 12px 62px !important;
+      }
+    }
+  
+  // -------------
+  // #Action Eyebrow
+  // -------------
+  
+    .action-eyebrow__description {
+      margin: 52px auto 20px;
+      font-size: 18px;
+    }
+  
+  // -------------
+  // #File Download Eyebrow
+  // -------------
+  
+    .file-download-eyebrow__list li {
+      width: 50%;
+      margin: 20px 0 0;
+      float: left;
+    }
+  
+    .file-download-eyebrow__text {
+      font-size: 18px;
+      width: 180px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .ad-eyebrow__col:nth-child(2) {
+      margin-right: 0;
+    }
+  }
+  @media( min-width: 992px ) {
+      .browSect {
+          justify-content: center;
+      }
+  }
+  
+  @media all and (min-width: 1200px) {
+  
+  // -------------
+  // #Ad Eyebrow
+  // -------------
+  
+    .ad-eyebrow__col:last-child {
+      display: block;
+    }
+  
+  // -------------
+  // #Promotion Eyebrow
+  // -------------
+  
+    .promotion-eyebrow {
+      .bar__left,
+      .bar__right {
+        display: none;
+      }
+      .bar__left { left: 50%; }
+      .bar__right { right: 50%; }
+    }
+  
+    .promotion-eyebrow-final {
+      display: none;
+      opacity: 0;
+    }
+  
+    .promotion-eyebrow-initial {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      left: 0;
+      width: 226px;
+      max-width: 226px;
+      height: 168px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+  
+  // -------------
+  // #Action Eyebrow
+  // -------------
+    .action-eyebrow {
+  
+      h2 {
+        font-size: 34px;
+      }
+    }
+  
+    .action-eyebrow__btn {
+      width: 330px;
+      padding: 16px 0 34px;
+    }
+  
+  // -------------
+  // #Download Eyebrow
+  // -------------
+  
+    .file-download-eyebrow__list li {
+      width: auto;
+      margin: 0 0 0 50px;
+      padding: 0;
+      display: inline-block;
+      float: none;
+  
+      &:first-of-type {
+        margin: 0;
+      }
+    }
+  }
+  

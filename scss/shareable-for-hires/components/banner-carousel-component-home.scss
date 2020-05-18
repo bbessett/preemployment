@@ -1,0 +1,59 @@
+/* Hero Image Styles */
+// Included with tu-rental-screening.css
+
+/* Hero Image Styles - Small Break Point */
+// Text on Image background css only
+@media screen and (min-width: 768px) {
+
+    .hero {
+        .heroContent {
+            .primaryHeadline {
+                background: rgba(55, 55, 55, 0.75);
+            }
+
+            p {
+                background: rgba(55, 55, 55, 0.75);
+            }
+        }
+    }
+}
+
+
+/* Hero Image Styles - Large Break Point */
+
+// @media screen and (min-width: 1200px) {
+//     .mobileHeroImageWrap {
+//         display: none;
+//     }
+
+//     .hero {
+
+//         .heroImage {
+//             height: 520px;
+//             margin-top: 0;
+//         }
+
+//         .heroContent {
+//             width: 47%;
+//             height: 380px;
+//             margin-left: 40px;
+//             .eyebrow {
+//                 font-size: 18px;
+//             }
+
+//             .primaryHeadline {
+//                 font-size: 58px;
+//                 line-height: 68px;
+//                 letter-spacing: -.25px;
+//                 width: 67%
+//             }
+
+//             p {
+//                 display: block;
+//                 font-size: 24px;
+//                 line-height: 29px;
+//                 width: 75%;
+//             }
+//         }
+//     }
+// }

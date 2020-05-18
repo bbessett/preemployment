@@ -1,0 +1,124 @@
+/* TransUnion 2016 Brand Colors */
+/* ---------------------------- */
+/*#EEEEEE*/
+/*#DDDDDD*/
+/*#A9A9A9*/
+/*#707070*/
+.article-list {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .article-list {
+      margin-top: 60px;
+      margin-bottom: 120px; } }
+  .article-list .article-list__title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .article-list .article-list__title {
+        font-size: 34px; } }
+  .article-list .article-list__item-parent {
+    margin-top: 40px;
+    text-align: left; }
+    @media screen and (min-width: 768px) {
+      .article-list .article-list__item-parent {
+        margin-top: 60px; } }
+    .article-list .article-list__item-parent .article-list__item {
+      margin-bottom: 40px; }
+      @media screen and (min-width: 768px) {
+        .article-list .article-list__item-parent .article-list__item {
+          margin-bottom: 60px; } }
+      .article-list .article-list__item-parent .article-list__item .article-list__headline {
+        margin-top: 0;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: center;
+        font-family: Intro, "Trebuchet MS", Helvetica, Arial, sans-serif; }
+        @media screen and (min-width: 768px) {
+          .article-list .article-list__item-parent .article-list__item .article-list__headline {
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 28px;
+            text-align: left;
+            color: black; } }
+        @media screen and (min-width: 768px) {
+          .article-list .article-list__item-parent .article-list__item .article-list__headline::after {
+            display: block;
+            width: 80px;
+            height: 4px;
+            margin: 15px 0;
+            background-color: #fcd800;
+            content: ''; } }
+      .article-list .article-list__item-parent .article-list__item .article-list__media {
+        margin-bottom: 10px; }
+        @media screen and (min-width: 768px) {
+          .article-list .article-list__item-parent .article-list__item .article-list__media {
+            margin-bottom: 0px; } }
+        .article-list .article-list__item-parent .article-list__item .article-list__media img {
+          width: 100%;
+          height: auto; }
+      .article-list .article-list__item-parent .article-list__item .article-list__excerpt {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 18px; }
+        @media screen and (min-width: 768px) {
+          .article-list .article-list__item-parent .article-list__item .article-list__excerpt {
+            font-size: 18px;
+            line-height: 26px; } }
+      .article-list .article-list__item-parent .article-list__item a .block__meta {
+        color: #006685;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 14px;
+        text-transform: uppercase; }
+        @media screen and (min-width: 768px) {
+          .article-list .article-list__item-parent .article-list__item a .block__meta {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 18px; } }
+  .article-list .article-list__footer {
+    text-align: center; }
+    .article-list .article-list__footer .btn {
+      line-height: 1;
+      padding: 22px 20px 19px 20px;
+      border: 0;
+      height: auto;
+      color: #000;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: normal;
+      word-wrap: break-word;
+      box-shadow: none;
+      text-shadow: none;
+      width: 100%; }
+      @media screen and (min-width: 768px) {
+        .article-list .article-list__footer .btn {
+          margin-top: 100px;
+          width: auto; } }
+      .article-list .article-list__footer .btn:hover {
+        color: #000;
+        background: #00c8f3; }
+      .article-list .article-list__footer .btn.btn-primary {
+        background: #00A6CA;
+        border-radius: 0; }
+      .article-list .article-list__footer .btn.btn-primary--reverse {
+        font-size: 14px; }
+        .article-list .article-list__footer .btn.btn-primary--reverse:active {
+          border-color: #c4a800;
+          color: #000;
+          box-shadow: none;
+          border-radius: 0; }
+        .article-list .article-list__footer .btn.btn-primary--reverse:focus {
+          outline: 1px dashed; }
+      .article-list .article-list__footer .btn .article-list__btn {
+        margin-top: 40px;
+        padding-right: 45px;
+        padding-left: 45px; }
+        @media screen and (min-width: 768px) {
+          .article-list .article-list__footer .btn .article-list__btn {
+            margin-top: 100px; } }

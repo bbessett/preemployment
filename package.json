@@ -1,0 +1,21 @@
+{
+  "name": "preemployment",
+  "version": "1.0.0",
+  "description": "shareable for hires ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run scss-compile",
+    "sass": "node-sass -w scss -o css/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.13.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

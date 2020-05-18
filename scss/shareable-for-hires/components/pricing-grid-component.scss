@@ -1,0 +1,239 @@
+// ToolBox Files
+@import "../../../assets/bootstrap/functions";
+@import "../../../assets/bootstrap/mixins";
+@import "../../../assets/variables";
+//@import "../tu-main-com.min.css";
+
+$iceblue: #0FC3EA; 
+
+/* ==========================================================================
+	Pricing Grid
+============================================================================= */
+
+.component-pricing {
+    h2 {
+        margin-bottom: 60px;
+    }
+    .price-table {
+        display: flex;
+        margin: 20px 0 40px 0;
+   
+        .price-col {
+            float: left;
+            flex: 1;
+            flex-grow: 3;
+            text-align: center;
+            padding-left: 0;
+            margin-bottom: 0;
+            border: 5px solid #e1e1e1;
+
+            // &.recommended {
+            //     border: 5px solid $tu-yellow;
+            // }
+
+            &:first-child {
+                flex-grow: 3;
+                text-align: left;
+                    border: none;
+            }
+
+            .price-row-title {
+                list-style-type: none;
+                margin: 0;
+                height: 35px;
+                background: $tu-yellow;
+                padding: 7px;
+                font-weight: 700;
+                font-size: 18px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .price-row-head {
+                margin-top: 0;
+                list-style-type: none;
+                padding: 15px 30px 0;
+
+                .packageName {
+                    font-size: 14px;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    font-weight: 600;
+                    // margin-top: 10px;
+                    // margin-bottom: 10px;
+                    line-height: 1.1;
+                    text-transform: uppercase;
+                }
+
+                .cost {
+                    font-size: 50px;
+                    font-weight: 300;
+                    margin-top: 28px;
+                    margin-bottom: 0;
+                    line-height: 1.1;
+                }
+            }
+
+            .price-row {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 5px 30px;
+                height: auto;
+
+                .icon {
+                    width: 25px;
+
+                    img {
+                        width: 15px;
+                    }
+                }
+                
+                .iconText {
+                    margin-bottom: 0;
+                    font-family: Intro, Trebuchet MS, Helvetica, Arial, sans-serif;
+                    display: inline-block;
+                    margin-top: 8px;
+                    margin-left: 10px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 1.1;
+                }
+
+                &:last-child {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .disclaimer {
+        text-align: center;
+        padding-right: 0;
+        padding-left: 0;
+
+        p {
+            font-size: 18px;
+            line-height: 1.42857;
+            margin-bottom: 20px;
+
+            strong {
+                font-weight: 700;
+            }
+
+        }
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 19px 20px 22px 20px;
+        height: 57px;
+    }
+
+    hr {
+        margin: 30px 0 60px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .component-pricing {
+        .price-table {
+            &.d-md-block {
+                display: flex !important;
+                .price-col:not(:first-child) {
+                    border: 1px solid #e1e1e1;
+                    border-top: 0;
+                    
+                }
+                .price-col {
+                    .price-row-head {
+                        padding: 15px 0;
+                        height: 130px;
+                        margin-top: 0;
+                        
+ 
+                        .packageName {
+                            font-size: 14px;
+                            padding-right: 5px;
+                            padding-left: 5px;
+                            width: 150px;
+                            margin: 0 auto;
+                        }
+
+                        .cost {
+                            margin-top: 0;
+                            font-size: 50px;
+                            color:$iceblue;
+                        }
+                        .savings {
+                            font-size:0.8em;
+                            font-weight:bold;
+                            span {
+                            text-decoration:line-through;
+                            }
+                        }
+                    }
+
+                    // &.recommended {
+                    //     border: 5px solid $tu-yellow;
+
+                    //     .price-row-head {
+                    //         margin-top: 0;
+                    //         height: 100px;
+                    //     }
+                    // }
+
+                    .price-row {
+                        padding: 15px 10px 15px 0;
+                        border-top: 1px solid $tu-gray-1;
+                        height: 80px;
+
+                        .icon {
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        span::before {
+                            background-color:$iceblue;
+                            border-radius: 50%;
+                            color: #fff;
+                            content: "✓";
+                            display: block;
+                            font-size: 1em;
+                            font-weight: 900;
+                            height: 1.618em;
+                            left: 0;
+                            top: .382em;
+                            line-height: 1.75;
+                            // position: absolute;
+                            text-align: center;
+                            width: 1.618em;
+                        }
+
+                        .iconText {
+                            margin-top: 0;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+        }
+        .btn {
+            width: auto;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .component-pricing {
+        .price-table {
+            margin: 20px 60px 40px 0;
+
+        }
+        .disclaimer {
+            padding-right: 200px;
+            padding-left: 200px;
+        }
+    }
+}

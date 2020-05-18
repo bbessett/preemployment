@@ -1,0 +1,6 @@
+html .hero-txt, html .hero-img {
+  display: flex; }
+
+html .hero-home a.btn {
+  padding: 0.382em 1.2em !important;
+  font-size: .6rem !important; }

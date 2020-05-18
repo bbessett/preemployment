@@ -1,0 +1,246 @@
+// ToolBox Files
+@import "../../../assets/bootstrap/functions";
+@import "../../../assets/bootstrap/mixins";
+@import "../../../assets/variables";
+
+/* ==========================================================================
+	Header
+============================================================================= */
+body {
+    &.menu-opened {
+        overflow: hidden;
+    }
+}
+.menuOpen {
+    #shareableHeader {
+        height: 100vh;
+        #sideNavToggle {
+            top: 15px
+        }
+    }  
+}
+#shareableHeader {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #eee;
+    #sideNavToggle {
+        top: 25px;
+        right: 7px;
+    }
+    .tu-mainHeader {
+        border-bottom: none;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: self-end;
+        .shareableLogo {
+            display: block;
+            width: 100%;
+            background: none;
+            padding-left: 10px;
+            .logoLink {
+                // max-width: 200px;
+                // display: block;
+                margin: -5px 10px 0 0 !important;
+                padding: 0;
+                img {
+                    // width: 100%;
+                    // max-width: 100%;
+                    height: 100px;
+                    width: 250px;
+                }
+            }
+        }
+        .mainNav {
+            display: none;
+            margin-bottom: auto;
+            ul {
+                li {
+                    height: 100%;
+                    float: none;
+                    margin-bottom: 0;
+                    a {
+                        color: black;
+                        display: block;
+                        text-transform: uppercase;
+                        line-height: 1.1;
+                        padding: 21px 0 7px;
+                        margin: 0 14px;
+                        font-weight: 600;
+                        &:hover {
+                            text-decoration: none;
+                            color: #00A6CA;
+                        }
+                    }
+                    &.active {
+                        a {
+                            color: $tu-darkest-gray;
+                            border-bottom: 2px solid $tu-blue;
+                        }
+                    }
+                }
+            }
+        }
+        .mainNavRight {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            align-content: flex-start;
+            height: 100%;
+            a {
+                margin: auto 0.2em;
+                
+            }
+        }
+    }
+    &.affix {
+        position: fixed;
+        z-index: 200;
+        top: 0;
+    }
+}
+
+.menuOpen {
+    background-color: white;
+    #shareableHeader {
+        .tu-mainHeader {
+            .shareableLogo {
+                display: none;
+            }
+            .mainNav {
+                display: block;
+            }
+            .mainNavRight 
+            {
+                height: 90px;
+                a.btn {
+                font-size: 1.1rem;
+            }
+            }
+        }
+    }
+}
+
+// Breakpoint for horizontal phone (sm)
+@include media-breakpoint-up(sm) {
+    #shareableHeader {
+        .tu-mainHeader {
+            .shareableLogo {
+            }
+        }
+    }
+}
+
+
+
+// Breakpoint for horizontal tablet (lg)
+@include media-breakpoint-up(lg) {
+    #shareableHeader {
+        .tu-mainHeader {
+            flex-direction: row;
+            width: 100%;
+            max-width: auto;
+            padding-left: 38px;
+            padding-right: 38px;
+            .shareableLogo {
+                float: none;
+                width: auto;
+                margin-right: auto;
+                padding-left: 0;
+                .logoLink {
+                    max-width: 250px;
+                }
+            }
+            .mainNav {
+                display: block;
+                margin-right: auto;
+                ul {
+                    height: 100px;
+                    display: inline-block;
+                    text-align: center;
+                    li {
+                        display: inline-block;
+                        a {
+                            text-align: center;
+                            padding: 27.5px 6px; 
+                            margin: 0;
+                            font-size: 0.775rem;
+       
+                            span {
+                                display: block;
+                            }
+                        }
+                        &.active {
+                            a {
+                                color: $tu-darkest-gray;
+                                border-bottom: 2px solid $tu-blue;
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            // .mainNavRight {
+            //     a {
+            //         display: inline-block;
+            //         font-size: 0.875rem;
+            //         &.btn {
+            //             height: 38px; 
+            //             padding-top: 10px;
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
+
+// Breakpoint for laptops (xl)
+
+@include media-breakpoint-up(xl) {
+    #shareableHeader {
+        width: 100%;
+        display: flex;
+        margin: auto;
+        .tu-mainHeader {
+            width: 1200px;
+            .shareableLogo {
+                border-right: none;
+                .logoLink {
+                    max-width: 300px;
+                    height: 50px;
+                    img {
+                        width: 300px;
+                    }
+                }
+            }
+            .mainNav {
+                ul {
+                    li {
+                        a {
+                            padding: 27.5px 14.2px;
+                            font-weight: 600;
+                            font-size: 0.805rem;
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}

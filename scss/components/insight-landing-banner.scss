@@ -1,0 +1,223 @@
+// ToolBox Files
+@import "../../assets/bootstrap/functions";
+@import "../../assets/bootstrap/mixins";
+@import "../../assets/variables";
+
+#site-wrapper { 
+	position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.lp-hero {
+	@include clearfix;
+}
+
+.lp-hero__main {
+	position: relative;
+}
+
+.lp-hero__content {
+	position: relative;
+	padding: 80px 15px;
+	color: #ffffff;
+	z-index: 3;
+
+	h1 {
+		margin-bottom: 26px;
+		color: #ffffff;
+		font-size: 34px;
+	}
+
+	p {
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 26px;
+	}
+}
+
+.lp-hero__image-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url('../images/landing-page/TU_LPHero_01.jpg') no-repeat top left;
+	background-size: cover;
+	z-index: 1;
+}
+
+.lp-hero__image {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #000000;
+	opacity: .5;
+	z-index: 2;
+}
+
+.lp-hero__featured {
+	padding: 35px 25px 35px 15px;
+	background-color: #494949;;
+}
+
+	.lp-hero__item {
+		margin-bottom: 40px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		h2 {
+			margin-top: 0;
+			color: #ffffff;
+			font-size: 18px;
+			font-weight: 500;
+			a {
+				color: #ffffff;
+				text-decoration: none;
+				&:hover {
+					text-decoration: underline;
+				}	
+			}
+		}
+		span {
+			color: #ffffff;
+			font-size: 10px;
+			font-weight: 600;
+			line-height: 14px;
+			text-transform: uppercase;
+		}
+	}
+
+
+@media( min-width: 768px ) {
+	.lp-hero__content {
+		padding: 80px 30px;
+		h1{
+			font-size: 34px;
+			font-weight: 600;
+		}
+	}
+
+	.lp-hero__featured {
+		@include clearfix;
+		display: block;
+		display: flex; // sass-lint:disable-line no-duplicate-properties
+		padding: 35px 0;
+	}
+
+		.lp-hero__item {
+			// Width and float for IE9
+			flex: 0 0 33%;
+			width: 33%;
+			margin: 0;
+			padding: 0 30px;
+			float: left;
+			border-right: 1px solid #707070;
+
+			&:last-child {
+				margin-right: 0;
+				border: 0;
+			}
+			h2 {
+				margin-top: 0;
+				color: #fff;
+				font-size: 18px;
+				font-weight: 500;
+			}
+			span {
+				font-size: 14px;
+				font-weight: 700;
+				line-height: 18px;
+			}
+		}
+}
+
+@media( min-width: 992px ) {
+	.lp-hero {
+		position: relative;
+		max-height: 730px;
+	}
+
+	.lp-hero__main {
+		position: absolute;
+		top: 0;
+		right: 460px;
+		bottom: 0;
+		left: 0;
+	}
+
+		.lp-hero__content {
+			display: block;
+			position: absolute;
+			top: 50%;
+			height: auto;
+			padding: 0 80px;
+			transform: translateY(-50%);
+			-ms-transform: translateY(-50%);
+
+			h1 {
+				font-size: 54px;
+				font-weight: 500;
+				text-align: left;
+			}
+
+			p {
+				font-size: 34px;
+				font-weight: 300;
+				line-height: 40px;
+				width: auto;
+			}
+		}
+	
+	.lp-hero__featured {
+		display: block;
+		width: 460px;
+		padding: 40px 120px 40px 50px;
+		float: right;
+	}
+
+		.lp-hero__item {
+			position: relative;
+			width: 100%;
+			margin-bottom: 40px;
+			padding: 0 0 40px;
+			float: none;
+			border: 0;
+
+			&::after {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 150px;
+				height: 1px;
+				background-color: #707070;;
+				content: '';
+			}
+
+			&:last-child {
+				padding: 0;
+				border: 0;
+
+				&::after {
+					content: none;
+				}
+			}
+
+			h2 {
+				font-size: 26px;
+			}
+		}
+}
+
+@media( min-width: 1200px ) {
+	.lp-hero__content {
+		padding: 0 170px;
+	}
+}
+
+
+// https://preemployment-marketing-pvw.transunion.com/blog/main-copy
+// <link type="text/css" href="/resources/css/about-us.css" rel="stylesheet">

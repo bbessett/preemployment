@@ -1,0 +1,101 @@
+// ToolBox Files
+@import "../../assets/bootstrap/functions";
+@import "../../assets/bootstrap/mixins";
+@import "../../assets/variables";
+
+/* ==========================================================================
+	Social Media Contact Component 
+============================================================================= */
+
+.share-component-insights-wrapper {
+    display: block;
+
+    .shareButtons {
+        padding-top: 5px;
+        padding-bottom: 10px;
+        clear: both;
+        &.shareRight {
+            div {
+                float: right;
+            }
+        }
+        // &.blueButtons {
+        //     .at-share-btn {
+                
+        //     }
+        // }
+        .addthis-animated {
+            animation-fill-mode: both;
+            animation-timing-function: ease-out;
+            animation-duration: .3s;
+            display: block !important;
+            opacity: 1 !important;
+            .at4-visually-hidden {
+                position: absolute;
+                clip: rect(1px,1px,1px,1px);
+                padding: 0;
+                border: 0;
+                overflow: hidden; 
+            }
+            .at-icon-wrapper {
+                line-height: 24px !important;
+                height: 24px !important;
+                width: 24px !important;
+                border-radius: 50%;
+                background-color: #00A6CA !important;
+                vertical-align: middle;
+                cursor: pointer;
+                margin: 0 5px 5px 0;
+                display: inline-block;
+                overflow: hidden;
+                border: 0;
+                text-decoration: none;
+                text-transform: none;
+                transition: all .2s ease-in-out;
+                .at-icon {
+                    height: 24px !important;
+                    width: 24px !important;
+                    fill: white;
+                    border: 0;
+                }
+                &:focus {
+                    transform: translateY(-4px);
+                    outline-offset: -1px;
+                    color: inherit;
+                }
+
+            }
+            .at_flat_counter {
+                line-height: 16px;
+                font-size: 10.2px;
+                cursor: pointer;
+                font-family: helvetica,arial,sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                display: inline-block;
+                position: relative;
+                vertical-align: top;
+                height: auto;
+                margin: 0 5px;
+                padding: 0 6px;
+                left: -1px;
+                background: #ebebeb;
+                color: #32363b;
+                transition: all .2s ease;
+                &:after {
+                    top: 30%;
+                    left: -4px;
+                    content: "";
+                    position: absolute;
+                    border-width: 5px 8px 5px 0;
+                    border-style: solid;
+                    border-color: transparent #ebebeb transparent transparent;
+                    display: block;
+                    width: 0;
+                    height: 0;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* TransUnion 2016 Brand Colors */
+/* ---------------------------- */
+/*#EEEEEE*/
+/*#DDDDDD*/
+/*#A9A9A9*/
+/*#707070*/
+/* ==========================================================================
+	Pricing Grid
+============================================================================= */
+.component-pricing h2 {
+  margin-bottom: 60px; }
+
+.component-pricing .price-table {
+  display: flex;
+  margin: 20px 0 40px 0; }
+  .component-pricing .price-table .price-col {
+    float: left;
+    flex: 1;
+    flex-grow: 3;
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    border: 5px solid #e1e1e1; }
+    .component-pricing .price-table .price-col:first-child {
+      flex-grow: 3;
+      text-align: left;
+      border: none; }
+    .component-pricing .price-table .price-col .price-row-title {
+      list-style-type: none;
+      margin: 0;
+      height: 35px;
+      background: #FCD800;
+      padding: 7px;
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: uppercase;
+      text-align: center; }
+    .component-pricing .price-table .price-col .price-row-head {
+      margin-top: 0;
+      list-style-type: none;
+      padding: 15px 30px 0; }
+      .component-pricing .price-table .price-col .price-row-head .packageName {
+        font-size: 14px;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-weight: 600;
+        line-height: 1.1;
+        text-transform: uppercase; }
+      .component-pricing .price-table .price-col .price-row-head .cost {
+        font-size: 50px;
+        font-weight: 300;
+        margin-top: 28px;
+        margin-bottom: 0;
+        line-height: 1.1; }
+    .component-pricing .price-table .price-col .price-row {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 5px 30px;
+      height: auto; }
+      .component-pricing .price-table .price-col .price-row .icon {
+        width: 25px; }
+        .component-pricing .price-table .price-col .price-row .icon img {
+          width: 15px; }
+      .component-pricing .price-table .price-col .price-row .iconText {
+        margin-bottom: 0;
+        font-family: Intro, Trebuchet MS, Helvetica, Arial, sans-serif;
+        display: inline-block;
+        margin-top: 8px;
+        margin-left: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.1; }
+      .component-pricing .price-table .price-col .price-row:last-child {
+        margin-bottom: 20px; }
+
+.component-pricing .disclaimer {
+  text-align: center;
+  padding-right: 0;
+  padding-left: 0; }
+  .component-pricing .disclaimer p {
+    font-size: 18px;
+    line-height: 1.42857;
+    margin-bottom: 20px; }
+    .component-pricing .disclaimer p strong {
+      font-weight: 700; }
+
+.component-pricing .btn {
+  width: 100%;
+  font-size: 16px;
+  padding: 19px 20px 22px 20px;
+  height: 57px; }
+
+.component-pricing hr {
+  margin: 30px 0 60px; }
+
+@media (min-width: 768px) {
+  .component-pricing .price-table.d-md-block {
+    display: flex !important; }
+    .component-pricing .price-table.d-md-block .price-col:not(:first-child) {
+      border: 1px solid #e1e1e1;
+      border-top: 0; }
+    .component-pricing .price-table.d-md-block .price-col .price-row-head {
+      padding: 15px 0;
+      height: 130px;
+      margin-top: 0; }
+      .component-pricing .price-table.d-md-block .price-col .price-row-head .packageName {
+        font-size: 14px;
+        padding-right: 5px;
+        padding-left: 5px;
+        width: 150px;
+        margin: 0 auto; }
+      .component-pricing .price-table.d-md-block .price-col .price-row-head .cost {
+        margin-top: 0;
+        font-size: 50px;
+        color: #0FC3EA; }
+      .component-pricing .price-table.d-md-block .price-col .price-row-head .savings {
+        font-size: 0.8em;
+        font-weight: bold; }
+        .component-pricing .price-table.d-md-block .price-col .price-row-head .savings span {
+          text-decoration: line-through; }
+    .component-pricing .price-table.d-md-block .price-col .price-row {
+      padding: 15px 10px 15px 0;
+      border-top: 1px solid #F5F5F5;
+      height: 80px; }
+      .component-pricing .price-table.d-md-block .price-col .price-row .icon {
+        margin-left: auto;
+        margin-right: auto; }
+      .component-pricing .price-table.d-md-block .price-col .price-row span::before {
+        background-color: #0FC3EA;
+        border-radius: 50%;
+        color: #fff;
+        content: "✓";
+        display: block;
+        font-size: 1em;
+        font-weight: 900;
+        height: 1.618em;
+        left: 0;
+        top: .382em;
+        line-height: 1.75;
+        text-align: center;
+        width: 1.618em; }
+      .component-pricing .price-table.d-md-block .price-col .price-row .iconText {
+        margin-top: 0;
+        margin-left: 0; }
+  .component-pricing .btn {
+    width: auto; } }
+
+@media (min-width: 992px) {
+  .component-pricing .price-table {
+    margin: 20px 60px 40px 0; }
+  .component-pricing .disclaimer {
+    padding-right: 200px;
+    padding-left: 200px; } }

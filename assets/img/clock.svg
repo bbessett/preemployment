@@ -1,0 +1,12 @@
+<svg id="clock" data-name="clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 137">
+	<defs>
+		<style>
+		path {
+			fill: #00a6ca;
+		}
+		</style>
+	</defs>
+	<title>clock icon</title>
+	<path d="M50.23,55.91v7.46h-22V73.92H51.33a9.47,9.47,0,0,0,9.46-9.46V36.31H50.23Z" />
+	<path d="M54,14.55a54,54,0,1,0,54,54A53.94,53.94,0,0,0,54,14.55Zm0,97.36A43.41,43.41,0,1,1,97.41,68.5,43.45,43.45,0,0,1,54,111.91Z" />
+</svg>

@@ -1,0 +1,128 @@
+// ToolBox Files
+@import "../../assets/bootstrap/functions";
+@import "../../assets/bootstrap/mixins";
+@import "../../assets/variables";
+
+.component-equal-blocks {
+    overflow: hidden;
+    .container {
+        padding: 0;
+        .blocks-holder {
+            .col-12 {
+                background-color: $tu-blue;
+
+                &:first-child {
+                    background-color: $tu-gray-4;
+
+                    .inner {
+
+                        // .text-white {
+                        //     color: white;
+                        // }
+                        // ul {
+                        //     li {
+                        //         color: $white;
+                        //     }
+                        // }
+                    }
+                }
+
+                .inner {
+                    padding-top: 45px;
+                    padding-bottom: 45px;
+                    padding: 45px 15px;
+                    max-width: 600px;
+                    margin: 0 auto;
+
+                    .icon {
+                        img {
+                            height: 60px;
+                            &.dollar {
+                                height: 65px;
+
+                            }
+                        }
+                    }
+
+                    .text-wrapper {
+                        ul {
+                            li {
+                                font-weight: 300;
+                            }
+                        }
+
+                        .text-white {
+                            font-size: 30px;
+                        }
+
+                        .btn-outline-white {
+                            border: 4px solid #fff;
+                            width: 100%;
+                            padding-top: 19px;
+                            padding-bottom: 30px;
+
+                            &:hover {
+                                color: black;
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .component-equal-blocks {
+        .container {
+            .blocks-holder {
+                .col-12 {
+                    .inner {
+                        .icon {
+                            display: inline-block;
+                            width: 90px;
+                            img {
+                                height: 80px;
+                                padding-bottom: 20px;
+                                &.dollar {
+                                    height: 90px;
+                                    margin-left: 20px;
+                                }
+                            }
+                        }
+                        .text-wrapper {
+                            display: inline-block;
+                            .btn-outline-white {
+                                width: auto;
+                                margin: 10px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .component-equal-blocks {
+        background: linear-gradient(to right, $tu-gray-4 50%, $tu-blue 50%);
+        .container {
+            .blocks-holder {
+                .col-12 {
+                    .inner {
+                        .icon {
+                            img {
+                                position: absolute;
+                                top: 50px;
+                                left: 40px;                            
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+// ToolBox Files
+@import "../../assets/bootstrap/functions";
+@import "../../assets/bootstrap/mixins";
+@import "../../assets/variables";
+//@import "../tu-main-com.min.css";
+
+/* ==========================================================================
+	Trending Insights Component 
+============================================================================= */
+
+.component-three-col-video {
+    padding: 60px 0 40px 0;
+    margin: 0;
+    background: #494949;
+    color: #fff;
+    
+    h2 {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+        font-size: 30px;
+
+        @include media-breakpoint-up(md) {
+            font-size: 34px;
+        }
+    }
+    p {
+        margin: 10px 0 30px 0;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.42857;
+    }
+    .block-grid {
+        padding-bottom: 40px;
+
+        .link--block {
+            cursor: pointer;
+            position: relative;
+            display: block;
+            img {
+                width: 100%;
+            }
+
+            &:before {
+                position: absolute;
+                content: '';
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                background: url(../../assets/img/play-white.svg) no-repeat center center;
+
+                &:hover {
+                    background: url(../../assets/img/play-gray.svg) no-repeat center center;
+                }
+            }
+        }
+
+    }
+}
+
+.modal-overlay {
+    .modal {
+        @include media-breakpoint-up(lg) {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .modal-content {
+            .close {
+                display: block;
+                position: absolute;
+                background-color: white;
+                border-radius: 50px;
+                width: 35px;
+                height: 35px;
+                right: 15px;
+                top: 15px;
+                z-index: 10;
+
+                a {
+                    cursor: pointer;
+                    img {
+                        width: 18px;
+                        margin-left: 8px;
+                        margin-top: 9px;
+                    }
+                }
+
+                @include media-breakpoint-up(md) {
+                    display: none;
+                }
+            }
+
+            @include media-breakpoint-up(md) {
+                &:hover {
+                    .close {
+                        display: block;
+                    }
+                }
+            }
+
+            .responsive-iframe-wrapper {
+                position: relative;
+                padding-bottom: 75%;
+                height: 0;
+                overflow: hidden;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100% !important;
+                    height: 100% !important;
+                    width: auto;
+                    height: 360;
+                }
+            }
+        }
+    }
+}

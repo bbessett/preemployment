@@ -1,0 +1,83 @@
+/* Hero Image Styles */
+.hero {
+  width: 100%;
+  min-height: 560px; }
+  .hero .mobileHeroImage {
+    height: 320px;
+    margin: 0 -16px 20px;
+    background-size: cover;
+    background-position: right center; }
+  .hero .heroContent .primaryHeadline {
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%; }
+  .hero .heroContent p {
+    font-weight: 300; }
+  .hero .heroContent .btn {
+    width: 100%;
+    height: auto;
+    padding: 20px; }
+
+/* Hero Image Styles - Small Break Point */
+@media screen and (min-width: 768px) {
+  .mobileHeroImageWrap {
+    display: none; }
+  .heroWrapper .carousel-inner {
+    background-color: black; }
+  .hero {
+    min-height: 500px;
+    margin-bottom: 0; }
+    .hero.background-light .heroContent .primaryHeadline {
+      color: black;
+      background: none; }
+    .hero.background-light .heroContent p {
+      color: black;
+      background: none; }
+    .hero .heroImageWrap .heroImage {
+      height: 500px;
+      margin-top: 0;
+      background-size: cover;
+      background-position: right center; }
+    .hero .heroContent {
+      margin-top: -503px;
+      padding: 60px 0 0 0;
+      width: 414px;
+      background-color: transparent;
+      text-shadow: none;
+      color: #ffffff; }
+      .hero .heroContent .btn {
+        width: auto; }
+      .hero .heroContent .primaryHeadline {
+        font-size: 36px;
+        line-height: 44px;
+        width: 57%; }
+      .hero .heroContent p {
+        display: block;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 40px;
+        width: 55%; } }
+
+/* Hero Image Styles - Large Break Point */
+@media screen and (min-width: 1200px) {
+  .mobileHeroImageWrap {
+    display: none; }
+  .hero .heroImage {
+    height: 520px;
+    margin-top: 0; }
+  .hero .heroContent {
+    width: 47%;
+    height: 380px;
+    margin-left: 40px; }
+    .hero .heroContent .eyebrow {
+      font-size: 18px; }
+    .hero .heroContent .primaryHeadline {
+      font-size: 58px;
+      line-height: 68px;
+      letter-spacing: -.25px;
+      width: 67%; }
+    .hero .heroContent p {
+      display: block;
+      font-size: 24px;
+      line-height: 29px;
+      width: 75%; } }

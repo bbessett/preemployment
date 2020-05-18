@@ -1,0 +1,169 @@
+/* TransUnion 2016 Brand Colors */
+/* ---------------------------- */
+/*#EEEEEE*/
+/*#DDDDDD*/
+/*#A9A9A9*/
+/*#707070*/
+/* ==========================================================================
+	Footer
+============================================================================= */
+.site-footer {
+  position: relative;
+  background: #494949;
+  padding: 30px 0 25px 0;
+  font-size: 14px;
+  color: #ffffff;
+  overflow: hidden; }
+  .site-footer .logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .site-footer .logo {
+        margin-bottom: 0;
+        margin-left: 0;
+        text-align: left; } }
+    .site-footer .logo img {
+      height: 50px;
+      width: 350px; }
+      @media (min-width: 768px) {
+        .site-footer .logo img {
+          height: 50px;
+          max-width: 400px; } }
+  .site-footer .logo-holder {
+    margin: 0 auto 20px auto; }
+    @media (min-width: 768px) {
+      .site-footer .logo-holder {
+        margin: 10px 0 0; } }
+  .site-footer .btn {
+    float: none;
+    margin-bottom: 5px; }
+    @media (max-width: 767.98px) {
+      .site-footer .btn {
+        width: 100%;
+        display: block; } }
+    @media (min-width: 768px) {
+      .site-footer .btn {
+        float: right; } }
+  .site-footer hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eeeeee; }
+  .site-footer .copyright {
+    font-size: 14px;
+    font-weight: 300; }
+    @media (min-width: 768px) {
+      .site-footer .copyright {
+        font-size: 18px; } }
+  .site-footer .m-b-0 {
+    margin-bottom: 0px !important; }
+  .site-footer .menu {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none; }
+    .site-footer .menu li {
+      font-size: .85rem;
+      margin-bottom: 10px; }
+      @media (min-width: 768px) {
+        .site-footer .menu li {
+          margin-bottom: 2px; } }
+      .site-footer .menu li a {
+        color: #ffffff;
+        font-weight: 700; }
+        .site-footer .menu li a.ccpa {
+          display: none; }
+      .site-footer .menu li:last-child {
+        margin-bottom: 0; }
+
+ul.menu-social {
+  padding-left: 0;
+  margin: 0 auto 30px 0;
+  list-style: none;
+  text-align: center;
+  max-width: 100%; }
+  @media (min-width: 768px) {
+    ul.menu-social {
+      text-align: left;
+      max-width: 130px;
+      margin-left: 0;
+      margin-bottom: 0; } }
+  ul.menu-social li {
+    background: #ffffff;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 0;
+    display: inline-block; }
+    @media (min-width: 768px) {
+      ul.menu-social li {
+        margin-bottom: 20px; } }
+    ul.menu-social li:last-child {
+      margin-right: 0; }
+    ul.menu-social li:hover {
+      background: #A9A9A9; }
+    ul.menu-social li a {
+      color: #494949;
+      font-size: 20px;
+      display: block;
+      text-align: center;
+      line-height: 44px;
+      width: 42px;
+      height: 42px; }
+      ul.menu-social li a img.imgIcon {
+        height: 20px; }
+  ul.menu-social.menu-social-inline {
+    text-align: left;
+    margin-left: 0;
+    max-width: 100%; }
+  ul.menu-social.menu-social-sm li {
+    background: #00A6CA;
+    margin-right: 10px;
+    margin-bottom: 30px; }
+    ul.menu-social.menu-social-sm li:last-child {
+      margin-right: 0; }
+    ul.menu-social.menu-social-sm li a {
+      color: #ffffff;
+      font-size: 12px;
+      width: 23px;
+      height: 23px;
+      line-height: 26px; }
+  ul.menu-social.menu-social-md {
+    text-align: center;
+    margin-left: auto; }
+    ul.menu-social.menu-social-md li {
+      background: #00A6CA;
+      margin-right: 15px;
+      margin-bottom: 30px; }
+      ul.menu-social.menu-social-md li:last-child {
+        margin-right: 0; }
+      ul.menu-social.menu-social-md li a {
+        color: #ffffff; }
+    ul.menu-social.menu-social-md .list-title {
+      background: none;
+      display: block;
+      margin-bottom: 15px; }
+      @media (min-width: 992px) {
+        ul.menu-social.menu-social-md .list-title {
+          display: inline-block; } }
+      ul.menu-social.menu-social-md .list-title h4 {
+        color: #000000;
+        font-weight: 300;
+        margin-bottom: 0; }
+  ul.menu-social.menu-social-lg {
+    text-align: center;
+    margin-left: auto; }
+    ul.menu-social.menu-social-lg li {
+      background: #00A6CA; }
+      @media (min-width: 768px) {
+        ul.menu-social.menu-social-lg li {
+          margin-right: 30px; } }
+      ul.menu-social.menu-social-lg li:last-child {
+        margin-right: 0; }
+      ul.menu-social.menu-social-lg li a {
+        color: #ffffff; }
+        @media (min-width: 768px) {
+          ul.menu-social.menu-social-lg li a {
+            font-size: 40px;
+            width: 77px;
+            height: 77px;
+            line-height: 85px; } }

@@ -1,0 +1,50 @@
+<link type="text/css" href="/resources/css/email-capture-eyebrow.css" rel="stylesheet">
+
+<!-- Begin Email Eyebrow Component-->
+<div class="container">
+    <div class="row browSect">
+        <div class="col-12 col-lg-10 col-xl-12">
+            <div class="eyebrow-newsletter">
+                <form novalidate="novalidate" method="post" id="insightSubscribe" class="row form-newsletter"
+                    onsubmit="setTimeout(setTime(),100);return true;" data-formtype="newsletter-signup"
+                    action="/admin/mailchimp-submission">
+                    <div class="bar bar__left"></div>
+                    <div class="bar bar__right"></div>
+                    <div class="form-newsletter__copy">
+                        <img class="newsletterIcon" alt="" src="/resources/img/icons/envelope.svg">
+                        <h5>Never miss an Insight!</h5>
+                        <p>Get a digest of TransUnion content in your inbox once a week </p>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-newsletter__email">
+                            <input aria-required="true" placeholder="Enter your email" id="emailInput"
+                                aria-label="Enter your email" name="emailBox" type="email"
+                                class="form-control required ValidEmail checkValid" onkeyup="isEmailValid()">
+                            <span class="error" id="emailBox-error">Please enter
+                                a valid email address</span>
+                        </div>
+                        <button disabled="" id="emailSubButton" class="btn btn-sq btn-orange submitButton" type="submit"
+                            onclick="setFormAction()">SIGN UP</button>
+                    </div>
+                    <div class="form-newsletter--success">
+                        <div class="bar bar__top"></div>
+                        <div class="bar bar__bottom"></div>
+                        <p class="form-newsletter--success__message">
+                            <strong>Thank you!</strong>
+                            <br>
+                            <strong>We'll be in touch</strong>
+                        </p>
+                        <p class="form-newsletter--fail__message">
+                            <strong>Sorry!</strong>
+                            <br>
+                            <strong>This request could not be completed</strong>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Email Eyebrow Component-->
+
+<script src="/resources/js/email-cap-validation.js"></script>

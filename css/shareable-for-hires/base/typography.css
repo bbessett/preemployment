@@ -1,0 +1,68 @@
+svg {
+  fill: currentColor; }
+
+@media (min-width: 120em) {
+  html {
+    font-size: 16px; } }
+
+svg[hidden] {
+  display: block;
+  height: 0;
+  position: absolute;
+  width: 0;
+  z-index: -1; }
+
+html blockquote, html ol, html p, html ul {
+  margin: 1em auto 0;
+  padding: 0; }
+
+html p {
+  max-width: 37.577em;
+  font-size: 1.2em; }
+
+html ul {
+  list-style: none; }
+
+html .h1, html .h2, html .h3, html .h4, html h1, html h2, html h3, html h4, html h5, html h6 {
+  color: #0e1e25;
+  font-weight: 500;
+  margin: 1.618em auto 0; }
+  html .h1 + p, html .h2 + p, html .h3 + p, html .h4 + p, html h1 + p, html h2 + p, html h3 + p, html h4 + p, html h5 + p, html h6 + p {
+    margin-top: .5em;
+    margin-bottom: 1.0em; }
+
+html .h1, html h1 {
+  font-size: 1.618em;
+  font-weight: 800;
+  line-height: 1.333; }
+  @media (min-width: 32em) {
+    html .h1, html h1 {
+      font-size: calc(1.618em + 1vw);
+      line-height: 1.2; } }
+  @media (min-width: 60em) {
+    html .h1, html h1 {
+      font-size: 2.618em; } }
+  html .h1 small, html h1 small {
+    font-size: 90%;
+    display: block !important; }
+
+html .h2, html h2 {
+  font-size: 1.618em;
+  font-weight: 600;
+  line-height: 1.333; }
+  @media (min-width: 60em) {
+    html .h2, html h2 {
+      font-size: 2em;
+      font-weight: 500; } }
+
+html .h3, html h3 {
+  font-size: 1.3em;
+  line-height: 1.333; }
+
+html .h4, html h4 {
+  font-size: 1.1em;
+  line-height: 1.4; }
+
+html section {
+  padding-bottom: 1.2236em;
+  text-align: center; }

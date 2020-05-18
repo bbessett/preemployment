@@ -1,0 +1,28 @@
+/* TransUnion 2016 Brand Colors */
+/* ---------------------------- */
+/*#EEEEEE*/
+/*#DDDDDD*/
+/*#A9A9A9*/
+/*#707070*/
+/* ==========================================================================
+	Feature - Image Teaser Component 
+============================================================================= */
+.component-col-icons {
+  padding: 40px 0;
+  margin: 0;
+  background: white;
+  text-align: center; }
+  .component-col-icons h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: black; }
+  .component-col-icons a {
+    color: #000;
+    display: block;
+    text-decoration: underline;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-size: 18px; }
