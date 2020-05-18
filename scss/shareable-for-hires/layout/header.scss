@@ -64,12 +64,32 @@ body {
 }
 .menuOpen {
     #shareableHeader {
-        height:70%;
-        border-bottom:2px solid #e1e1e1;
+        height: 95%;
+        margin: 2px 2px;
+        border: 1px solid #e1e1e1;
+        opacity: 1;
+        width: 88%;
+        transform: scale(1);
+        transition: transform 0.3s cubic-bezier(0.8, -0.4, 0.2, 1.44) 0s, opacity 0.3s cubic-bezier(0.8, -0.4, 0.2, 1.44) 0s;
+        border-bottom: 2px solid #e1e1e1;
+        float: right;
+        z-index: 200;
+        position: absolute;
+        right: 0;
         #sideNavToggle {
             top: 15px
         }
+        .mainNav {
+            display: block;
+            width: 100%;
+            top: 15px;
+            position: relative;
+        }
     }  
+    // .mainNavRight {
+     
+        
+    // }
 }
 #shareableHeader {
     width: 100%;

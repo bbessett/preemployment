@@ -138,5 +138,8 @@ header.retailActive .btn-yellow, header.retailActive a.btn-yellow:not([href]):no
   header.retailActive .btn-yellow:active:focus, header.retailActive a.btn-yellow:not([href]):not([tabindex]):active:focus {
     box-shadow: none; }
 
+a.btn, .btn {
+  text-transform: none; }
+
 .site-footer .btn {
   display: none !important; }

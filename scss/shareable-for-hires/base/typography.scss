@@ -37,6 +37,7 @@ html {
             margin-top: .5em;
             margin-bottom: 1.0em;
         }
+
         color: #0e1e25;
         font-weight: 500;
         margin: 1.618em auto 0 
@@ -46,6 +47,7 @@ html {
         font-size: 1.618em;
         font-weight: 800;
         line-height: 1.333;
+        margin-bottom:0.5em;
         @media (min-width: 32em) {
                 font-size:calc(1.618em + 1vw);
                 line-height: 1.2

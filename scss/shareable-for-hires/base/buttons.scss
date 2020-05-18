@@ -89,7 +89,9 @@ header.retailActive {
         border-radius:45px;
 }
 }
-
+a.btn, .btn {
+    text-transform: none;
+}
 
 //overides
 .site-footer {

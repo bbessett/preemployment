@@ -34,7 +34,8 @@ html .h1, html .h2, html .h3, html .h4, html h1, html h2, html h3, html h4, html
 html .h1, html h1 {
   font-size: 1.618em;
   font-weight: 800;
-  line-height: 1.333; }
+  line-height: 1.333;
+  margin-bottom: 0.5em; }
   @media (min-width: 32em) {
     html .h1, html h1 {
       font-size: calc(1.618em + 1vw);
