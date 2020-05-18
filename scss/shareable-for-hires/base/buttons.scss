@@ -29,7 +29,7 @@ $yellow:  #fcd800;
     }
 }
 a.btn, .btn {
-    padding: .382em 1em !important;
+    padding: 0.982em 1.6em;
     font-size: .9rem;
     box-sizing: border-box;
     font-weight: 700;
@@ -41,7 +41,6 @@ a.btn, .btn {
     -moz-osx-font-smoothing: grayscale;  
     line-height: 1.618em;
     outline: 0;
-    padding: .382em 1em;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -58,6 +57,12 @@ a.btn, .btn {
 .btn-outline-blue,a.btn-outline-blue:not([href]):not([tabindex]) {
     @include btn-primary($iceblue);
     border-radius: 45px;
+    &.btn-sq {
+        border-radius:0 !important;
+    &.btn-primary {
+        padding: 0.782em 1em !important;
+    }
+    }
 }
 .btn-blue,
   a.btn-blue:not([href]):not([tabindex]) {
@@ -70,12 +75,11 @@ a.btn, .btn {
 
 .btn-outline-yellow,a.btn-outline-yellow:not([href]):not([tabindex]) {
         @include btn-primary($yellow);
-  
-    }
-.btn-yellow, a.btn-yellow:not([href]):not([tabindex]) {
+}
+
+.btn-yellow,.btn-primary, a.btn-yellow:not([href]):not([tabindex]) {
         @include btn-primary($yellow);
         background-color:$yellow;
-   
 }
 
 
@@ -88,10 +92,8 @@ header.retailActive {
         @include btn-primary($iceblue);
         background-color:$iceblue;
         border-radius:45px;
+        text-transform: none;
 }
-}
-a.btn, .btn {
-    text-transform: none;
 }
 
 //overides

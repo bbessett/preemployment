@@ -1,5 +1,5 @@
 a.btn, .btn {
-  padding: .382em 1em !important;
+  padding: 0.982em 1.6em;
   font-size: .9rem;
   box-sizing: border-box;
   font-weight: 700;
@@ -11,7 +11,6 @@ a.btn, .btn {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.618em;
   outline: 0;
-  padding: .382em 1em;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -42,6 +41,10 @@ a.btn, .btn {
     box-shadow: none; }
   .btn-outline-blue:active:focus, a.btn-outline-blue:not([href]):not([tabindex]):active:focus {
     box-shadow: none; }
+  .btn-outline-blue.btn-sq, a.btn-outline-blue:not([href]):not([tabindex]).btn-sq {
+    border-radius: 0 !important; }
+    .btn-outline-blue.btn-sq.btn-primary, a.btn-outline-blue:not([href]):not([tabindex]).btn-sq.btn-primary {
+      padding: 0.782em 1em !important; }
 
 .btn-blue,
 a.btn-blue:not([href]):not([tabindex]) {
@@ -84,22 +87,22 @@ a.btn-blue:not([href]):not([tabindex]) {
   .btn-outline-yellow:active:focus, a.btn-outline-yellow:not([href]):not([tabindex]):active:focus {
     box-shadow: none; }
 
-.btn-yellow, a.btn-yellow:not([href]):not([tabindex]) {
+.btn-yellow, .btn-primary, a.btn-yellow:not([href]):not([tabindex]) {
   border: 4px solid;
   border-color: #fcd800;
   background-color: transparent;
   background-color: #fcd800; }
-  .btn-yellow:hover, a.btn-yellow:not([href]):not([tabindex]):hover {
+  .btn-yellow:hover, .btn-primary:hover, a.btn-yellow:not([href]):not([tabindex]):hover {
     background-color: #e3c200; }
-  .btn-yellow:active, a.btn-yellow:not([href]):not([tabindex]):active {
+  .btn-yellow:active, .btn-primary:active, a.btn-yellow:not([href]):not([tabindex]):active {
     border-color: #fcd800;
     background-color: #968100;
     box-shadow: none; }
-  .btn-yellow:focus, a.btn-yellow:not([href]):not([tabindex]):focus {
+  .btn-yellow:focus, .btn-primary:focus, a.btn-yellow:not([href]):not([tabindex]):focus {
     background-color: #c9ac00;
     border-color: #fcd800;
     box-shadow: none; }
-  .btn-yellow:active:focus, a.btn-yellow:not([href]):not([tabindex]):active:focus {
+  .btn-yellow:active:focus, .btn-primary:active:focus, a.btn-yellow:not([href]):not([tabindex]):active:focus {
     box-shadow: none; }
 
 header.retailActive .btn-outline-yellow, header.retailActive a.btn-outline-yellow:not([href]):not([tabindex]) {
@@ -125,7 +128,8 @@ header.retailActive .btn-yellow, header.retailActive a.btn-yellow:not([href]):no
   border-color: #0FC3EA;
   background-color: transparent;
   background-color: #0FC3EA;
-  border-radius: 45px; }
+  border-radius: 45px;
+  text-transform: none; }
   header.retailActive .btn-yellow:hover, header.retailActive a.btn-yellow:not([href]):not([tabindex]):hover {
     background-color: #0dafd2; }
   header.retailActive .btn-yellow:active, header.retailActive a.btn-yellow:not([href]):not([tabindex]):active {
@@ -138,9 +142,6 @@ header.retailActive .btn-yellow, header.retailActive a.btn-yellow:not([href]):no
     box-shadow: none; }
   header.retailActive .btn-yellow:active:focus, header.retailActive a.btn-yellow:not([href]):not([tabindex]):active:focus {
     box-shadow: none; }
-
-a.btn, .btn {
-  text-transform: none; }
 
 .site-footer .btn {
   display: none !important; }

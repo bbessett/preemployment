@@ -143,7 +143,7 @@ svg[hidden] {
   width: 0;
   z-index: -1; }
 
-html blockquote, html ol, html p, html ul {
+html blockquote, html ol, html ul {
   margin: 1em auto 0;
   padding: 0; }
 
@@ -153,14 +153,6 @@ html p {
 
 html ul {
   list-style: none; }
-
-html .h1, html .h2, html .h3, html .h4, html h1, html h2, html h3, html h4, html h5, html h6 {
-  color: #0e1e25;
-  font-weight: 500;
-  margin: 1.618em auto 0; }
-  html .h1 + p, html .h2 + p, html .h3 + p, html .h4 + p, html h1 + p, html h2 + p, html h3 + p, html h4 + p, html h5 + p, html h6 + p {
-    margin-top: .5em;
-    margin-bottom: 1.0em; }
 
 html .h1, html h1 {
   font-size: 1.618em;
@@ -194,10 +186,6 @@ html .h3, html h3 {
 html .h4, html h4 {
   font-size: 1.1em;
   line-height: 1.4; }
-
-html section {
-  padding-bottom: 1.2236em;
-  text-align: center; }
 
 /* TransUnion 2016 Brand Colors */
 /* ---------------------------- */
@@ -2642,7 +2630,7 @@ body {
           margin: 15px auto; } }
 
 a.btn, .btn {
-  padding: .382em 1em !important;
+  padding: 0.982em 1.6em;
   font-size: .9rem;
   box-sizing: border-box;
   font-weight: 700;
@@ -2654,7 +2642,6 @@ a.btn, .btn {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.618em;
   outline: 0;
-  padding: .382em 1em;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -2685,6 +2672,10 @@ a.btn, .btn {
     box-shadow: none; }
   .btn-outline-blue:active:focus, a.btn-outline-blue:not([href]):not([tabindex]):active:focus {
     box-shadow: none; }
+  .btn-outline-blue.btn-sq, a.btn-outline-blue:not([href]):not([tabindex]).btn-sq {
+    border-radius: 0 !important; }
+    .btn-outline-blue.btn-sq.btn-primary, a.btn-outline-blue:not([href]):not([tabindex]).btn-sq.btn-primary {
+      padding: 0.782em 1em !important; }
 
 .btn-blue,
 a.btn-blue:not([href]):not([tabindex]) {
@@ -2727,22 +2718,22 @@ a.btn-blue:not([href]):not([tabindex]) {
   .btn-outline-yellow:active:focus, a.btn-outline-yellow:not([href]):not([tabindex]):active:focus {
     box-shadow: none; }
 
-.btn-yellow, a.btn-yellow:not([href]):not([tabindex]) {
+.btn-yellow, .btn-primary, a.btn-yellow:not([href]):not([tabindex]) {
   border: 4px solid;
   border-color: #fcd800;
   background-color: transparent;
   background-color: #fcd800; }
-  .btn-yellow:hover, a.btn-yellow:not([href]):not([tabindex]):hover {
+  .btn-yellow:hover, .btn-primary:hover, a.btn-yellow:not([href]):not([tabindex]):hover {
     background-color: #e3c200; }
-  .btn-yellow:active, a.btn-yellow:not([href]):not([tabindex]):active {
+  .btn-yellow:active, .btn-primary:active, a.btn-yellow:not([href]):not([tabindex]):active {
     border-color: #fcd800;
     background-color: #968100;
     box-shadow: none; }
-  .btn-yellow:focus, a.btn-yellow:not([href]):not([tabindex]):focus {
+  .btn-yellow:focus, .btn-primary:focus, a.btn-yellow:not([href]):not([tabindex]):focus {
     background-color: #c9ac00;
     border-color: #fcd800;
     box-shadow: none; }
-  .btn-yellow:active:focus, a.btn-yellow:not([href]):not([tabindex]):active:focus {
+  .btn-yellow:active:focus, .btn-primary:active:focus, a.btn-yellow:not([href]):not([tabindex]):active:focus {
     box-shadow: none; }
 
 header.retailActive .btn-outline-yellow, header.retailActive a.btn-outline-yellow:not([href]):not([tabindex]) {
@@ -2768,7 +2759,8 @@ header.retailActive .btn-yellow, header.retailActive a.btn-yellow:not([href]):no
   border-color: #0FC3EA;
   background-color: transparent;
   background-color: #0FC3EA;
-  border-radius: 45px; }
+  border-radius: 45px;
+  text-transform: none; }
   header.retailActive .btn-yellow:hover, header.retailActive a.btn-yellow:not([href]):not([tabindex]):hover {
     background-color: #0dafd2; }
   header.retailActive .btn-yellow:active, header.retailActive a.btn-yellow:not([href]):not([tabindex]):active {
@@ -2782,95 +2774,8 @@ header.retailActive .btn-yellow, header.retailActive a.btn-yellow:not([href]):no
   header.retailActive .btn-yellow:active:focus, header.retailActive a.btn-yellow:not([href]):not([tabindex]):active:focus {
     box-shadow: none; }
 
-a.btn, .btn {
-  text-transform: none; }
-
 .site-footer .btn {
   display: none !important; }
-
-/* Hero Image Styles */
-.hero {
-  width: 100%;
-  min-height: 560px; }
-  .hero .mobileHeroImage {
-    height: 320px;
-    margin: 0 -16px 20px;
-    background-size: cover;
-    background-position: right center; }
-  .hero .heroContent .primaryHeadline {
-    font-size: 24px;
-    font-weight: 400;
-    width: 100%; }
-  .hero .heroContent p {
-    font-weight: 300; }
-  .hero .heroContent .btn {
-    width: 100%;
-    height: auto;
-    padding: 20px; }
-
-/* Hero Image Styles - Small Break Point */
-@media screen and (min-width: 768px) {
-  .mobileHeroImageWrap {
-    display: none; }
-  .heroWrapper .carousel-inner {
-    background-color: black; }
-  .hero {
-    min-height: 500px;
-    margin-bottom: 0; }
-    .hero.background-light .heroContent .primaryHeadline {
-      color: black;
-      background: none; }
-    .hero.background-light .heroContent p {
-      color: black;
-      background: none; }
-    .hero .heroImageWrap .heroImage {
-      height: 500px;
-      margin-top: 0;
-      background-size: cover;
-      background-position: right center; }
-    .hero .heroContent {
-      margin-top: -503px;
-      padding: 60px 0 0 0;
-      width: 414px;
-      background-color: transparent;
-      text-shadow: none;
-      color: #ffffff; }
-      .hero .heroContent .btn {
-        width: auto; }
-      .hero .heroContent .primaryHeadline {
-        font-size: 36px;
-        line-height: 44px;
-        width: 57%; }
-      .hero .heroContent p {
-        display: block;
-        font-size: 18px;
-        line-height: 24px;
-        margin-bottom: 40px;
-        width: 55%; } }
-
-/* Hero Image Styles - Large Break Point */
-@media screen and (min-width: 1200px) {
-  .mobileHeroImageWrap {
-    display: none; }
-  .hero .heroImage {
-    height: 520px;
-    margin-top: 0; }
-  .hero .heroContent {
-    width: 47%;
-    height: 380px;
-    margin-left: 40px; }
-    .hero .heroContent .eyebrow {
-      font-size: 18px; }
-    .hero .heroContent .primaryHeadline {
-      font-size: 58px;
-      line-height: 68px;
-      letter-spacing: -.25px;
-      width: 67%; }
-    .hero .heroContent p {
-      display: block;
-      font-size: 24px;
-      line-height: 29px;
-      width: 75%; } }
 
 /* TransUnion 2016 Brand Colors */
 /* ---------------------------- */

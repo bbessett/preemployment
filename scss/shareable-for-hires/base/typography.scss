@@ -17,11 +17,10 @@ svg[hidden] {
     z-index: -1
 }
 html {
-    blockquote,ol,p,ul {
+    blockquote,ol, ul {
         margin: 1em auto 0;
         padding: 0
     }
-    
     p {
         max-width: 37.577em;
         font-size: 1.2em;
@@ -32,16 +31,6 @@ html {
     }
 
 
-    .h1,.h2,.h3,.h4,h1,h2,h3,h4,h5,h6 {
-        + p {
-            margin-top: .5em;
-            margin-bottom: 1.0em;
-        }
-
-        color: #0e1e25;
-        font-weight: 500;
-        margin: 1.618em auto 0 
-    } 
 
 .h1,h1 {
         font-size: 1.618em;
@@ -84,10 +73,7 @@ html {
     }
     
 //Layout 
-section {
-    padding-bottom: 1.2236em;
-    text-align: center;
-}
+
 
 
 }

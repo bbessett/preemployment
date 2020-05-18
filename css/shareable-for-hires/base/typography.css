@@ -12,7 +12,7 @@ svg[hidden] {
   width: 0;
   z-index: -1; }
 
-html blockquote, html ol, html p, html ul {
+html blockquote, html ol, html ul {
   margin: 1em auto 0;
   padding: 0; }
 
@@ -22,14 +22,6 @@ html p {
 
 html ul {
   list-style: none; }
-
-html .h1, html .h2, html .h3, html .h4, html h1, html h2, html h3, html h4, html h5, html h6 {
-  color: #0e1e25;
-  font-weight: 500;
-  margin: 1.618em auto 0; }
-  html .h1 + p, html .h2 + p, html .h3 + p, html .h4 + p, html h1 + p, html h2 + p, html h3 + p, html h4 + p, html h5 + p, html h6 + p {
-    margin-top: .5em;
-    margin-bottom: 1.0em; }
 
 html .h1, html h1 {
   font-size: 1.618em;
@@ -63,7 +55,3 @@ html .h3, html h3 {
 html .h4, html h4 {
   font-size: 1.1em;
   line-height: 1.4; }
-
-html section {
-  padding-bottom: 1.2236em;
-  text-align: center; }
