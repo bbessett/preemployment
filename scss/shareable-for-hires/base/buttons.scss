@@ -71,7 +71,7 @@ a.btn, .btn {
     @include btn-primary($iceblue);
     background-color:$iceblue;
     border-radius:45px;
-    color:#fff;
+    color:#fff !important;
   }
    
     //Header Buttons TODO change class names 
@@ -100,6 +100,7 @@ header.retailActive {
         background-color:$iceblue;
         border-radius:45px;
         text-transform: none;
+        color:#fff !important;
         &:hover {
             color:#333;
         }

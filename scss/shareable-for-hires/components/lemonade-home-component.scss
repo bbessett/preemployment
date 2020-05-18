@@ -155,11 +155,17 @@ html {
     }
 
     ul {
+        @media (min-width: 768px) and (max-width: 1024px) {
+        width: 88%;
+        }
         @media (min-width: 768px) { 
         width: 68%;
         }
         @media (min-width: 1600px) {
             width: 60%;
+        }
+        @media (min-width: 768px) and (max-width: 1024px) {
+            width: 88%;
         }
         margin: 0 auto 0 auto;
     }
@@ -200,6 +206,9 @@ html {
             padding: 1.5px 3.2em;
         }
         @media (min-width: 60em) {
+            padding: 1.5px 4em;
+        }
+        @media (min-width: 70em) {
             padding: 1.5px 5.2em;
         }
      
@@ -207,11 +216,21 @@ html {
     margin-bottom:40px;
     .callout--text {
         width: 80%;
-        margin: 1em auto 2em;
+        margin:0 auto 2em;
+        p {
+            max-width: 41.877em;
+        }
         strong {
             text-transform: uppercase;
             font-size:90%;
             text-decoration: underline;
+        }
+        .callout-text__bottom {
+            strong {
+                @media (max-width: 480px) {
+                display:inline-block;
+                }
+            }
         }
     }
     .callout--sig {
@@ -220,6 +239,7 @@ html {
         }
         p {
             margin:0;
+            max-width: 41.977em;
         }
         .callout--sig_name {
             margin:0 auto;
@@ -228,7 +248,7 @@ html {
         .callout--sig_title {
             margin: 0 auto 40px;
         }
- 
+
   
     }
 }

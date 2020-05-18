@@ -55,7 +55,10 @@ html {
                 font-size:2.618em
         }
         small {
-            font-size:90%;
+            font-size: 80%;
+            @media (min-width: 60em) {
+            font-size: 70%;
+            }
             display:block !important;
         }
 

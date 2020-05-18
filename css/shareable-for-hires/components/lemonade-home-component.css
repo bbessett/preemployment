@@ -117,12 +117,18 @@ html .hero--home a.btn {
         padding: 0 1.418em; } }
   .benefits-card ul {
     margin: 0 auto 0 auto; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .benefits-card ul {
+        width: 88%; } }
     @media (min-width: 768px) {
       .benefits-card ul {
         width: 68%; } }
     @media (min-width: 1600px) {
       .benefits-card ul {
         width: 60%; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .benefits-card ul {
+        width: 88%; } }
   .benefits-card li {
     padding-left: 1.618em;
     position: relative;
@@ -151,18 +157,27 @@ html .hero--home a.btn {
       padding: 1.5px 3.2em; } }
   @media (min-width: 60em) {
     .callout .h1 {
+      padding: 1.5px 4em; } }
+  @media (min-width: 70em) {
+    .callout .h1 {
       padding: 1.5px 5.2em; } }
   .callout .callout--text {
     width: 80%;
-    margin: 1em auto 2em; }
+    margin: 0 auto 2em; }
+    .callout .callout--text p {
+      max-width: 41.877em; }
     .callout .callout--text strong {
       text-transform: uppercase;
       font-size: 90%;
       text-decoration: underline; }
+    @media (max-width: 480px) {
+      .callout .callout--text .callout-text__bottom strong {
+        display: inline-block; } }
   .callout .callout--sig img.callout-sig_img {
     width: 6.25em; }
   .callout .callout--sig p {
-    margin: 0; }
+    margin: 0;
+    max-width: 41.977em; }
   .callout .callout--sig .callout--sig_name {
     margin: 0 auto;
     font-weight: 800; }

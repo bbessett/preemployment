@@ -169,8 +169,11 @@ html .h1, html h1 {
     html .h1, html h1 {
       font-size: 2.618em; } }
   html .h1 small, html h1 small {
-    font-size: 90%;
+    font-size: 80%;
     display: block !important; }
+    @media (min-width: 60em) {
+      html .h1 small, html h1 small {
+        font-size: 70%; } }
 
 html .h2, html h2 {
   font-size: 1.618em;
@@ -2692,7 +2695,7 @@ a.btn-blue:not([href]):not([tabindex]) {
   background-color: transparent;
   background-color: #0FC3EA;
   border-radius: 45px;
-  color: #fff; }
+  color: #fff !important; }
   .btn-blue:hover,
   a.btn-blue:not([href]):not([tabindex]):hover {
     background-color: #0dafd2;
@@ -2775,7 +2778,8 @@ header.retailActive .btn-yellow, header.retailActive a.btn-yellow:not([href]):no
   background-color: transparent;
   background-color: #0FC3EA;
   border-radius: 45px;
-  text-transform: none; }
+  text-transform: none;
+  color: #fff !important; }
   header.retailActive .btn-yellow:hover, header.retailActive a.btn-yellow:not([href]):not([tabindex]):hover {
     background-color: #0dafd2;
     color: #fff; }
