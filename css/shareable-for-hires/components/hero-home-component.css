@@ -56,21 +56,17 @@ html .hero--home a.btn {
   @media (min-width: 120em) {
     html .hero--home a.btn {
       padding: 1.182em 2.3em !important; } }
-
-i::before {
-  left: 85%;
-  line-height: 1;
-  background-color: #0FC3EA;
-  border-radius: 50%;
-  color: #fff;
-  content: "\25BA";
-  font-size: 1.218em;
-  height: 1.718em;
-  top: 0.782em;
-  line-height: 1.75;
-  position: absolute;
-  text-align: center;
-  width: 1.618em; }
+  html .hero--home a.btn svg {
+    left: 85%;
+    color: #fff;
+    content: "\25BA";
+    font-size: 1.218em;
+    height: 1.718em;
+    top: 0.782em;
+    line-height: 1.75;
+    position: absolute;
+    text-align: center;
+    width: 1.618em; }
 
 span.btn-txt {
   position: relative;
