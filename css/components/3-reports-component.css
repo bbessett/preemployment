@@ -7,6 +7,20 @@
 /* ==========================================================================
 	Component Grid
 ============================================================================= */
+@media (min-width: 992px) {
+  section#home-reports-module .flex-item {
+    padding: 0 0.5em; } }
+
+section#home-reports-module ul {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 200px; }
+  @media (min-width: 768px) {
+    section#home-reports-module ul {
+      min-height: 275px !important;
+      width: 89%;
+      margin: 0 auto; } }
+
 @media only screen and (min-width: 768px) and (max-width: 2560px) {
   section.component-two-col .col-md-5 {
     padding: 20px 0 !important; } }
@@ -19,21 +33,9 @@ section.component-two-col .col-md-5 ul {
   margin-left: 15px;
   margin-bottom: 10px; }
   section.component-two-col .col-md-5 ul li {
-    font-size: 1em;
-    line-height: 1.5em;
-    list-style: inherit !important; }
-
-@media (min-width: 992px) {
-  section#home-reports-module .flex-item {
-    padding: 0 0.5em; } }
-
-section#home-reports-module ul {
-  display: flex;
-  flex-flow: row wrap;
-  min-height: 200px; }
-  @media (min-width: 768px) {
-    section#home-reports-module ul {
-      min-height: 270px !important; } }
+    font-size: 1.1em;
+    line-height: 2em;
+    list-style: disc !important; }
 
 .report-contain {
   display: block; }
@@ -45,33 +47,6 @@ section#home-reports-module ul {
   padding: 30px 0;
   margin: 0;
   background: #ffffff; }
-  .component-grid .modal {
-    width: auto; }
-    @media (min-width: 992px) {
-      .component-grid .modal {
-        width: 70%; } }
-    .component-grid .modal .modal-content .close {
-      display: block;
-      position: absolute;
-      background-color: white;
-      border-radius: 50px;
-      width: 35px;
-      height: 35px;
-      right: 15px;
-      top: 15px;
-      z-index: 10; }
-      .component-grid .modal .modal-content .close a {
-        cursor: pointer; }
-        .component-grid .modal .modal-content .close a img {
-          width: 18px;
-          margin-left: 8px;
-          margin-top: 9px; }
-      @media (min-width: 768px) {
-        .component-grid .modal .modal-content .close {
-          display: none; } }
-    @media (min-width: 768px) {
-      .component-grid .modal .modal-content:hover .close {
-        display: block; } }
   .component-grid img.img-shadow {
     border: 1px solid #e1e1e1;
     margin-bottom: 30px;
@@ -88,17 +63,16 @@ section#home-reports-module ul {
     text-align: center; }
   .component-grid h4 {
     font-weight: 600 !important;
-    font-size: 25px !important; }
+    font-size: 1.56em !important; }
     @media (min-width: 768px) {
       .component-grid h4 {
         font-weight: 500 !important;
-        font-size: 17px !important; } }
+        font-size: 1em !important; } }
     @media (min-width: 992px) {
       .component-grid h4 {
         font-weight: 600 !important;
-        font-size: 25px !important; } }
+        font-size: 1.56em !important; } }
   .component-grid h5 {
-    font-family: Intro, Trebuchet MS, Helvetica, Arial, sans-serif;
     margin-bottom: 15px;
     font-weight: 700; }
   .component-grid ul.disc {
@@ -123,22 +97,23 @@ section#home-reports-module ul {
     .component-grid ul li {
       flex: 1 1 100%;
       font-size: 110%;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 1.5;
-      list-style: inherit;
-      line-height: 30px; }
+      list-style: disc;
+      line-height: 2em; }
       @media only screen and (min-width: 1024px) {
         .component-grid ul li {
-          min-height: 70px; } }
+          min-height: 2.6em; } }
       @media (min-width: 768px) {
         .component-grid ul li {
-          font-size: 0.9em; } }
-      @media (min-width: 992px) {
-        .component-grid ul li {
-          font-size: 17px; } }
+          font-size: 1em;
+          font-size: 1.1em;
+          line-height: 1.2em; } }
     .component-grid ul li:last-child {
       list-style: none; }
     .component-grid ul a {
+      font-size: 0.9em;
+      line-height: 1.2em;
       text-decoration: underline; }
   .component-grid p {
     font-size: 20px;

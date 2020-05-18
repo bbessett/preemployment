@@ -177,6 +177,11 @@
   font-weight: 700;
   font-style: normal; }
 
+a {
+  color: #017494; }
+  a:hover {
+    color: #0FC3EA; }
+
 svg {
   fill: currentColor; }
 
@@ -198,9 +203,6 @@ html blockquote, html ol, html ul {
 html p {
   max-width: 37.577em;
   font-size: 1.2em; }
-
-html ul {
-  list-style: none; }
 
 html .h1, html h1 {
   font-size: 1.618em;
@@ -2390,7 +2392,7 @@ body {
           margin: 15px auto; } }
 
 a.btn, .btn {
-  padding: 0.982em 1.6em;
+  padding: 1.182em 1.7em;
   font-size: .9rem;
   box-sizing: border-box;
   font-weight: 700;
@@ -2421,7 +2423,8 @@ a.btn, .btn {
   background-color: transparent;
   border-radius: 45px; }
   .btn-outline-blue:hover, a.btn-outline-blue:not([href]):not([tabindex]):hover {
-    background-color: #0dafd2; }
+    background-color: #0dafd2;
+    color: #fff; }
   .btn-outline-blue:active, a.btn-outline-blue:not([href]):not([tabindex]):active {
     border-color: #0FC3EA;
     background-color: #09738a;
@@ -2443,10 +2446,12 @@ a.btn-blue:not([href]):not([tabindex]) {
   border-color: #0FC3EA;
   background-color: transparent;
   background-color: #0FC3EA;
-  border-radius: 45px; }
+  border-radius: 45px;
+  color: #fff; }
   .btn-blue:hover,
   a.btn-blue:not([href]):not([tabindex]):hover {
-    background-color: #0dafd2; }
+    background-color: #0dafd2;
+    color: #fff; }
   .btn-blue:active,
   a.btn-blue:not([href]):not([tabindex]):active {
     border-color: #0FC3EA;
@@ -2466,7 +2471,8 @@ a.btn-blue:not([href]):not([tabindex]) {
   border-color: #fcd800;
   background-color: transparent; }
   .btn-outline-yellow:hover, a.btn-outline-yellow:not([href]):not([tabindex]):hover {
-    background-color: #e3c200; }
+    background-color: #e3c200;
+    color: #fff; }
   .btn-outline-yellow:active, a.btn-outline-yellow:not([href]):not([tabindex]):active {
     border-color: #fcd800;
     background-color: #968100;
@@ -2484,7 +2490,8 @@ a.btn-blue:not([href]):not([tabindex]) {
   background-color: transparent;
   background-color: #fcd800; }
   .btn-yellow:hover, .btn-primary:hover, a.btn-yellow:not([href]):not([tabindex]):hover {
-    background-color: #e3c200; }
+    background-color: #e3c200;
+    color: #fff; }
   .btn-yellow:active, .btn-primary:active, a.btn-yellow:not([href]):not([tabindex]):active {
     border-color: #fcd800;
     background-color: #968100;
@@ -2495,6 +2502,8 @@ a.btn-blue:not([href]):not([tabindex]) {
     box-shadow: none; }
   .btn-yellow:active:focus, .btn-primary:active:focus, a.btn-yellow:not([href]):not([tabindex]):active:focus {
     box-shadow: none; }
+  .btn-yellow:hover, .btn-primary:hover, a.btn-yellow:not([href]):not([tabindex]):hover {
+    color: #333; }
 
 header.retailActive .btn-outline-yellow, header.retailActive a.btn-outline-yellow:not([href]):not([tabindex]) {
   border: 4px solid;
@@ -2502,7 +2511,8 @@ header.retailActive .btn-outline-yellow, header.retailActive a.btn-outline-yello
   background-color: transparent;
   border-radius: 45px; }
   header.retailActive .btn-outline-yellow:hover, header.retailActive a.btn-outline-yellow:not([href]):not([tabindex]):hover {
-    background-color: #0dafd2; }
+    background-color: #0dafd2;
+    color: #fff; }
   header.retailActive .btn-outline-yellow:active, header.retailActive a.btn-outline-yellow:not([href]):not([tabindex]):active {
     border-color: #0FC3EA;
     background-color: #09738a;
@@ -2522,7 +2532,8 @@ header.retailActive .btn-yellow, header.retailActive a.btn-yellow:not([href]):no
   border-radius: 45px;
   text-transform: none; }
   header.retailActive .btn-yellow:hover, header.retailActive a.btn-yellow:not([href]):not([tabindex]):hover {
-    background-color: #0dafd2; }
+    background-color: #0dafd2;
+    color: #fff; }
   header.retailActive .btn-yellow:active, header.retailActive a.btn-yellow:not([href]):not([tabindex]):active {
     border-color: #0FC3EA;
     background-color: #09738a;
@@ -2533,6 +2544,8 @@ header.retailActive .btn-yellow, header.retailActive a.btn-yellow:not([href]):no
     box-shadow: none; }
   header.retailActive .btn-yellow:active:focus, header.retailActive a.btn-yellow:not([href]):not([tabindex]):active:focus {
     box-shadow: none; }
+  header.retailActive .btn-yellow:hover, header.retailActive a.btn-yellow:not([href]):not([tabindex]):hover {
+    color: #333; }
 
 .site-footer .btn {
   display: none !important; }
@@ -2609,7 +2622,9 @@ body.menu-opened {
 
 #shareableHeader {
   width: 100%;
-  height: 100px; }
+  height: 100px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  z-index: 1; }
   #shareableHeader #sideNavToggle {
     top: 25px;
     right: 7px; }
@@ -2662,7 +2677,10 @@ body.menu-opened {
       align-content: flex-start;
       height: 100%; }
       #shareableHeader .tu-mainHeader .mainNavRight a {
-        margin: auto 0.2em; }
+        margin: auto 0.2em;
+        box-shadow: none; }
+        #shareableHeader .tu-mainHeader .mainNavRight a:hover {
+          color: #333; }
   #shareableHeader.affix {
     position: fixed;
     z-index: 200;
@@ -2692,7 +2710,7 @@ body.menu-opened {
 
 .tu-mainHeader .mainNavRight a.btn, .tu-mainHeader .mainNavRight .btn {
   padding: .382em 1em;
-  font-size: .9rem; }
+  font-size: 1rem; }
 
 @media (min-width: 992px) {
   #shareableHeader .tu-mainHeader {
@@ -2835,7 +2853,6 @@ body.menu-opened {
     background-size: cover;
     background-position: right center; }
   .hero .heroContent .primaryHeadline {
-    font-size: 24px;
     font-weight: 400;
     width: 100%; }
   .hero .heroContent p {
@@ -2873,15 +2890,14 @@ body.menu-opened {
       text-shadow: none;
       color: #ffffff; }
       .hero .heroContent .btn {
-        width: auto; }
+        width: auto;
+        font-size: 1rem; }
       .hero .heroContent .primaryHeadline {
-        font-size: 36px;
-        line-height: 44px;
-        width: 57%; }
+        font-size: 3.218em;
+        letter-spacing: -.25px;
+        width: 80%; }
       .hero .heroContent p {
         display: block;
-        font-size: 18px;
-        line-height: 24px;
         margin-bottom: 40px;
         width: 55%; } }
 
@@ -2893,16 +2909,14 @@ body.menu-opened {
     height: 520px;
     margin-top: 0; }
   .hero .heroContent {
-    width: 47%;
     height: 380px;
     margin-left: 40px; }
     .hero .heroContent .eyebrow {
       font-size: 18px; }
     .hero .heroContent .primaryHeadline {
-      font-size: 58px;
-      line-height: 68px;
+      font-size: 3.218em;
       letter-spacing: -.25px;
-      width: 67%; }
+      width: 80%; }
     .hero .heroContent p {
       display: block;
       font-size: 24px;

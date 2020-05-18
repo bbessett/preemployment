@@ -8,7 +8,6 @@
     background-size: cover;
     background-position: right center; }
   .hero .heroContent .primaryHeadline {
-    font-size: 24px;
     font-weight: 400;
     width: 100%; }
   .hero .heroContent p {
@@ -46,15 +45,14 @@
       text-shadow: none;
       color: #ffffff; }
       .hero .heroContent .btn {
-        width: auto; }
+        width: auto;
+        font-size: 1rem; }
       .hero .heroContent .primaryHeadline {
-        font-size: 36px;
-        line-height: 44px;
-        width: 57%; }
+        font-size: 3.218em;
+        letter-spacing: -.25px;
+        width: 80%; }
       .hero .heroContent p {
         display: block;
-        font-size: 18px;
-        line-height: 24px;
         margin-bottom: 40px;
         width: 55%; } }
 
@@ -66,16 +64,14 @@
     height: 520px;
     margin-top: 0; }
   .hero .heroContent {
-    width: 47%;
     height: 380px;
     margin-left: 40px; }
     .hero .heroContent .eyebrow {
       font-size: 18px; }
     .hero .heroContent .primaryHeadline {
-      font-size: 58px;
-      line-height: 68px;
+      font-size: 3.218em;
       letter-spacing: -.25px;
-      width: 67%; }
+      width: 80%; }
     .hero .heroContent p {
       display: block;
       font-size: 24px;

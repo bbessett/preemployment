@@ -1,4 +1,4 @@
-$off-wht: rgba(white,.4);
+$white: #fff;
 $iceblue: #0FC3EA;
 $yellow:  #fcd800; 
   //Shareable Button Color Overides
@@ -6,9 +6,10 @@ $yellow:  #fcd800;
     border:4px solid;
 	border-color: $btn-color;
     background-color: transparent;
-  
+    
 	&:hover {
         background-color:darken($btn-color, 5%);
+        color:$white;
 		// box-shadow: 0 .125em $off-wht, inset 0 .063em $off-wht, inset 0 -.188em lighten($btn-color, 2%);
 	}
 	&:active {
@@ -29,7 +30,7 @@ $yellow:  #fcd800;
     }
 }
 a.btn, .btn {
-    padding: 0.982em 1.6em;
+    padding: 1.182em 1.7em;
     font-size: .9rem;
     box-sizing: border-box;
     font-weight: 700;
@@ -57,6 +58,7 @@ a.btn, .btn {
 .btn-outline-blue,a.btn-outline-blue:not([href]):not([tabindex]) {
     @include btn-primary($iceblue);
     border-radius: 45px;
+
     &.btn-sq {
         border-radius:0 !important;
     &.btn-primary {
@@ -69,6 +71,7 @@ a.btn, .btn {
     @include btn-primary($iceblue);
     background-color:$iceblue;
     border-radius:45px;
+    color:#fff;
   }
    
     //Header Buttons TODO change class names 
@@ -80,6 +83,9 @@ a.btn, .btn {
 .btn-yellow,.btn-primary, a.btn-yellow:not([href]):not([tabindex]) {
         @include btn-primary($yellow);
         background-color:$yellow;
+        &:hover {
+            color:#333;
+        }
 }
 
 
@@ -87,12 +93,16 @@ header.retailActive {
 .btn-outline-yellow,a.btn-outline-yellow:not([href]):not([tabindex]) {
         @include btn-primary($iceblue);
         border-radius: 45px;
+
     }
 .btn-yellow, a.btn-yellow:not([href]):not([tabindex]) {
         @include btn-primary($iceblue);
         background-color:$iceblue;
         border-radius:45px;
         text-transform: none;
+        &:hover {
+            color:#333;
+        }
 }
 }
 
@@ -102,29 +112,3 @@ header.retailActive {
         display: none !important;
 }
 }
-
-// .btn-yellow {
-
-//     &.focus,
-//     &:focus {
-//       box-shadow: 0 0 0 0.2rem rgba(214, 184, 0, 0.5);
-//     }
-//   }
-  
-//   a.btn-yellow:not([href]):not([tabindex]) {
-  
-//     &.focus,
-//     &:focus {
-//       box-shadow: 0 0 0 0.2rem rgba(214, 184, 0, 0.5);
-//     }
-//   }
-  
-//   .btn-yellow {
-  
-//     &.disabled,
-//     &:disabled {
-//       color: #000;
-//       background-color: #fcd800;
-//       border-color: #fcd800;
-//     }
-//   }

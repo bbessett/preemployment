@@ -1,5 +1,13 @@
 $iceblue: #0FC3EA; 
 
+a {
+    color: #017494;
+    
+    &:hover {
+        color: #0FC3EA;
+    }
+}
+
 svg {
     fill: currentColor
 }
@@ -26,9 +34,9 @@ html {
         font-size: 1.2em;
     }
     
-    ul {
-        list-style: none
-    }
+    // ul {
+    //     list-style: none
+    // }
 
 
 

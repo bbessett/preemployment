@@ -1,6 +1,12 @@
 $iceblue: #0FC3EA;
 
 html {
+    p {
+        font-size: 1.2em;
+    }
+    ul li {
+       list-style:none;
+    }
     section {
         padding-bottom: 1.2236em;
         text-align: center;
@@ -17,7 +23,7 @@ html {
 
         // color: #0e1e25;
         // font-weight: 500;
-        margin: 1.618em auto 0 
+        margin: 1.618em auto 0.5em;
     } 
     blockquote,ol,p,ul {
         margin: 1em auto 0;

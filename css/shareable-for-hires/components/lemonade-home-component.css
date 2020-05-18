@@ -1,3 +1,9 @@
+html p {
+  font-size: 1.2em; }
+
+html ul li {
+  list-style: none; }
+
 html section {
   padding-bottom: 1.2236em;
   text-align: center; }
@@ -6,7 +12,7 @@ html a.btn, html .btn {
   text-transform: none; }
 
 html .h1, html .h2, html .h3, html .h4, html h1, html h2, html h3, html h4, html h5, html h6 {
-  margin: 1.618em auto 0; }
+  margin: 1.618em auto 0.5em; }
   html .h1 + p, html .h2 + p, html .h3 + p, html .h4 + p, html h1 + p, html h2 + p, html h3 + p, html h4 + p, html h5 + p, html h6 + p {
     margin-top: .5em;
     margin-bottom: 1.0em; }

@@ -8,25 +8,7 @@
 	Component Grid
 ============================================================================= */
 
-section.component-two-col .col-md-5 {
-@media only screen and (min-width: 768px) 
-    and (max-width: 2560px) {  
-        padding:20px 0 !important;  
-} 
-@media only screen and  (max-width: 768px) { 
-    padding:20px 40px;
-}
 
-ul {
-    margin-left:15px;
-    margin-bottom:10px; 
-    li {
-    font-size:1em;
-    line-height:1.5em;
-    list-style: inherit !important;
-}
-}
-}
 
 
 section#home-reports-module
@@ -41,7 +23,9 @@ ul {
     flex-flow: row wrap; 
     min-height:200px;
     @include media-breakpoint-up(md) {
-        min-height: 270px !important;
+        min-height: 275px !important;
+        width: 89%;
+        margin: 0 auto;
     }
 
     // @include media-breakpoint-up(md) {
@@ -50,7 +34,27 @@ ul {
 
 }
 } 
-
+section.component-two-col {
+.col-md-5 {
+    @media only screen and (min-width: 768px) 
+        and (max-width: 2560px) {  
+            padding:20px 0 !important;  
+    } 
+    @media only screen and  (max-width: 768px) { 
+        padding:20px 40px;
+    }
+    
+    ul {
+        margin-left:15px;
+        margin-bottom:10px; 
+        li {
+        font-size: 1.1em;
+        line-height: 2em;
+        list-style: disc !important;
+    }
+    }
+    }
+}
 .report-contain {
     display: block;
     @include media-breakpoint-up(md) {
@@ -61,43 +65,9 @@ ul {
     padding: 30px 0;
     margin: 0;
     background: #ffffff;
-    .modal {
-        width: auto;
-        @include media-breakpoint-up(lg) {
-            width: 70%;
-        }
-        .modal-content {
-            .close {
-                display: block;
-                position: absolute;
-                background-color: white;
-                border-radius: 50px;
-                width: 35px;
-                height: 35px;
-                right: 15px;
-                top: 15px;
-                z-index: 10;
-                a {
-                    cursor: pointer;
-                    img {
-                        width: 18px;
-                        margin-left: 8px;
-                        margin-top: 9px;
-                    }
-                }
-                @include media-breakpoint-up(md) {
-                    display: none;
-                }
-            }
-            @include media-breakpoint-up(md) {
-                &:hover {
-                    .close {
-                        display: block;
-                    }
-                }
-            }
-        }
-    }
+  
+
+
     img.img-shadow {
         border: 1px solid #e1e1e1;
         &:hover {
@@ -118,26 +88,23 @@ ul {
 
     h4 {
         font-weight: 600 !important;
-        font-size: 25px !important;
+        font-size: 1.56em !important;
 
         @include media-breakpoint-up(md) {
             font-weight: 500 !important;
-            font-size: 17px !important;
+            font-size: 1em !important;
         }
 
         @include media-breakpoint-up(lg) {
             font-weight: 600 !important;
-            font-size: 25px !important;
+            font-size: 1.56em !important;
         }
     }
  
     h5 {
-        font-family: Intro, Trebuchet MS, Helvetica, Arial, sans-serif;
         margin-bottom: 15px;
         font-weight: 700;
     }
-
-
 
     ul.disc {
         padding-left: 15px;
@@ -167,23 +134,26 @@ ul {
             flex: 1 1 100%;
             font-size: 110%;
             @media only screen and (min-width: 1024px) { 
-            min-height: 70px;
+            min-height: 2.6em;
             }
-            font-weight: 400; 
+            font-weight:600;
             line-height: 1.5;
-            list-style: inherit;
-            line-height: 30px;
+            list-style: disc;
+            line-height: 2em;
+    
             @include media-breakpoint-up(md) {
-                font-size: 0.9em;
-            }
-            @include media-breakpoint-up(lg) {
-                font-size: 17px;
+                font-size: 1em;
+                font-size: 1.1em;
+                line-height: 1.2em;
+                
             }
         }
         li:last-child {
             list-style: none;
         }
         a {
+            font-size: 0.9em;
+            line-height: 1.2em;
             text-decoration: underline;
         }
     }

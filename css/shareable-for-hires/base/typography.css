@@ -1,3 +1,8 @@
+a {
+  color: #017494; }
+  a:hover {
+    color: #0FC3EA; }
+
 svg {
   fill: currentColor; }
 
@@ -19,9 +24,6 @@ html blockquote, html ol, html ul {
 html p {
   max-width: 37.577em;
   font-size: 1.2em; }
-
-html ul {
-  list-style: none; }
 
 html .h1, html h1 {
   font-size: 1.618em;

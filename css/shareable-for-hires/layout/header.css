@@ -70,7 +70,9 @@ body.menu-opened {
 
 #shareableHeader {
   width: 100%;
-  height: 100px; }
+  height: 100px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 2px 4px 0 rgba(14, 30, 37, 0.12);
+  z-index: 1; }
   #shareableHeader #sideNavToggle {
     top: 25px;
     right: 7px; }
@@ -123,7 +125,10 @@ body.menu-opened {
       align-content: flex-start;
       height: 100%; }
       #shareableHeader .tu-mainHeader .mainNavRight a {
-        margin: auto 0.2em; }
+        margin: auto 0.2em;
+        box-shadow: none; }
+        #shareableHeader .tu-mainHeader .mainNavRight a:hover {
+          color: #333; }
   #shareableHeader.affix {
     position: fixed;
     z-index: 200;
@@ -153,7 +158,7 @@ body.menu-opened {
 
 .tu-mainHeader .mainNavRight a.btn, .tu-mainHeader .mainNavRight .btn {
   padding: .382em 1em;
-  font-size: .9rem; }
+  font-size: 1rem; }
 
 @media (min-width: 992px) {
   #shareableHeader .tu-mainHeader {
