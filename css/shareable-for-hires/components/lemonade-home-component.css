@@ -75,6 +75,9 @@ html .hero--home a.btn {
   @media (max-width: 58em) {
     html .hero--home a.btn {
       width: 100%; } }
+  @media (min-width: 60em) {
+    html .hero--home a.btn {
+      padding: 1.282em 2.6em; } }
   @media (min-width: 120em) {
     html .hero--home a.btn {
       padding: 1.182em 2.3em; } }
