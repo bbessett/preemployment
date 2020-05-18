@@ -77,10 +77,10 @@ html .hero--home a.btn {
       width: 100%; } }
   @media (min-width: 60em) {
     html .hero--home a.btn {
-      padding: 1.282em 2.6em; } }
+      padding: 1.282em 2.4em; } }
   @media (min-width: 120em) {
     html .hero--home a.btn {
-      padding: 1.182em 2.3em; } }
+      padding: 1.182em 3.2em; } }
   html .hero--home a.btn svg {
     left: 85%;
     color: #fff;
@@ -144,9 +144,14 @@ html .hero--home a.btn {
 
 .callout {
   margin-bottom: 40px; }
-  @media (min-width: 768px) {
+  .callout .h1 {
+    padding: 0; }
+  @media (min-width: 40em) {
     .callout .h1 {
-      padding: 0 1.4em; } }
+      padding: 1.5px 3.2em; } }
+  @media (min-width: 60em) {
+    .callout .h1 {
+      padding: 1.5px 5.2em; } }
   .callout .callout--text {
     width: 80%;
     margin: 1em auto 2em; }

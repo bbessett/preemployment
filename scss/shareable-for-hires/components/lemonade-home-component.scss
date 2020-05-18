@@ -97,10 +97,10 @@ html {
             
             }
             @media (min-width: 60em) {
-            padding: 1.282em 2.6em;
+                padding: 1.282em 2.4em;
             }
             @media (min-width: 120em) {
-                padding: 1.182em 2.3em;
+                padding: 1.182em 3.2em;
             } 
 
             margin-bottom:1em;
@@ -192,11 +192,18 @@ html {
 
 //callout section 
 .callout {
-    @media (min-width:768px) {
     .h1 {
-        padding: 0 1.4em;
+        padding: 0;
     }
-}
+    .h1 {
+        @media (min-width: 40em) {
+            padding: 1.5px 3.2em;
+        }
+        @media (min-width: 60em) {
+            padding: 1.5px 5.2em;
+        }
+     
+    }
     margin-bottom:40px;
     .callout--text {
         width: 80%;
