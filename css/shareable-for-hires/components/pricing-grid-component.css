@@ -13,7 +13,8 @@
 
 .component-pricing .price-table {
   display: flex;
-  margin: 20px 0 40px 0; }
+  margin: 20px 0 40px 0;
+  border: 3px solid #0FC3EA; }
   .component-pricing .price-table .price-col {
     float: left;
     flex: 1;
@@ -30,8 +31,8 @@
       list-style-type: none;
       margin: 0;
       height: 35px;
-      background: #FCD800;
       padding: 7px;
+      text-align: center;
       font-weight: 700;
       font-size: 18px;
       text-transform: uppercase;
@@ -39,30 +40,49 @@
     .component-pricing .price-table .price-col .price-row-head {
       margin-top: 0;
       list-style-type: none;
-      padding: 15px 30px 0; }
+      padding: 0 0 30px;
+      text-align: center; }
       .component-pricing .price-table .price-col .price-row-head .packageName {
-        font-size: 14px;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        font-weight: 600;
         padding-right: 5px;
         padding-left: 5px;
-        font-weight: 600;
-        line-height: 1.1;
+        width: 150px;
+        margin: 0 auto;
         text-transform: uppercase; }
       .component-pricing .price-table .price-col .price-row-head .cost {
-        font-size: 50px;
+        font-size: 4.5em;
         font-weight: 300;
-        margin-top: 28px;
+        margin-top: 0;
         margin-bottom: 0;
-        line-height: 1.1; }
+        line-height: 1.1;
+        color: #0FC3EA; }
+      .component-pricing .price-table .price-col .price-row-head .savings {
+        font-size: 0.9em;
+        font-weight: bold; }
+        .component-pricing .price-table .price-col .price-row-head .savings span {
+          text-decoration: line-through; }
     .component-pricing .price-table .price-col .price-row {
       display: flex;
       align-items: center;
       margin: 0;
       padding: 5px 30px;
       height: auto; }
-      .component-pricing .price-table .price-col .price-row .icon {
-        width: 25px; }
-        .component-pricing .price-table .price-col .price-row .icon img {
-          width: 15px; }
+      .component-pricing .price-table .price-col .price-row span::before {
+        background-color: #0FC3EA;
+        border-radius: 50%;
+        color: #fff;
+        content: "✓";
+        display: block;
+        font-size: 1em;
+        font-weight: 900;
+        height: 1.618em;
+        left: 0;
+        top: .382em;
+        line-height: 1.75;
+        text-align: center;
+        width: 1.618em; }
       .component-pricing .price-table .price-col .price-row .iconText {
         margin-bottom: 0;
         font-family: Intro, Trebuchet MS, Helvetica, Arial, sans-serif;
@@ -96,54 +116,37 @@
   margin: 30px 0 60px; }
 
 @media (min-width: 768px) {
-  .component-pricing .price-table.d-md-block {
-    display: flex !important; }
-    .component-pricing .price-table.d-md-block .price-col:not(:first-child) {
-      border: 1px solid #e1e1e1;
-      border-top: 0; }
-    .component-pricing .price-table.d-md-block .price-col .price-row-head {
-      padding: 15px 0;
-      height: 130px;
-      margin-top: 0; }
-      .component-pricing .price-table.d-md-block .price-col .price-row-head .packageName {
-        font-size: 14px;
-        padding-right: 5px;
-        padding-left: 5px;
-        width: 150px;
-        margin: 0 auto; }
-      .component-pricing .price-table.d-md-block .price-col .price-row-head .cost {
-        margin-top: 0;
-        font-size: 50px;
-        color: #0FC3EA; }
-      .component-pricing .price-table.d-md-block .price-col .price-row-head .savings {
-        font-size: 0.8em;
-        font-weight: bold; }
-        .component-pricing .price-table.d-md-block .price-col .price-row-head .savings span {
-          text-decoration: line-through; }
-    .component-pricing .price-table.d-md-block .price-col .price-row {
-      padding: 15px 10px 15px 0;
-      border-top: 1px solid #F5F5F5;
-      height: 80px; }
-      .component-pricing .price-table.d-md-block .price-col .price-row .icon {
-        margin-left: auto;
-        margin-right: auto; }
-      .component-pricing .price-table.d-md-block .price-col .price-row span::before {
-        background-color: #0FC3EA;
-        border-radius: 50%;
-        color: #fff;
-        content: "✓";
-        display: block;
-        font-size: 1em;
-        font-weight: 900;
-        height: 1.618em;
-        left: 0;
-        top: .382em;
-        line-height: 1.75;
-        text-align: center;
-        width: 1.618em; }
-      .component-pricing .price-table.d-md-block .price-col .price-row .iconText {
-        margin-top: 0;
-        margin-left: 0; }
+  .component-pricing .price-table {
+    border: none; }
+    .component-pricing .price-table.d-md-block {
+      display: flex !important; }
+      .component-pricing .price-table.d-md-block .price-col:not(:first-child) {
+        border: 1px solid #e1e1e1;
+        border-top: 0; }
+      .component-pricing .price-table.d-md-block .price-col .price-row-head {
+        padding: 15px 0;
+        height: 130px;
+        margin-top: 0; }
+        .component-pricing .price-table.d-md-block .price-col .price-row-head .packageName {
+          font-size: 14px;
+          padding-right: 5px;
+          padding-left: 5px;
+          width: 150px;
+          margin: 0 auto; }
+        .component-pricing .price-table.d-md-block .price-col .price-row-head .cost {
+          margin-top: 0;
+          font-size: 50px;
+          color: #0FC3EA; }
+      .component-pricing .price-table.d-md-block .price-col .price-row {
+        padding: 15px 10px 15px 0;
+        border-top: 1px solid #F5F5F5;
+        height: 80px; }
+        .component-pricing .price-table.d-md-block .price-col .price-row .icon {
+          margin-left: auto;
+          margin-right: auto; }
+        .component-pricing .price-table.d-md-block .price-col .price-row .iconText {
+          margin-top: 0;
+          margin-left: 0; }
   .component-pricing .btn {
     width: auto; } }
 

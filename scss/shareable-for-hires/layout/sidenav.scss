@@ -1,0 +1,91 @@
+.menuOpen .menuToggle span {
+    background-color: #000
+}
+
+.menuOpen .menuToggle span:first-child {
+    top: 22px;
+    width: 0;
+    left: 50%
+}
+
+.menuOpen .menuToggle span:nth-child(2) {
+    transform: rotate(45deg)
+}
+
+.menuOpen .menuToggle span:nth-child(3) {
+    transform: rotate(-45deg)
+}
+
+.menuOpen .menuToggle span:nth-child(4) {
+    top: 22px;
+    width: 0;
+    left: 50%
+}
+
+.menuOpen .tu-mainNavWrapper {
+    left: 0;
+    box-shadow: 0 0 30px 10px rgba(0,0,0,0.1),0 0 12px 2px rgba(0,0,0,0.15)
+}
+
+.menuOpen .mobileFade {
+    display: block;
+    width: 100%;
+    right: 0;
+    opacity: 1
+}
+
+.menuToggle {
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    z-index: 9;
+    -webkit-transform: translateZ(0);
+    position: absolute;
+    transform: rotate(0deg)
+}
+
+.menuToggle span {
+    position: absolute;
+    transform: rotate(0deg);
+    display: block;
+    height: 3px;
+    width: 26px;
+    background: #000;
+    opacity: 1;
+    left: 12px;
+    transition: 0.25s ease-in-out
+}
+
+.menuToggle span:first-child {
+    top: 16px
+}
+
+.menuToggle span:nth-child(2),.menuToggle span:nth-child(3) {
+    top: 22px
+}
+
+.menuToggle span:nth-child(4) {
+    top: 28px
+}
+
+.menuOpen .menuToggle span:first-child {
+    top: 22px;
+    width: 0;
+    left: 50%
+}
+.mobileFade {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    opacity: 0;
+    background: rgba(0,166,202,0.5);
+    z-index: 7;
+    transition: display 1s, opacity 1s
+}
+
+@media (min-width: 992px) {
+.menuToggle {
+    display:none;
+}
+}

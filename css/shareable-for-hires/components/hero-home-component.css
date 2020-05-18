@@ -5,33 +5,55 @@ html h2.feature-sub-heading {
 
 html .hero--home .hero-img {
   padding: 0; }
-  html .hero--home .hero-img img {
-    width: 128%;
-    right: 40px;
-    position: relative; }
+  @media (min-width: 48em) {
+    html .hero--home .hero-img img {
+      width: 128%;
+      right: 40px;
+      position: relative; } }
 
 html .hero--home .hero-text {
   padding: 0 1em;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.16);
   text-align: left; }
-  @media (min-width: 768px) {
+  @media (min-width: 48em) {
     html .hero--home .hero-text {
       padding: 20px 30px; } }
   html .hero--home .hero-text p {
     max-width: 100%; }
 
+@media (min-width: 120em) {
+  html .hero--home .button-wrap {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start; } }
+
 html .hero--home .button-wrap .col-md-auto {
-  padding: 0 5px; }
+  padding: 0 0.5em; }
 
 html .hero--home a.btn {
   padding: 1.182em 3.2em !important;
-  font-size: .80rem !important;
+  font-size: .80rem;
   text-transform: unset;
   margin-bottom: 1em; }
-  @media (max-width: 940px) {
+  @media (max-width: 58em) {
     html .hero--home a.btn {
       width: 100%; } }
-  @media (min-width: 1920px) {
+  @media (min-width: 120em) {
     html .hero--home a.btn {
       padding: 1.182em 2.3em !important; } }
 

@@ -12,7 +12,7 @@
     <meta name="keywords" content="">
     <meta name="description"
         content="TransUnion pre-employment screening for small businesses. All online. Free signup. No hidden fees.  Start screening immediately. Results in minutes.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link href="resources/img/ico/apple-touch-icon-57x57.png"  sizes="57x57" rel="apple-touch-icon">
     <link href="resources/img/ico/apple-touch-icon-60x60.png" sizes="60x60" rel="apple-touch-icon">
     <link href="resources/img/ico/apple-touch-icon-72x72.png" sizes="72x72" rel="apple-touch-icon">
@@ -31,17 +31,20 @@
 
 
     <!-- <script src="resources/js/lib/min/modernizr.min.js"></script> -->
-    <link type="text/css" href="css/shareable-for-hires/tu-main-com.css" rel="stylesheet">
+    <link type="text/css" href="css/shareable-for-hires/layout/grid.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <!-- <link type="text/css" href="../css/tu-main-com.css" rel="stylesheet"> -->
     <link type="text/css" href="css/shareable-hires-skin.css" rel="stylesheet">
 
     <!--includes bootstrap 4 utilities, mixins and variables-->
+    
     <!-- <link type="text/css" href="../css/banner-carousel-component.css" rel="stylesheet"> -->
-    <link type="text/css" href="css/shareable-for-hires/components/banner-carousel-component-home.css"
-        rel="stylesheet">
+    <link type="text/css" href="css/shareable-for-hires/components/banner-carousel-component-home.css" rel="stylesheet">
     <link type="text/css" href="css/shareable-for-hires/components/hero-home-component.css" rel="stylesheet">
     <!-- <link type="text/css" href="../css/shareable-for-hires/components/feature-default-component.css" rel="stylesheet"> -->
     <link type="text/css" href="css/shareable-for-hires/components/videoModal-default.css" rel="stylesheet">
     <link type="text/css" href="css/shareable-for-hires/components/pricing-grid-component.css" rel="stylesheet">
+    
     <!-- <link type="text/css" href="../css/shareable-for-hires/components/3-reports-component.css" rel="stylesheet"> -->
     <!-- <link type="text/css" href="../css/shareable-for-hires/components/about-us-component.css" rel="stylesheet"> -->
     <!-- <link type="text/css" href="../css/components/progress-bar-static.css" rel="stylesheet"> -->
@@ -52,7 +55,7 @@
 
 <body class="flexBoxLayout">
     <!-- Begin ShareAble Header Component -->
-    <header id="shareableHeader" class="tu-mainHeaderWrapper">
+    <header id="shareableHeader" class="tu-mainHeaderWrapper retailActive">
         <div class="tu-mainHeader container">
             <div class="shareableLogo">
                 <a class="logoLink" href="/"><img alt="shareable logo" src="assets/img/1.svg"></a>
@@ -98,56 +101,35 @@
         <div class="container">
             <div class="row">
                 <div class="hero-img col-md-5">
-                    <img width="100%"
-                        src="https://res.cloudinary.com/dvrhnvuqs/image/upload/v1589699200/lemonade/free-tag.png" />
+                    <img width="100%" src="https://res.cloudinary.com/dvrhnvuqs/image/upload/v1589699200/lemonade/free-tag.png" />
                 </div>
                 <div class="hero-text col-md-12 col-lg-7">
                     <h1 class="h1">Because You Can’t Open Your Small Business Without a Staff</h1>
-                    <p>We support Small Businesses like yours. To help you hire quickly and get people back to work,
-                        TransUnion ShareAble background check is free* through July 30, 2020.</p>
-                    <div class="row flex-container button-wrap">
-                        <div class="col-md-auto">
-                            <a data-target="shareableOfferingModal" aria-label="Open the video modal"
-                                class="btn btn-outline-blue btn-large modalLink"><span class="btn-txt">Hear How We Are
-                                    Helping</span> <i class="play-icon" aria-hidden="true"></i></a>
+                    <p>We support Small Businesses like yours. To help you hire quickly and get people back to work, TransUnion ShareAble background check is free* through July 30, 2020.</p>
+                        <div class="row button-wrap">
+                            <div class="col-md-auto">
+                                <a data-target="shareableOfferingModal" aria-label="Open the video modal"
+                                    class="btn btn-outline-blue btn-large modalLink"><span class="btn-txt">Hear How We Are
+                                        Helping</span> <i class="play-icon" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-md-auto">
+                                <a href="#" class="btn btn-blue btn-large">Start Your Free Screening</a>
+                            </div>
                         </div>
-                        <div class="col-md-auto">
-                            <a href="#" class="btn btn-blue btn-large">Start Your Free Screening</a>
-                        </div>
-                    </div>
+
                 </div>
+        
             </div>
         </div>
-        <div aria-labelledby="shareableOfferingModal" role="dialog" id="shareableOfferingModal" tabindex="-1"
-            class="modal-overlay">
-            <a class="cancel" onclick="closeModal()" ;></a>
-            <div class="modal">
-                <div class="modal-content">
-                    <div class="close">
-                        <a aria-label="Close" aria-hidden="true" onclick="closeModal()" ;><img alt="Close"
-                                src="../assets/img/xIcon.svg">
-                        </a>
-                    </div>
-                    <div class="responsive-iframe-wrapper modal-body">
-                        <iframe title="Why choose ShareAble for Hires?" frameborder="0" allowfullscreen=""
-                            mozallowfullscreen="" webkitallowfullscreen=""
-                            src="https://www.youtube.com/embed/zX7bSuO2oNI">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </section>
 
-    <section>
-        <div class="container">
-            <h2 class="h1">The <u>only</u> background check tool that 100% of small buisnesses can use
-                for now <u>free*</u></h2>
-        </div>
-    </section>
+
 
     <section id="benefits" class="component-two-column card">
         <div class="container">
+            <h2 class="h1">The <u>only</u> background check tool that 100% of small buisnesses can use
+                for now <u>free*</u></h2>
             <div class="row flex-container">
                 <div class="col-sm-6 col-md-6 benefits-card">
                     <svg xmlns="http://www.w3.org/2000/svg" width="243" height="188.119" viewBox="0 0 243 188.119">
@@ -333,12 +315,95 @@
                     <h2 class="h1">One Less Cost To Worry About <small>No setup fees, no subscription, no strings
                             attached.</small></h2>
 
-                    <div class="price-table d-flex d-md-none">
-                        <ul class="price-col recommended">
-                            <li class="price-row-title">Recommended</li>
+                    <div class="price-table d-flex d-md-none mobile">
+                        <ul class="price-col ">
                             <li class="price-row-head">
                                 <div class="packageName">Background Check Basic</div>
-                                <div class="cost">$60</div>
+                                <div class="cost">0</div>
+                                <div class="savings">Price:<span>$35</span> (100% off)</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">TransUnion Identity Verification</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">National Sex offender registry</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">National Most Wanted</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">Federal Watch Lists</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">Instant State and County Check </div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">FCRA and State Filters</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="price-table d-flex d-md-none mobile">
+                        <ul class="price-col">
+                            <li class="price-row-head">
+                                <div class="packageName">Background Check Plus</div>
+                                <div class="cost">0</div>
+                                <div class="savings">Price:<span>$50</span> (100% off)</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">Transunion Subject Selection</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">TransUnion Identity Verification</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">National Sex offender registry</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">National Most Wanted</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">Federal Watch Lists</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">Instant State and County Check </div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">FCRA and State Filters</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">Deceased Persons SSN Check</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">Fraud Alerts Check</div>
+                            </li>
+                            <li class="price-row">
+                                <span class="icon"></span>
+                                <div class="iconText">Name &amp; SSN Match Report</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="price-table d-flex d-md-none mobile">
+                        <ul class="price-col recommended">
+                            <li class="price-row-head">
+                                <div class="packageName">Background Check Pro</div>
+                                <div class="cost">$10</div>
+                                <div class="savings">Price:<span>$60</span> (83% off)</div>
                             </li>
                             <li class="price-row">
                                 <span class="icon"></span>
@@ -389,87 +454,7 @@
                                 <div class="iconText">Detailed Credit Report</div>
                             </li>
                         </ul>
-                    </div>
-                    <div class="price-table d-flex d-md-none">
-                        <ul class="price-col ">
-                            <li class="price-row-head">
-                                <div class="packageName">Background Check Plus</div>
-                                <div class="cost">$50</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">Transunion Subject Selection</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">TransUnion Identity Verification</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">National Sex offender registry</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">National Most Wanted</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">Federal Watch Lists</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">Instant State and County Check </div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">FCRA and State Filters</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">Deceased Persons SSN Check</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">Fraud Alerts Check</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">Name &amp; SSN Match Report</div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="price-table d-flex d-md-none">
-                        <ul class="price-col ">
-                            <li class="price-row-head">
-                                <div class="packageName">Background Check Basic</div>
-                                <div class="cost">$35</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">TransUnion Identity Verification</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">National Sex offender registry</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">National Most Wanted</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">Federal Watch Lists</div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">Instant State and County Check </div>
-                            </li>
-                            <li class="price-row">
-                                <span class="icon"></span>
-                                <div class="iconText">FCRA and State Filters</div>
-                            </li>
-                        </ul>
+                      
                     </div>
 
                     <div class="price-table d-none d-md-block">
@@ -593,7 +578,7 @@
                         <ul class="price-col ">
                             <li class="price-row-head">
                                 <div class="packageName">Background Check Pro</div>
-                                <div class="cost">0</div>
+                                <div class="cost">$10</div>
                                 <div class="savings">Price:<span>$60</span> (83% off)</div>
                             </li>
                             <li class="price-row">
@@ -664,25 +649,25 @@
         </div>
     </section>
 
-
-    <div aria-labelledby="hiringModal" role="dialog" id="hiringModal" tabindex="-1" class="modal-overlay">
-        <a class="cancel" onclick="closeModal()" ;></a>
-        <div class="modal">
-            <div class="modal-content">
-                <div class="close">
-                    <a aria-label="Close" aria-hidden="true" onclick="closeModal()" ;><img alt="Close"
-                            src="assets/img/xIcon.svg">
-                    </a>
-                </div>
-                <div class="responsive-iframe-wrapper modal-body">
-                    <iframe title="Why choose ShareAble for Hires?" frameborder="0" allowfullscreen=""
-                        mozallowfullscreen="" webkitallowfullscreen="" src="https://www.youtube.com/embed/zX7bSuO2oNI">
-                    </iframe>
-                </div>
+    <div aria-labelledby="shareableOfferingModal" role="dialog" id="shareableOfferingModal" tabindex="-1"
+    class="modal-overlay">
+    <a class="cancel" onclick="closeModal()" ;></a>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="close">
+                <a aria-label="Close" aria-hidden="true" onclick="closeModal()" ;><img alt="Close"
+                        src="../assets/img/xIcon.svg">
+                </a>
+            </div>
+            <div class="responsive-iframe-wrapper modal-body">
+                <iframe title="Why choose ShareAble for Hires?" frameborder="0" allowfullscreen=""
+                    mozallowfullscreen="" webkitallowfullscreen=""
+                    src="https://www.youtube.com/embed/zX7bSuO2oNI">
+                </iframe>
             </div>
         </div>
     </div>
-    </section>
+</div>
     <!-- Begin ShareAble Footer Component -->
     <footer role="contentinfo" class="site-footer">
         <div class="container">

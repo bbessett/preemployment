@@ -3,7 +3,6 @@
 @import "../../../assets/bootstrap/mixins";
 @import "../../../assets/variables";
 //@import "../tu-main-com.min.css";
-
 $iceblue: #0FC3EA; 
 
 /* ==========================================================================
@@ -17,6 +16,7 @@ $iceblue: #0FC3EA;
     .price-table {
         display: flex;
         margin: 20px 0 40px 0;
+        border: 3px solid $iceblue;
    
         .price-col {
             float: left;
@@ -41,8 +41,9 @@ $iceblue: #0FC3EA;
                 list-style-type: none;
                 margin: 0;
                 height: 35px;
-                background: $tu-yellow;
+                // background: $tu-yellow;
                 padding: 7px;
+                text-align:center;
                 font-weight: 700;
                 font-size: 18px;
                 text-transform: uppercase;
@@ -52,25 +53,34 @@ $iceblue: #0FC3EA;
             .price-row-head {
                 margin-top: 0;
                 list-style-type: none;
-                padding: 15px 30px 0;
+                padding: 0 0 30px;
+                text-align:center;
 
                 .packageName {
-                    font-size: 14px;
+                    font-size: 1.2em;
+                    line-height: 1.2em;
+                    font-weight: 600;
                     padding-right: 5px;
                     padding-left: 5px;
-                    font-weight: 600;
-                    // margin-top: 10px;
-                    // margin-bottom: 10px;
-                    line-height: 1.1;
+                    width: 150px;
+                    margin: 0 auto;
                     text-transform: uppercase;
                 }
 
                 .cost {
-                    font-size: 50px;
+                    font-size: 4.5em;
                     font-weight: 300;
-                    margin-top: 28px;
+                    margin-top: 0;
                     margin-bottom: 0;
                     line-height: 1.1;
+                    color:$iceblue;
+                }
+                .savings {
+                    font-size:0.9em;
+                    font-weight:bold;
+                    span {
+                    text-decoration:line-through;
+                    }
                 }
             }
 
@@ -81,12 +91,21 @@ $iceblue: #0FC3EA;
                 padding: 5px 30px;
                 height: auto;
 
-                .icon {
-                    width: 25px;
-
-                    img {
-                        width: 15px;
-                    }
+                span::before {
+                    background-color:$iceblue;
+                    border-radius: 50%;
+                    color: #fff;
+                    content: "✓";
+                    display: block;
+                    font-size: 1em;
+                    font-weight: 900;
+                    height: 1.618em;
+                    left: 0;
+                    top: .382em;
+                    line-height: 1.75;
+                    // position: absolute;
+                    text-align: center;
+                    width: 1.618em;
                 }
                 
                 .iconText {
@@ -139,6 +158,7 @@ $iceblue: #0FC3EA;
 @include media-breakpoint-up(md) {
     .component-pricing {
         .price-table {
+            border:none;
             &.d-md-block {
                 display: flex !important;
                 .price-col:not(:first-child) {
@@ -152,7 +172,6 @@ $iceblue: #0FC3EA;
                         height: 130px;
                         margin-top: 0;
                         
- 
                         .packageName {
                             font-size: 14px;
                             padding-right: 5px;
@@ -166,13 +185,7 @@ $iceblue: #0FC3EA;
                             font-size: 50px;
                             color:$iceblue;
                         }
-                        .savings {
-                            font-size:0.8em;
-                            font-weight:bold;
-                            span {
-                            text-decoration:line-through;
-                            }
-                        }
+                     
                     }
 
                     // &.recommended {
@@ -193,22 +206,7 @@ $iceblue: #0FC3EA;
                             margin-left: auto;
                             margin-right: auto;
                         }
-                        span::before {
-                            background-color:$iceblue;
-                            border-radius: 50%;
-                            color: #fff;
-                            content: "✓";
-                            display: block;
-                            font-size: 1em;
-                            font-weight: 900;
-                            height: 1.618em;
-                            left: 0;
-                            top: .382em;
-                            line-height: 1.75;
-                            // position: absolute;
-                            text-align: center;
-                            width: 1.618em;
-                        }
+           
 
                         .iconText {
                             margin-top: 0;

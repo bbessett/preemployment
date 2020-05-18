@@ -1,21 +1,25 @@
 $off-wht: rgba(white,.4);
-$iceblue: #0FC3EA !default; 
+$iceblue: #0FC3EA;
+$yellow:  #fcd800; 
   //Shareable Button Color Overides
-@mixin btn-theme($btn-color) {
+@mixin btn-primary($btn-color) {
+    border:4px solid;
 	border-color: $btn-color;
-	background-color: transparent;
+    background-color: transparent;
+  
 	&:hover {
-		background-color: $btn-color;
+        background-color:darken($btn-color, 5%);
 		// box-shadow: 0 .125em $off-wht, inset 0 .063em $off-wht, inset 0 -.188em lighten($btn-color, 2%);
 	}
 	&:active {
-        background-color: $btn-color;
+        // background-color: $btn-color;
         border-color: $btn-color;
+        background-color:darken($btn-color, 20%);
         box-shadow: none; 
 		// box-shadow: 0 .063em $off-wht, inset 0 0 1.094em darken($btn-color, 40%), inset 0 .063em darken($btn-color, 20%),inset 0 -0.188em darken($btn-color, 20%); 
     }
     &:focus {
-        background-color: $btn-color;
+        background-color:darken($btn-color, 10%);
         border-color: $btn-color;
         box-shadow: none; 
     }
@@ -33,7 +37,7 @@ a.btn, .btn {
     display: inline-block;
     font-family: inherit;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale;  
     line-height: 1.618em;
     outline: 0;
     padding: .382em 1em;
@@ -41,138 +45,81 @@ a.btn, .btn {
     text-align: center;
     text-decoration: none;
     text-shadow: none;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
     transition: all .15s ease;
     vertical-align: middle;
     z-index: 1;
     height: auto;
 }
 .btn-outline-blue,a.btn-outline-blue:not([href]):not([tabindex]) {
-    @include btn-theme($iceblue);
+    @include btn-primary($iceblue);
     border-radius: 45px;
 }
-      .btn-blue,
+.btn-blue,
   a.btn-blue:not([href]):not([tabindex]) {
-    @include btn-theme($iceblue);
+    @include btn-primary($iceblue);
     background-color:$iceblue;
     border-radius:45px;
   }
    
     //Header Buttons TODO change class names 
-html {
-    #shareableHeader { 
-    .btn-outline-yellow,a.btn-outline-yellow:not([href]):not([tabindex]) {
-        @include btn-theme($iceblue);
+
+.btn-outline-yellow,a.btn-outline-yellow:not([href]):not([tabindex]) {
+        @include btn-primary($yellow);
+  
+    }
+.btn-yellow, a.btn-yellow:not([href]):not([tabindex]) {
+        @include btn-primary($yellow);
+        background-color:$yellow;
+   
+}
+
+
+header.retailActive {
+.btn-outline-yellow,a.btn-outline-yellow:not([href]):not([tabindex]) {
+        @include btn-primary($iceblue);
         border-radius: 45px;
     }
-          .btn-yellow,
-      a.btn-yellow:not([href]):not([tabindex]) {
-        @include btn-theme($iceblue);
+.btn-yellow, a.btn-yellow:not([href]):not([tabindex]) {
+        @include btn-primary($iceblue);
         background-color:$iceblue;
         border-radius:45px;
 }
- .tu-mainHeader {
-     .mainNavRight {
-      a.btn, .btn {
-        padding: .382em 1em;
-        font-size: .9rem;
-        }
-    }
 }
-    // .btn-outline-yellow:hover,a.btn-outline-yellow:not([href]):not([tabindex]):hover {
-    //     color: #000;
-    //     border-color: #0FC3EA;
-    //     border-radius: 45px;
-    // } 
-//     .btn-outline-yellow,
-// a.btn-outline-yellow:not([href]):not([tabindex]) {
-//   color: #000;
-//   background-color: #fff;
-//   border-color: #fcd800; 
-
-// }
-
-// .btn-outline-yellow:hover,
-// a.btn-outline-yellow:not([href]):not([tabindex]):hover {
-//   color: #000;
-//   background-color: #fcd800;
-//   border-color: #fcd800; 
-// }
-
-// .btn-outline-yellow.focus, .btn-outline-yellow:focus {
-//   box-shadow: 0 0 0 0.2rem rgba(252, 216, 0, 0.5); 
-// }
-
-// a.btn-outline-yellow:not([href]):not([tabindex]).focus, a.btn-outline-yellow:not([href]):not([tabindex]):focus {
-//   box-shadow: 0 0 0 0.2rem rgba(252, 216, 0, 0.5); 
-// }
 
 
-// a.btn-outline-yellow:not([href]):not([tabindex]).disabled, a.btn-outline-yellow:not([href]):not([tabindex]):disabled {
-//   color: #fcd800;
-//   background-color: transparent; 
-// }
+//overides
+.site-footer {
+    .btn {
+        display: none !important;
+}
+}
 
-// .btn-outline-yellow:not(:disabled):not(.disabled).active, .btn-outline-yellow:not(:disabled):not(.disabled):active {
-//   color: #000;
-//   background-color: #fcd800;
-//   border-color: #fcd800; 
+// .btn-yellow {
 
-// }
-
-// .show > .btn-outline-yellow.dropdown-toggle,
-// .show > a.btn-outline-yellow:not([href]):not([tabindex]).dropdown-toggle {
-//   color: #000;
-//   background-color: #fcd800;
-//   border-color: #fcd800; 
-// }
-
-// a.btn-outline-yellow:not([href]):not([tabindex]):not(:disabled):not(.disabled).active, a.btn-outline-yellow:not([href]):not([tabindex]):not(:disabled):not(.disabled):active {
-//   color: #000;
-//   background-color: #fcd800;
-//   border-color: #fcd800; }
-
-// .btn-outline-yellow:not(:disabled):not(.disabled).active:focus, .btn-outline-yellow:not(:disabled):not(.disabled):active:focus {
-//   box-shadow: 0 0 0 0.2rem rgba(252, 216, 0, 0.5); 
-// }
-
-// .show > .btn-outline-yellow.dropdown-toggle:focus,
-// .show > a.btn-outline-yellow:not([href]):not([tabindex]).dropdown-toggle:focus {
-//   box-shadow: 0 0 0 0.2rem rgba(252, 216, 0, 0.5); }
-
-// a.btn-outline-yellow:not([href]):not([tabindex]):not(:disabled):not(.disabled).active:focus, a.btn-outline-yellow:not([href]):not([tabindex]):not(:disabled):not(.disabled):active:focus {
-//   box-shadow: 0 0 0 0.2rem rgba(252, 216, 0, 0.5); }
-
-//     //Primary Link Buttons with fill todo Change class names in future
-
-    
-//     .btn-yellow:hover,
-//     a.btn-yellow:not([href]):not([tabindex]):hover {
-//       color: #000;
-//       background-color: #d6b700; }
-    
-//     .btn-yellow.focus, .btn-yellow:focus {
-//       box-shadow: 0 0 0 0.2rem rgba(214, 184, 0, 0.5); }
-    
-//     a.btn-yellow:not([href]):not([tabindex]).focus, a.btn-yellow:not([href]):not([tabindex]):focus {
-//       box-shadow: 0 0 0 0.2rem rgba(214, 184, 0, 0.5); }
-    
-//     .btn-yellow.disabled, .btn-yellow:disabled {
+//     &.focus,
+//     &:focus {
+//       box-shadow: 0 0 0 0.2rem rgba(214, 184, 0, 0.5);
+//     }
+//   }
+  
+//   a.btn-yellow:not([href]):not([tabindex]) {
+  
+//     &.focus,
+//     &:focus {
+//       box-shadow: 0 0 0 0.2rem rgba(214, 184, 0, 0.5);
+//     }
+//   }
+  
+//   .btn-yellow {
+  
+//     &.disabled,
+//     &:disabled {
 //       color: #000;
 //       background-color: #fcd800;
-//       border-color: #fcd800; }
-    
-//     a.btn-yellow:not([href]):not([tabindex]).disabled, a.btn-yellow:not([href]):not([tabindex]):disabled {
-//       color: #000;
-//       background-color: #fcd800;
-//       border-color: #fcd800; }
-    
-//     .btn-yellow:not(:disabled):not(.disabled).active, .btn-yellow:not(:disabled):not(.disabled):active {
-//       color: #000;
-//       background-color: #c9ac00;
-//       border-color: #bca100; }
-      
-
-
-}
-
-}
+//       border-color: #fcd800;
+//     }
+//   }

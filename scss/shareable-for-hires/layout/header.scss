@@ -6,6 +6,57 @@
 /* ==========================================================================
 	Header
 ============================================================================= */
+
+
+
+.tu-mainHeaderWrapper {
+    position: relative;
+    background-color: #fff;
+    
+  
+    #sideNavToggle {
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+  
+      span {
+        left: 15px;
+      }
+    }
+  
+    &.fixedHeader {
+      padding: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 50px;
+      z-index: 5;
+      width: 100%;
+    }
+}  
+
+.menuToggle {
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    z-index: 9;
+    -webkit-transform: translateZ(0);
+    position: absolute;
+    transform: rotate(0deg);
+}
+.menuOpen {
+    background-color: #fff
+}
+
+.menuOpen #shareableHeader .tu-mainHeader .shareableLogo {
+    display: none
+}
+
+.menuOpen #shareableHeader .tu-mainHeader .mainNav {
+    display: block
+}
+
 body {
     &.menu-opened {
         overflow: hidden;
@@ -13,7 +64,8 @@ body {
 }
 .menuOpen {
     #shareableHeader {
-        height: 100vh;
+        height:70%;
+        border-bottom:2px solid #e1e1e1;
         #sideNavToggle {
             top: 15px
         }
@@ -22,7 +74,7 @@ body {
 #shareableHeader {
     width: 100%;
     height: 100px;
-    border-bottom: 1px solid #eee;
+
     #sideNavToggle {
         top: 25px;
         right: 7px;
@@ -54,7 +106,11 @@ body {
         .mainNav {
             display: none;
             margin-bottom: auto;
+            
+     
             ul {
+                list-style: none;
+       
                 li {
                     height: 100%;
                     float: none;
@@ -62,6 +118,7 @@ body {
                     a {
                         color: black;
                         display: block;
+                        text-decoration: none;
                         text-transform: uppercase;
                         line-height: 1.1;
                         padding: 21px 0 7px;
@@ -102,7 +159,8 @@ body {
 }
 
 .menuOpen {
-    background-color: white;
+    background-color: #f9f9f9;
+
     #shareableHeader {
         .tu-mainHeader {
             .shareableLogo {
@@ -110,6 +168,19 @@ body {
             }
             .mainNav {
                 display: block;
+                width:100%;
+                li {
+                    border-bottom:1px solid #e1e1e1;
+                }
+                a {
+                    color: rgba(14,30,37,.8);
+                    display: block;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    line-height: 2.618em;
+                    outline: 0;
+                    padding: 0 1em;
+                }
             }
             .mainNavRight 
             {
@@ -121,7 +192,14 @@ body {
         }
     }
 }
-
+.tu-mainHeader {
+    .mainNavRight {
+     a.btn, .btn {
+       padding: .382em 1em;
+       font-size: .9rem;
+       }
+   }
+}
 // Breakpoint for horizontal phone (sm)
 @include media-breakpoint-up(sm) {
     #shareableHeader {
@@ -232,15 +310,4 @@ body {
 }
 
 
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
+

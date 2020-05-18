@@ -10,9 +10,11 @@ html {
         .hero-img {
             padding: 0;
             img {
+                @media (min-width: 48em) {
                 width: 128%;
                 right: 40px;
                 position: relative;
+                }
             }
         }
         .hero-text {
@@ -20,7 +22,7 @@ html {
             text-shadow: 0 2px 20px rgba(0, 0, 0, .16);
             text-align: left;
 
-            @media (min-width: 768px) {
+            @media (min-width: 48em) {
                 padding: 20px 30px;
             }
 
@@ -30,21 +32,41 @@ html {
         }
 
         .button-wrap {
+            @media (min-width: 120em) {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -webkit-align-content: flex-start;
+            -ms-flex-line-pack: start;
+            align-content: flex-start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            }
             .col-md-auto {
-                padding: 0 5px;
+                padding: 0 0.5em;
             }
         }
 
         a.btn {
             padding: 1.182em 3.2em !important;
-            font-size: .80rem !important;
+            font-size: .80rem;
             text-transform: unset;
 
-            @media (max-width: 940px) {
+            @media (max-width: 58em) {
                 width: 100%;
             }
 
-            @media (min-width: 1920px) {
+            @media (min-width: 120em) {
                 padding: 1.182em 2.3em !important;
             }
 
