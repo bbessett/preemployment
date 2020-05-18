@@ -94,7 +94,7 @@ span.btn-txt {
         padding: 0 3.818em; } }
     @media (min-width: 768px) {
       .benefits-card .benefits__title {
-        padding: 0 2.718em; } }
+        padding: 0 1.418em; } }
   .benefits-card ul {
     margin: 0 auto 0 auto; }
     @media (min-width: 768px) {
@@ -128,6 +128,9 @@ span.btn-txt {
 
 .callout {
   margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .callout .h1 {
+      padding: 0 1.4em; } }
   .callout .callout--text {
     width: 80%;
     margin: 1em auto 0; }
