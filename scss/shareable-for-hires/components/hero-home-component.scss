@@ -10,11 +10,12 @@ html {
         .hero-img {
             padding: 0;
             img {
-                @media (min-width: 48em) {
+                @media (min-width: 60em) {
                 width: 128%;
                 right: 40px;
                 position: relative;
                 }
+      
             }
         }
         .hero-text {
@@ -84,16 +85,17 @@ html {
                 text-align: center;
                 width: 1.618em; 
             }
+            span.btn-txt {
+                position: relative;
+                right: 15px;
+            }
         }
     }
 }
 
 
 
-span.btn-txt {
-    position: relative;
-    right: 15px;
-}
+
 
 .benefits-card {
     text-align: center;

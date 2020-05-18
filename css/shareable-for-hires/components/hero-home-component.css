@@ -5,7 +5,7 @@ html h2.feature-sub-heading {
 
 html .hero--home .hero-img {
   padding: 0; }
-  @media (min-width: 48em) {
+  @media (min-width: 60em) {
     html .hero--home .hero-img img {
       width: 128%;
       right: 40px;
@@ -67,10 +67,9 @@ html .hero--home a.btn {
     position: absolute;
     text-align: center;
     width: 1.618em; }
-
-span.btn-txt {
-  position: relative;
-  right: 15px; }
+  html .hero--home a.btn span.btn-txt {
+    position: relative;
+    right: 15px; }
 
 .benefits-card {
   text-align: center; }
