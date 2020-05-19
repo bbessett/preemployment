@@ -196,16 +196,7 @@ body {
        }
    }
 }
-@include media-breakpoint-up(sm) {
-    #shareableHeader {
-        .tu-mainHeader {
-            .mainNavRight {
-                opacity: 0;
-                display:none;
-            }
-        }
-    }
-}
+
 .menuOpen {
     background-color: #f9f9f9;
 
@@ -245,7 +236,16 @@ body {
 }
 
 
-
+@include media-breakpoint-up(sm) {
+    #shareableHeader {
+        .tu-mainHeader {
+            .mainNavRight {
+                opacity: 0;
+                display:none;
+            }
+        }
+    }
+}
 
 
 // Breakpoint for horizontal tablet (lg)
