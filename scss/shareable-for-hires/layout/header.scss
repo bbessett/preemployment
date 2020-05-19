@@ -236,16 +236,6 @@ body {
 }
 
 
-@include media-breakpoint-up(sm) {
-    #shareableHeader {
-        .tu-mainHeader {
-            .mainNavRight {
-                opacity: 0;
-                display:none;
-            }
-        }
-    }
-}
 
 
 // Breakpoint for horizontal tablet (lg)
@@ -349,3 +339,13 @@ body {
 
 
 
+@media only screen and (max-width: 640px) {
+    #shareableHeader {
+        .tu-mainHeader {
+            .mainNavRight {
+                opacity: 0;
+                display:none;
+            }
+        }
+    }
+}
