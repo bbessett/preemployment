@@ -1,9 +1,1 @@
-/* Hero Image Styles */
-/* Hero Image Styles - Small Break Point */
-@media screen and (min-width: 768px) {
-  .hero .heroContent .primaryHeadline {
-    background: rgba(61, 54, 54, 0.75); }
-  .hero .heroContent p {
-    background: rgba(61, 54, 54, 0.75); } }
-
-/* Hero Image Styles - Large Break Point */
+@media screen and (min-width: 768px){.hero .heroContent .primaryHeadline{background:rgba(61,54,54,0.75)}.hero .heroContent p{background:rgba(61,54,54,0.75)}}

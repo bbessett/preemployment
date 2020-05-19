@@ -15,6 +15,7 @@ var sass = require('gulp-sass');
 gulp.task('sass', function (done) {
 	gulp.src('scss/**/*.scss')
   .pipe(sass().on('error', sass.logError))
+  .pipe(sass({outputStyle: 'compressed'}))
   .pipe(gulp.dest('css'))
   done();
  });

@@ -15,7 +15,7 @@
     
     .heroContent {
         .primaryHeadline {
-            font-size: 24px;
+            // font-size: 24px;
             font-weight: 400;
             width: 100%
         }
@@ -80,18 +80,19 @@
             color: #ffffff;
             .btn {
                 width: auto;
+                font-size: 1rem;
             }
 
             .primaryHeadline {
-                font-size: 36px;
-                line-height: 44px;
-                width: 57%;
+                font-size: 3.218em;
+                letter-spacing: -.25px;
+                width: 80%;
             }
 
             p {
                 display: block;
-                font-size: 18px;
-                line-height: 24px;
+                // font-size: 18px;
+                // line-height: 24px;
                 margin-bottom: 40px;
                 width: 55%;
             }
@@ -115,7 +116,7 @@
         }
 
         .heroContent {
-            width: 47%;
+            // width: 47%;
             height: 380px;
             margin-left: 40px;
             .eyebrow {
@@ -123,10 +124,11 @@
             }
 
             .primaryHeadline {
-                font-size: 58px;
-                line-height: 68px;
+                // font-size: 58px;
+                // line-height: 68px;
+                font-size: 3.218em;
                 letter-spacing: -.25px;
-                width: 67%
+                width: 80%;
             }
 
             p {

@@ -181,6 +181,7 @@ body {
     }
 }
 
+
 .menuOpen {
     background-color: #f9f9f9;
 
@@ -217,6 +218,10 @@ body {
 }
 .tu-mainHeader {
     .mainNavRight {
+        display:none;
+        @include media-breakpoint-up(lg) {
+        display:flex;
+        }
      a.btn, .btn {
        padding: .382em 1em;
        font-size: 1rem;
@@ -224,14 +229,14 @@ body {
    }
 }
 // Breakpoint for horizontal phone (sm)
-@include media-breakpoint-up(sm) {
-    #shareableHeader {
-        .tu-mainHeader {
-            .shareableLogo {
-            }
-        }
-    }
-}
+// @include media-breakpoint-up(sm) {
+//     #shareableHeader {
+//         .tu-mainHeader {
+//             .shareableLogo {
+//             }
+//         }
+//     }
+// }
 
 
 
