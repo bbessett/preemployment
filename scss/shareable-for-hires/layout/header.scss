@@ -183,9 +183,11 @@ body {
 
 .tu-mainHeader {
     .mainNavRight {
+        opacity: 0;
         display:none;
         @include media-breakpoint-up(lg) {
         display:flex;
+        opacity: 1;
         }
      a.btn, .btn {
        padding: .382em 1em;
