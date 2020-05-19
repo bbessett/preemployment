@@ -183,9 +183,8 @@ body {
 
 .tu-mainHeader {
     .mainNavRight {
-        opacity: 0 !important;
-        display:none;
-        @include media-breakpoint-up(lg) {
+
+        @include media-breakpoint-up(md) {
         display:flex;
         opacity: 1;
         }
@@ -221,7 +220,7 @@ body {
             }
             .mainNavRight 
             {
-                opacity: 1 !important;
+                opacity: 1;
                 height: 90px;
                 a.btn {
                 font-size: 1.1rem;
@@ -232,14 +231,16 @@ body {
 }
 
 // Breakpoint for horizontal phone (sm)
-// @include media-breakpoint-up(sm) {
-//     #shareableHeader {
-//         .tu-mainHeader {
-//             .shareableLogo {
-//             }
-//         }
-//     }
-// }
+@include media-breakpoint-up(sm) {
+    #shareableHeader {
+        .tu-mainHeader {
+            .mainNavRight {
+                opacity: 0;
+                display:none;
+            }
+        }
+    }
+}
 
 
 
