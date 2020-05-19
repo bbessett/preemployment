@@ -45,9 +45,12 @@ html {
     }
 
     .hero--home {
-        h2 {
+        .h1 {
             
             margin: 1.618em auto 0.5em;
+        }
+        p {
+            margin-bottom: 1.5em; 
         }
         .hero-img {
             padding: 0;

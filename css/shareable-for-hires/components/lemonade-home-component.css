@@ -35,8 +35,11 @@ html h2.feature-sub-heading {
   font-size: 2.5rem;
   font-weight: 800; }
 
-html .hero--home h2 {
+html .hero--home .h1 {
   margin: 1.618em auto 0.5em; }
+
+html .hero--home p {
+  margin-bottom: 1.5em; }
 
 html .hero--home .hero-img {
   padding: 0; }
