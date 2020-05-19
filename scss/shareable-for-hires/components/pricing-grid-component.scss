@@ -217,12 +217,12 @@ $iceblue: #0FC3EA;
             width: auto;
         }
     }
-}
+} 
 
 @include media-breakpoint-up(lg) {
     .component-pricing {
         .price-table {
-            margin: 20px 60px 40px 60px;
+            margin: 20px 60px 40px 60px;    
 
         }
         .disclaimer {
