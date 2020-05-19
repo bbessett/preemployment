@@ -1,6 +1,14 @@
 $iceblue: #0FC3EA;
 
 html {
+    ::selection {
+        background: $iceblue; /* WebKit/Blink Browsers */
+        color:#fff;
+      }
+      ::-moz-selection {
+        background: $iceblue; /* Gecko Browsers */
+        color:#fff;
+      }
     p {
         font-size: 1.2em;
     }
@@ -223,7 +231,7 @@ html {
     margin-bottom:40px;
     .callout--text {
         width: 80%;
-        margin:0 auto 2em;
+        margin:0 auto 3.5em;
         p {
             max-width: 41.877em;
         }
@@ -234,7 +242,7 @@ html {
         }
         .callout-text__bottom {
             strong {
-                @media (max-width: 480px) {
+                @media (max-width: 680px) {
                 display:inline-block;
                 }
             }
@@ -253,7 +261,7 @@ html {
             font-weight: 800;
         }
         .callout--sig_title {
-            margin: 0 auto 40px;
+            margin: 0 auto 2.5em;
         }
 
   

@@ -1,3 +1,13 @@
+html ::selection {
+  background: #0FC3EA;
+  /* WebKit/Blink Browsers */
+  color: #fff; }
+
+html ::-moz-selection {
+  background: #0FC3EA;
+  /* Gecko Browsers */
+  color: #fff; }
+
 html p {
   font-size: 1.2em; }
 
@@ -166,14 +176,14 @@ html .hero--home a.btn {
       padding: 1.5px 5.2em; } }
   .callout .callout--text {
     width: 80%;
-    margin: 0 auto 2em; }
+    margin: 0 auto 3.5em; }
     .callout .callout--text p {
       max-width: 41.877em; }
     .callout .callout--text strong {
       text-transform: uppercase;
       font-size: 90%;
       text-decoration: underline; }
-    @media (max-width: 480px) {
+    @media (max-width: 680px) {
       .callout .callout--text .callout-text__bottom strong {
         display: inline-block; } }
   .callout .callout--sig img.callout-sig_img {
@@ -185,7 +195,7 @@ html .hero--home a.btn {
     margin: 0 auto;
     font-weight: 800; }
   .callout .callout--sig .callout--sig_title {
-    margin: 0 auto 40px; }
+    margin: 0 auto 2.5em; }
 
 section.terms p {
   max-width: 100%;
