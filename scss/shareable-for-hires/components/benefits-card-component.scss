@@ -20,12 +20,13 @@ $iceblue: #0FC3EA;
         font-size: 1.4em;
         color: $iceblue;
 
-        @media (min-width: 1180px) {
-            padding: 0 3.818em;
-        }
 
-        @media (min-width: 768px) {
+        @media (min-width: 48em) {
             padding: 0 1.418em;
+        }
+        
+        @media (min-width: 60em) {
+            padding: 0 1.518em;
         }
     }
 

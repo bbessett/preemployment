@@ -71,7 +71,7 @@
       .component-pricing .price-table .price-col .price-row span::before {
         border-radius: 50%;
         color: #fff;
-        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.938 6.105-6.219 1.421 1.409-7.5 7.626z' fill='%230fc3ea'/%3E%3C/svg%3E");
+        content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26.903 24'%3e%3cpath d='M10.193 22L2.41 14.21l3.135-2.775 4.596 4.581L23.284 2l2.909 2.806-16 17.194z' fill='%230fc3ea'/%3e%3c/svg%3e");
         display: block;
         height: 1.618em;
         left: 0;

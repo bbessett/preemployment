@@ -11,12 +11,12 @@
     padding: 0 0.118em;
     font-size: 1.4em;
     color: #0FC3EA; }
-    @media (min-width: 1180px) {
-      .benefits-card .benefits__title {
-        padding: 0 3.818em; } }
-    @media (min-width: 768px) {
+    @media (min-width: 48em) {
       .benefits-card .benefits__title {
         padding: 0 1.418em; } }
+    @media (min-width: 60em) {
+      .benefits-card .benefits__title {
+        padding: 0 1.518em; } }
   .benefits-card ul {
     margin: 0 auto 0 auto; }
     @media (min-width: 768px) {
