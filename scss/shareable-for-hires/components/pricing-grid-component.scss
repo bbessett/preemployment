@@ -222,7 +222,7 @@ $iceblue: #0FC3EA;
 @include media-breakpoint-up(lg) {
     .component-pricing {
         .price-table {
-            margin: 20px 60px 40px 0;
+            margin: 20px 60px 40px 60px;
 
         }
         .disclaimer {
