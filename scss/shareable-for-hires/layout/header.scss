@@ -59,6 +59,8 @@ body {
         overflow: hidden;
     }
 }
+// Breakpoint for horizontal phone (sm)
+
 .menuOpen {
     #shareableHeader {
         height: 95%;
@@ -181,9 +183,9 @@ body {
     }
 }
 
+
 .tu-mainHeader {
     .mainNavRight {
-
         @include media-breakpoint-up(md) {
         display:flex;
         opacity: 1;
@@ -194,6 +196,16 @@ body {
        }
    }
 }
+@include media-breakpoint-up(sm) {
+    #shareableHeader {
+        .tu-mainHeader {
+            .mainNavRight {
+                opacity: 0;
+                display:none;
+            }
+        }
+    }
+}
 .menuOpen {
     background-color: #f9f9f9;
 
@@ -201,6 +213,7 @@ body {
         .tu-mainHeader {
             .shareableLogo {
                 display: none;
+            
             }
             .mainNav {
                 display: block;
@@ -220,6 +233,7 @@ body {
             }
             .mainNavRight 
             {
+                display: flex;
                 opacity: 1;
                 height: 90px;
                 a.btn {
@@ -230,17 +244,7 @@ body {
     }
 }
 
-// Breakpoint for horizontal phone (sm)
-@include media-breakpoint-up(sm) {
-    #shareableHeader {
-        .tu-mainHeader {
-            .mainNavRight {
-                opacity: 0;
-                display:none;
-            }
-        }
-    }
-}
+
 
 
 
@@ -291,16 +295,18 @@ body {
                     }
                 }
             }
-            // .mainNavRight {
-            //     a {
-            //         display: inline-block;
-            //         font-size: 0.875rem;
-            //         &.btn {
-            //             height: 38px; 
-            //             padding-top: 10px;
-            //         }
-            //     }
-            // }
+            .mainNavRight {
+                display: flex;
+                opacity:1;
+                // a {
+                //     display: inline-block;
+                //     font-size: 0.875rem;
+                //     &.btn {
+                //         height: 38px; 
+                //         padding-top: 10px;
+                //     }
+                // }
+            }
         }
     }
 }
