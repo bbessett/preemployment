@@ -73,12 +73,11 @@
         color: #fff;
         content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26.903 24'%3e%3cpath d='M10.193 22L2.41 14.21l3.135-2.775 4.596 4.581L23.284 2l2.909 2.806-16 17.194z' fill='%230fc3ea'/%3e%3c/svg%3e");
         display: block;
-        height: 1.618em;
         left: 0;
         top: .382em;
         line-height: 1.75;
         text-align: center;
-        width: 1.618em; }
+        width: 2.418em; }
       .component-pricing .price-table .price-col .price-row .iconText {
         margin-bottom: 0;
         font-family: Intro, Trebuchet MS, Helvetica, Arial, sans-serif;

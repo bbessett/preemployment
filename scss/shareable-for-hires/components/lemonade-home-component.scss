@@ -23,7 +23,8 @@ html {
 
         // color: #0e1e25;
         // font-weight: 500;
-        margin: 1.618em auto 0.5em;
+   
+        margin: 1.618em auto 1em;
     } 
     blockquote,ol,p,ul {
         margin: 1em auto 0;
@@ -36,6 +37,10 @@ html {
     }
 
     .hero--home {
+        h2 {
+            
+            margin: 1.618em auto 0.5em;
+        }
         .hero-img {
             padding: 0;
             img {
@@ -126,6 +131,7 @@ html {
 }
 
 .benefits-card {
+
     text-align: center;
 
     svg {
