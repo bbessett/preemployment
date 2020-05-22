@@ -1,0 +1,401 @@
+// ToolBox Files
+@import "../../../assets/bootstrap/functions";
+@import "../../../assets/bootstrap/mixins";
+@import "../../../assets/variables";
+
+//@import "../tu-main-com.min.css";
+
+/* Carousel Feature */
+
+.featureCarousel {
+    @include media-breakpoint-up(md) {
+        padding-top: 30px;
+    }
+    padding-top: 0; 
+    padding-bottom: 23px;
+
+    .carousel {
+        position: relative;
+        height: 275px;
+        .carouselHeading {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 21px; 
+        }
+
+        .carousel-inner {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            scroll-snap-type: x mandatory;
+
+            .item {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+
+                .fa {
+                    display: inline-block;
+                    margin-right: 0px;
+                    font-size: 105px;
+                    color: #00A6CA;
+                }
+
+
+            }
+
+            .carousel__slide {
+                position: relative;
+                flex: 0 0 100%;
+                width: 100%;
+                &:focus {
+                    outline: 1px dotted black;
+                }
+
+                .carousel__snapper {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    scroll-snap-align: center;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    .featIcon {
+                        height: 100px;
+                    }
+
+                    .carouselContent {
+                        .carouselHeadline {
+                            display: block;
+                            margin-top: 4px;
+                            font-size: 27px;
+                            line-height: 26px;
+                            text-align: center;
+                        }
+
+                        p {
+                            margin: 11px 0 25px 0;
+                            font-size: 16px;
+                            line-height: 20px;
+                            border-top: none;
+
+                            a {
+                                text-decoration: none;
+                                color: #00A6CA;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .controls {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            .btn {
+                height: 35px;
+                width: 35px;
+                background-color: $tu-gray-2;
+                &.active {
+                    background-color: $tu-blue;
+                }
+            }
+        }
+    }
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: transparent;
+        border: none;
+    }
+    * {
+        -ms-overflow-style: none;
+    }
+}
+
+//auto-scroll removed for accessibilty
+//   @media (hover: hover) {
+//     .carousel__snapper {
+//       animation-name: tonext, snap;
+//       animation-timing-function: ease;
+//       animation-duration: 4s;
+//       animation-iteration-count: infinite;
+//     }
+
+//     .carousel__slide:last-child .carousel__snapper {
+//       animation-name: tostart, snap;
+//     }
+//   }
+
+// @media (prefers-reduced-motion: reduce) {
+//     .carousel__snapper {
+//         animation-name: none;
+//     }
+// }
+
+// .carousel-test:hover .carousel__snapper,
+// .carousel-test:focus-within .carousel__snapper {
+//     animation-name: none;
+// }
+
+
+
+
+/* Carousel Feature Personal - Small Break Point */
+
+@media screen and (min-width: 768px) {
+    .featureCarousel {
+        .carousel {
+            height: 100%;
+            .carouselHeading {
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 30px;
+                margin-bottom: 42px;
+                padding-top: 35px;
+                border-top: 1px solid #ccc;
+
+                &.noBorder {
+                    border-top: none;
+                    padding-top: 0;
+                    font-size: 33px;
+                    line-height: 36px;
+                }
+            }
+
+            .carousel-inner {
+                position: relative;
+                -js-display: flex;
+                display: flex;
+                flex-wrap: wrap;
+                min-height: 0;
+                padding-bottom: 0;
+
+                // .item {
+                //     position: relative;
+                //     float: left;
+                //     padding: 14px 8px 0 8px;
+                //     text-align: center;
+
+                //     .carouselContent {
+                //         display: table-cell;
+
+                //         .carouselHeadline {
+                //             text-align: center;
+                //         }
+
+                //         p {
+                //             text-align: center;
+                //         }
+                //     }
+                // }
+
+                .controls {
+                    display: none;
+                }
+
+                &.byThree {
+                    .item {
+                        width: 33%;
+
+                        .fa {
+                            font-size: 79px;
+                        }
+
+                        .carouselContent {
+                            .carouselHeadline {
+                                font-size: 30px;
+                                line-height: 34px;
+                                margin-top: 20px;
+                            }
+
+                            p {
+                                margin-top: 14px;
+                                padding: 0 20px 0 20px;
+                            }
+                        }
+
+                        &:nth-child(3n+0) {
+                            margin-right: 0;
+                        }
+                    }
+                }
+
+                .carousel__slide {
+                    position: relative;
+                    flex: auto;
+
+                    .carousel__snapper {
+                        position: relative;
+                        scroll-snap-align: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+    /* Carousel Feature Personal - Large Break Point */
+
+    @media screen and (min-width: 992px) {
+        .featIcon {
+            height: 125px;
+        }
+
+        .featureCarouselPersonalWrapper {
+            padding-top: 52px;
+            padding-bottom: 45px;
+
+            .carouselPersonal {
+                .instantAlertImage {
+                    text-align: center;
+                }
+
+                .carouselHeading {
+                    margin-bottom: 42px;
+                    margin-left: 110px;
+                    margin-right: 110px;
+                    padding-top: 60px;
+                    padding-left: 80px;
+                    padding-right: 80px;
+                    border-top: 1px solid #ccc;
+                    font-size: 40px;
+                    font-weight: 300;
+                    line-height: 48px;
+
+                    &.noBorder {
+                        font-size: 41px;
+                        font-weight: normal;
+                    }
+                }
+
+                .carousel-inner {
+                    width: 980px;
+                    margin: 0 auto;
+
+                    &.byTwo,
+                    &.byFour {
+                        padding: 0 40px 0 40px;
+                        text-align: left;
+
+                        .item {
+                            font-weight: lighter;
+
+                            .fa {
+                                float: left;
+                                font-size: 75px;
+                                margin-right: 19px;
+                            }
+
+                            .carouselContent {
+                                .carouselHeadline {
+                                    display: block;
+                                    padding: 12px 0 16px 0;
+                                    margin-top: -1px;
+                                    text-align: left;
+                                }
+
+                                p {
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                    border-top: none;
+                                    margin-top: -7px;
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
+
+                    &.byThree {
+                        .item {
+                            width: 280px;
+                            margin-right: 70px;
+                            font-weight: 300;
+
+                            .fa {
+                                font-size: 114px;
+                            }
+
+                            .carouselContent {
+                                .carouselHeadline {
+                                    padding: 12px 0 16px 0;
+                                    margin-top: 18px;
+                                }
+
+                                p {
+                                    font-size: 18px;
+                                    line-height: 22px;
+                                    border-top: none;
+                                    padding: 0px;
+                                }
+                            }
+                        }
+                    }
+
+                    &.byFourVariant {
+                        .item {
+                            .fa {
+                                font-size: 50px;
+                            }
+
+                            .carouselContent {
+                                .carouselHeadline {
+                                    padding: 12px 0 16px 0;
+                                    margin-top: -1px;
+                                    font-size: 27px;
+                                }
+
+                                p {
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                    border-top: none;
+                                    margin-top: -7px;
+
+                                    &.finePrint {
+                                        font-size: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #featuresCarouselLinksComponent {
+            .carouselPersonal {
+                .carousel-inner {
+                    width: 100%;
+
+                    &.byFourVariant {
+                        .item {
+                            width: 24%;
+                            margin-right: 5px;
+                            padding: 15px;
+                            padding-top: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
