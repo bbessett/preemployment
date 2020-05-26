@@ -189,6 +189,7 @@ body {
         @include media-breakpoint-up(md) {
         display:flex;
         opacity: 1;
+      
         }
      a.btn, .btn {
        padding: .382em 1em;
@@ -196,7 +197,7 @@ body {
        }
    }
 }
-
+html {
 .menuOpen {
     background-color: #f9f9f9;
 
@@ -227,12 +228,17 @@ body {
                 display: flex;
                 opacity: 1;
                 height: 90px;
+                flex-direction: row;
+                padding: 10px;
+                margin-top: 50px;
+                width: 100%;
                 a.btn {
                 font-size: 1.1rem;
             }
             }
         }
     }
+}
 }
 
 @media only screen and (max-width: 64em) {
