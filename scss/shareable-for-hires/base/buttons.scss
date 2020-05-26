@@ -30,30 +30,30 @@ $yellow:  #fcd800;
     }
 }
 a.btn, .btn {
-    // padding: 1.182em 1.7em;
-    // font-size: .9rem;
-    // box-sizing: border-box;
-    // font-weight: 700;
+    padding: 1.182em 1.7em;
+    font-size: .9rem;
+    box-sizing: border-box;
+    font-weight: 700;
     box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12);
     cursor: pointer;
-    // display: inline-block;
-    // font-family: inherit;
-    // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smoothing: grayscale;  
-    // line-height: 1.618em;
+    display: inline-block;
+    font-family: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;  
+    line-height: 1.618em;
     outline: 0;
-    // position: relative;
-    // text-align: center;
-    // text-decoration: none;
-    // text-shadow: none;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
     text-transform: uppercase;
     color: #000;
-    // text-align: center;
-    // vertical-align: middle;
-    // transition: all .15s ease; 
-    // vertical-align: middle;
+    text-align: center;
+    vertical-align: middle;
+    transition: all .15s ease; 
+    vertical-align: middle;
     z-index: 1;
-    // height: auto;
+    height: auto;
 }
 .btn-outline-blue,a.btn-outline-blue:not([href]):not([tabindex]) {
     @include btn-primary($iceblue);
