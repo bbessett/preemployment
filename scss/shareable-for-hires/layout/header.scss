@@ -186,7 +186,7 @@ body {
     }
 }
 
-
+#shareableHeader {
 .tu-mainHeader {
     .mainNavRight {
         @include media-breakpoint-up(md) {
@@ -196,11 +196,11 @@ body {
         }
      a.btn, .btn {
        padding: .382em 1em;
-       font-size: 1rem;
+       font-size: 1.1rem;
        }
    }
 }
-
+}
 .menuOpen {
     background-color: #f9f9f9;
 

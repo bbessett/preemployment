@@ -100,7 +100,7 @@ header.retailActive {
         @include btn-primary($iceblue);
         background-color:$iceblue;
         border-radius:45px;
-        text-transform: none;
+        text-transform: none !important;
         color:#fff !important;
         &:hover {
             color:#333;
