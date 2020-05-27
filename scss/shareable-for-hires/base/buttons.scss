@@ -43,7 +43,6 @@ a.btn, .btn {
     -moz-osx-font-smoothing: grayscale;  
     line-height: 1.618em;
     outline: 0;
-    height:auto !important;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -55,7 +54,7 @@ a.btn, .btn {
     transition: all .15s ease; 
     vertical-align: middle;
     z-index: 1;
-    height: auto;
+    height:auto !important;
 }
 .btn-outline-blue,a.btn-outline-blue:not([href]):not([tabindex]) {
     @include btn-primary($iceblue);
