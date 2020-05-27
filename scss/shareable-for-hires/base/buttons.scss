@@ -95,7 +95,7 @@ header.retailActive {
 .btn-outline-yellow,a.btn-outline-yellow:not([href]):not([tabindex]) {
         @include btn-primary($iceblue);
         border-radius: 45px;
-        text-transform: initial;
+        text-transform: initial !important;
 
     }
 .btn-yellow, a.btn-yellow:not([href]):not([tabindex]) {
@@ -104,7 +104,7 @@ header.retailActive {
         border-radius:45px;
         // text-transform: none;
         color:#fff !important;
-        text-transform: initial;
+        text-transform: initial !important;
         &:hover {
             color:#333;
         }
@@ -112,9 +112,9 @@ header.retailActive {
 }
 
 //overides
-.site-footer {
-    .btn {
-        display: none !important;
-}
-}
+// .site-footer {
+//     .btn {
+//         display: none !important;
+// }
+// }
 }
