@@ -43,6 +43,7 @@ a.btn, .btn {
     -moz-osx-font-smoothing: grayscale;  
     line-height: 1.618em;
     outline: 0;
+    height:auto !important;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -94,14 +95,16 @@ header.retailActive {
 .btn-outline-yellow,a.btn-outline-yellow:not([href]):not([tabindex]) {
         @include btn-primary($iceblue);
         border-radius: 45px;
+        text-transform: initial;
 
     }
 .btn-yellow, a.btn-yellow:not([href]):not([tabindex]) {
         @include btn-primary($iceblue);
         background-color:$iceblue;
         border-radius:45px;
-        text-transform: none !important;
+        text-transform: none;
         color:#fff !important;
+        text-transform: initial;
         &:hover {
             color:#333;
         }
