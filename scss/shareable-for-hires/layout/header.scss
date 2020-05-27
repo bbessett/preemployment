@@ -297,7 +297,7 @@ body {
                         display: inline-block;
                         a {
                             text-align: center;
-                            padding: 27.5px 6px; 
+                            padding: 27.5px 6px !important; 
                             margin: 0;
                             font-size: 0.775rem;
        
@@ -350,7 +350,7 @@ body {
                 ul {
                     li {
                         a {
-                            padding: 27.5px 14.2px;
+                            padding: 27.5px 14.2px !important;
                             font-weight: 600;
                             font-size: 0.805rem;
                         }
