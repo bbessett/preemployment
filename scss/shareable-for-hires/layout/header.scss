@@ -169,8 +169,8 @@ body {
             height: 100%;
             
             a {
-                margin: auto 0.2em;
-                box-shadow: none;
+                margin: auto 0.2em !important;
+                box-shadow: none !important;
                 &:hover {
                     color:#333;
                 }
