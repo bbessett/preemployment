@@ -29,6 +29,7 @@ $yellow:  #fcd800;
         // box-shadow: 0 .063em $off-wht, inset 0 0 1.094em darken($btn-color, 40%), inset 0 .063em darken($btn-color, 20%),inset 0 -0.188em darken($btn-color, 20%);
     }
 }
+html {
 a.btn, .btn {
     padding: 1.182em 1.7em;
     font-size: .9rem;
@@ -111,5 +112,6 @@ header.retailActive {
 .site-footer {
     .btn {
         display: none !important;
+}
 }
 }

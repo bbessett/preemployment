@@ -164,14 +164,17 @@ body {
             display: flex;
             flex-direction: row;
             margin: 0;
+            height: auto;
             align-content: flex-start;
             height: 100%;
+            
             a {
                 margin: auto 0.2em;
                 box-shadow: none;
                 &:hover {
                     color:#333;
                 }
+            
             }
        
         }
@@ -197,7 +200,7 @@ body {
        }
    }
 }
-html {
+
 .menuOpen {
     background-color: #f9f9f9;
 
@@ -212,6 +215,13 @@ html {
                 width:100%;
                 li {
                     border-bottom:1px solid #e1e1e1;
+               
+                &.active {
+                    a {
+                        color: $tu-darkest-gray;
+                        border-bottom: 2px solid #fff;
+                    }
+                }
                 }
                 a {
                     color: rgba(14,30,37,.8);
@@ -222,6 +232,7 @@ html {
                     outline: 0;
                     padding: 0 1em;
                 }
+                
             }
             .mainNavRight 
             {
@@ -230,16 +241,19 @@ html {
                 height: 90px;
                 flex-direction: row;
                 padding: 10px;
-                margin-top: 50px;
+                margin-top: 20px;
                 width: 100%;
                 a.btn {
                 font-size: 1.1rem;
+                
             }
+  
+      
             }
         }
     }
 }
-}
+
 
 @media only screen and (max-width: 64em) {
     #shareableHeader {
@@ -291,19 +305,14 @@ html {
                                 display: block;
                             }
                         }
-                        &.active {
-                            a {
-                                color: $tu-darkest-gray;
-                                border-bottom: 2px solid $tu-blue;
-                                padding-bottom: 10px;
-                            }
-                        }
+         
                     }
                 }
             }
             .mainNavRight {
                 display: flex;
                 opacity:1;
+    
                 // a {
                 //     display: inline-block;
                 //     font-size: 0.875rem;
