@@ -85,10 +85,26 @@ html {
   
     }
     
+
 //temporary blog article reset hacks
+.iframe-container {
+    overflow: hidden;
+    // Calculated from the aspect ration of the content (in case of 16:9 it is 9/16= 0.5625)
+    padding-top: 56.25%;
+    position: relative;
+  }
+   
+  .iframe-container iframe {
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+  }
 
     .text-module__content .text-module__text p > img {
-    margin:0 30px;
+    margin:10px 0;
     }
     
     @media screen and (min-width: 768px) {
