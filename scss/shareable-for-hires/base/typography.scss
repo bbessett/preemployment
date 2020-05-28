@@ -85,9 +85,27 @@ html {
   
     }
     
-//Layout 
+//temporary blog article reset hacks
 
-
+    .text-module__content .text-module__text p > img {
+    margin:0 15px;
+    }
+    
+    @media screen and (min-width: 768px) {
+    .text-module__content .text-module__text > p {
+        margin: 0 0 20px;
+    }
+    }
+    .text-module__content .text-module__text img {
+      width: 100%;
+      height:auto;
+    }
+    .text-module__content .text-module__text>p {
+      font-size: 1em;
+      line-height: 1.68em;
+      /* margin: 0 0 20px; */
+    }
+ 
 
 }
 
