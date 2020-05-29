@@ -116,12 +116,24 @@ html {
       width: 100%;
       height:auto;
     }
-    .text-module__content .text-module__text>p {
-      font-size: 1em;
-      line-height: 1.68em;
-      /* margin: 0 0 20px; */
+    .text-module__content 
+    {  
+    .text-module__text 
+    {
+    ul {
+        margin-top:2rem;
+        margin-bottom:2rem;
+        li {
+         font-size:1.2em;
+         line-height: 2em;
+        }
     }
+     p  {
+      font-size: 1.2em;
+      line-height: 2em;
+    }
+ }
+}
  
-
 }
 
