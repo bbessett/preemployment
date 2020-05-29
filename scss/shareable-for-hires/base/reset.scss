@@ -398,6 +398,19 @@ ul {
 .sm-m-b-0 {
   margin-bottom: 0px !important;
 }
+.text-module__content ul li:before {
+  content: "\2022";
+  float: left;
+  width: 15px;
+  margin-top: 1px;
+  margin-left: -15px;
+  font-size: 22px;
+  color: #00A6CA;
+}
+.text-module__content ul li {
+  margin-left: 30px;
+  list-style: none !important;
+}
 .component-hero-short .hero-bg {
   position: absolute;
   top: inherit;
