@@ -398,6 +398,13 @@ ul {
 .sm-m-b-0 {
   margin-bottom: 0px !important;
 }
+
+
+}
+html .text-module__content  h3 {
+    font-weight: bold!important;
+    margin-bottom: 1.2em;
+}
 .text-module__content ul li:before {
   content: "\2022";
   float: left;
