@@ -2,6 +2,9 @@ function toggleNav() {
   document.body.classList.toggle("menuOpen");
 }
 
+document.getElementById("sideNavToggle").addEventListener("click", function(e){
+  e.preventDefault();
+});
 // ****** Affix header on window scroll ******//
 
 window.onscroll = function changeNav() {

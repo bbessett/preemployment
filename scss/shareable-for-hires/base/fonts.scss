@@ -1,164 +1,27 @@
-@charset "UTF-8";@font-face {
-    font-family: Intro;
-    src: url(../font/2CA963-6-0.woff2) format("woff2"),url(../font/2CA963-6-0.woff) format("woff"),url(../font/2CA963-6-0.ttf) format("truetype");
-    font-weight: 400;
+@font-face {
+    font-family: 'Intro';
+    font-display:swap;src: url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_4_0.woff2") format("woff2"),url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_4_0.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'IntroBold';
+    src: url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_0_0.woff2") format("woff2"),url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_0_0.woff") format("woff");
+    font-display:swap}
+
+@font-face {
+    font-family: 'IntroLight';
+    font-display:swap;
+    src: url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_2_0.woff2") format("woff2"),url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_2_0.woff") format("woff")
+}
+
+@font-face {
+    font-family: 'IntroSemiBold';
+    src: url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525210057/font/font-intro/2C3BD6_6_0.woff2") format("woff2"),url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525210057/font/font-intro/2C3BD6_6_0.woff") format("woff");
+    font-display:swap}
+
+@font-face {
+    font-family: "tu-icon-font";
+    src: url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525209526/font/font-intro/tu-icon-font.woff2") format("woff2"),url("//res.cloudinary.com/dvrhnvuqs/raw/upload/v1525209526/font/font-intro/tu-icon-font.woff") format("woff");
+    font-weight: normal; 
     font-style: normal;
-    font-display:swap;
-}
-
-@font-face {
-    font-family: Intro;
-    src: url(../font/2CA963-7-0.woff2) format("woff2"),url(../font/2CA963-7-0.woff) format("woff"),url(../font/2CA963-7-0.ttf) format("truetype");
-    font-weight: 400;
-    font-style: italic;
-    font-display:swap;
-}
-
-@font-face {
-    font-family: Intro;
-    src: url(../font/2CA963-0-0.woff2) format("woff2"),url(../font/2CA963-0-0.woff) format("woff"),url(../font/2CA963-0-0.ttf) format("truetype");
-    font-weight: 700;
-    font-style: normal;
-    font-display:swap;
-}
-
-@font-face {
-    font-family: Intro;
-    src: url(../font/2CA963-1-0.woff2) format("woff2"),url(../font/2CA963-1-0.woff) format("woff"),url(../font/2CA963-1-0.ttf) format("truetype");
-    font-weight: 700;
-    font-style: italic;
-    font-display:swap;
-}
-
-@font-face {
-    font-family: Intro;
-    src: url(../font/2CA963-3-0.woff2) format("woff2"),url(../font/2CA963-3-0.woff) format("woff"),url(../font/2CA963-3-0.ttf) format("truetype");
-    font-weight: 300;
-    font-style: normal;
-    font-display:swap;
-}
-
-@font-face {
-    font-family: Intro;
-    src: url(../font/2CA963-5-0.woff2) format("woff2"),url(../font/2CA963-5-0.woff) format("woff"),url(../font/2CA963-5-0.ttf) format("truetype");
-    font-weight: 300;
-    font-style: italic;
-    font-display:swap;
-}
-
-@font-face {
-    font-family: Intro;
-    src: url(../font/2CA963-9-0.woff2) format("woff2"),url(../font/2CA963-9-0.woff) format("woff"),url(../font/2CA963-9-0.ttf) format("truetype");
-    font-weight: 600;
-    font-style: normal;
-    font-display:swap;
-}
-
-@font-face {
-    font-family: Intro;
-    src: url(../font/2CA963-B-0.woff2) format("woff2"),url(../font/2CA963-B-0.woff) format("woff"),url(../font/2CA963-B-0.ttf) format("truetype");
-    font-weight: 600;
-    font-style: italic;
-    font-display:swap;
-}
-
-// @font-face {
-//     font-family: IntroOldIE;
-//     src: url(../font/2CA963-6-0.eot) format("embedded-opentype");
-//     font-weight: 400;
-//     font-style: normal;
-//     font-display:swap;
-// }
-
-// @font-face {
-//     font-family: IntroOldIE;
-//     src: url(../font/2CA963-7-0.eot) format("embedded-opentype");
-//     font-weight: 400;
-//     font-style: italic;
-//     font-display:swap;
-// }
-
-// @font-face {
-//     font-family: IntroOldIE;
-//     src: url(../font/2CA963-0-0.eot) format("embedded-opentype");
-//     font-weight: 700;
-//     font-style: normal;
-//     font-display:swap;
-// }
-
-// @font-face {
-//     font-family: IntroOldIE;
-//     src: url(../font/2CA963-1-0.eot) format("embedded-opentype");
-//     font-weight: 700;
-//     font-style: italic;
-//     font-display:swap;
-// }
-
-// @font-face {
-//     font-family: IntroOldIE;
-//     src: url(../font/2CA963-3-0.eot) format("embedded-opentype");
-//     font-weight: 300;
-//     font-style: normal;
-//     font-display:swap;
-// }
-
-// @font-face {
-//     font-family: IntroOldIE;
-//     src: url(../font/2CA963-5-0.eot) format("embedded-opentype");
-//     font-weight: 300;
-//     font-style: italic;
-//     font-display:swap;
-// }
-
-// @font-face {
-//     font-family: IntroOldIE;
-//     src: url(../font/2CA963-9-0.eot) format("embedded-opentype");
-//     font-weight: 600;
-//     font-style: normal;
-//     font-display:swap;
-
-// }
-
-// @font-face {
-//     font-family: IntroOldIE;
-//     src: url(../font/2CA963-B-0.eot) format("embedded-opentype");
-//     font-weight: 600;
-//     font-style: italic;
-//     font-display:swap;
-// }
-
-@font-face {
-    font-family: IntroCaps;
-    src: url(../font/2CA963-4-0.eot);
-    src: url(../font/2CA963-4-0.eot?#iefix) format("embedded-opentype"),url(../font/2CA963-4-0.woff) format("woff"),url(../font/2CA963-4-0.woff2) format("woff2"),url(../font/2CA963-4-0.ttf) format("truetype"),url(../font/2CA963-4-0.svg#wf) format("svg");
-    font-weight: 300;
-    font-style: normal;
-    font-display:swap;
-}
-
-@font-face {
-    font-family: IntroCaps;
-    src: url(../font/2CA963-8-0.eot);
-    src: url(../font/2CA963-8-0.eot?#iefix) format("embedded-opentype"),url(../font/2CA963-8-0.woff) format("woff"),url(../font/2CA963-8-0.woff2) format("woff2"),url(../font/2CA963-8-0.ttf) format("truetype"),url(../font/2CA963-8-0.svg#wf) format("svg");
-    font-weight: 400;
-    font-style: normal;
-    font-display:swap;
-}
-
-@font-face {
-    font-family: IntroCaps;
-    src: url(../font/2CA963-A-0.eot);
-    src: url(../font/2CA963-A-0.eot?#iefix) format("embedded-opentype"),url(../font/2CA963-A-0.woff) format("woff"),url(../font/2CA963-A-0.woff2) format("woff2"),url(../font/2CA963-A-0.ttf) format("truetype"),url(../font/2CA963-A-0.svg#wf) format("svg");
-    font-weight: 600;
-    font-style: normal;
-    font-display:swap;
-}
-
-@font-face {
-    font-family: IntroCaps;
-    src: url(../font/2CA963-2-0.eot);
-    src: url(../font/2CA963-2-0.eot?#iefix) format("embedded-opentype"),url(../font/2CA963-2-0.woff) format("woff"),url(../font/2CA963-2-0.woff2) format("woff2"),url(../font/2CA963-2-0.ttf) format("truetype"),url(../font/2CA963-2-0.svg#wf) format("svg");
-    font-weight: 700;
-    font-style: normal;
-    font-display:swap;
-}
+    font-display:block}
