@@ -2,17 +2,25 @@
     font-family: 'Intro';
     font-display:swap;src: url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_4_0.woff2") format("woff2"),url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_4_0.woff") format("woff")
 }
-
+ 
 @font-face {
     font-family: 'IntroBold';
     src: url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_0_0.woff2") format("woff2"),url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_0_0.woff") format("woff");
-    font-display:swap}
+    font-display:swap} 
 
 @font-face {
     font-family: 'IntroLight';
     font-display:swap;
     src: url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_2_0.woff2") format("woff2"),url("https://res.cloudinary.com/dvrhnvuqs/raw/upload/v1525206821/font/font-intro/2C3BD6_2_0.woff") format("woff")
 }
+
+// @font-face {
+//     font-family: 'IntroCaps';
+//     src: url(../font/2CA963-4-0.eot);
+//     src: url(../font/2CA963-4-0.eot?#iefix) format("embedded-opentype"),url(../font/2CA963-4-0.woff) format("woff"),url(../font/2CA963-4-0.woff2) format("woff2"),url(../font/2CA963-4-0.ttf) format("truetype"),url(../font/2CA963-4-0.svg#wf) format("svg");
+//     font-weight: 300;
+//     font-style: normal
+// }
 
 @font-face {
     font-family: 'IntroSemiBold';

@@ -10,12 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.13.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-livereload": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-sourcemaps-support": "0.0.1"
   }
 }

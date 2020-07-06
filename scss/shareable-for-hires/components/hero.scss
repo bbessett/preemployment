@@ -1,0 +1,106 @@
+
+html {
+.hero {
+    .h1 {
+        
+        margin: 1.618em auto 0.5em;
+    }
+    p {
+        margin-bottom: 1.5em; 
+    }
+    .hero-img {
+        padding: 0;
+        img {
+            @media (min-width: 60em) {
+            width: 128%;
+            right: 40px;
+            position: relative;
+            }
+  
+        }
+    }
+    .hero-text {
+        padding: 0 1em;
+        text-shadow: 0 2px 20px rgba(0, 0, 0, .16);
+        text-align: left;
+        font-family:"IntroLight";
+
+        @media (min-width: 48em) {
+            padding: 20px 30px;
+        }
+
+        p {
+            max-width: 100%;
+        }
+    }
+
+    .button-wrap {
+        @media (min-width: 120em) {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        }
+        .col-md-auto {
+            padding: 0 0.5em;
+        }
+    }
+
+    a.btn {
+        padding: 1.282em 3.8em;
+        font-size: 0.9rem;
+        text-transform: unset;
+
+        @media (max-width: 58em) {
+            width: 100%;
+        
+        }
+        @media (min-width: 60em) {
+            padding: 1.282em 2.4em;
+        }
+        @media (min-width: 120em) {
+            padding: 1.182em 3.2em;
+        } 
+
+        margin-bottom:1em;
+        svg {
+
+            left: 85%;
+            color: #fff;
+            content: "\25BA";
+            font-size: 1.218em;
+            height: 1.718em;
+            top: 0.782em;
+            line-height: 1.75;
+            position: absolute;
+            text-align: center;
+            width: 1.618em; 
+        }
+        span.btn-txt {
+            position: relative;
+            right: 15px;
+        }
+    }
+}
+
+.hero-w-dark-bg {
+    background:#000;
+}
+.hero-text { 
+color:#fff;
+}
+}

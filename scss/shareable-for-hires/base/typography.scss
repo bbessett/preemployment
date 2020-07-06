@@ -29,10 +29,12 @@ html {
         margin: 1em auto 0;
         padding: 0
     }
-    p {
+  section {
+   p {
         max-width: 37.577em;
         font-size: 1.2em;
     }
+}
     
     // ul {
     //     list-style: none
@@ -45,6 +47,7 @@ html {
         font-weight: 800;
         line-height: 1.333;
         margin-bottom:0.5em;
+       
       
 
         @media (min-width: 32em) {
@@ -75,7 +78,9 @@ html {
 }
     .h3,h3 {
         font-size: 1.3em;
-        line-height: 1.333
+        line-height: 1.333;
+        font-family:"IntroBold";
+        // text-transform:uppercase;
     }
     
     .h4,h4 {

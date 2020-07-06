@@ -15,12 +15,9 @@ $iceblue: #0FC3EA;
 
     .benefits__title {
         margin: 1.3em 0 .5em 0;
-        font-weight: bold;
         padding: 0 0.118em;
         font-size: 1.4em;
         color: $iceblue;
-
-
         @media (min-width: 48em) {
             padding: 0 1.418em;
         }
@@ -31,6 +28,7 @@ $iceblue: #0FC3EA;
     }
 
     ul {
+        font-family:"IntroLight";
         @media (min-width: 768px) { 
         width: 68%;
         }
