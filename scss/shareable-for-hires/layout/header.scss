@@ -36,7 +36,7 @@ html {
 
 .menuToggle {
     transition: .5s ease-in-out;
-    cursor: pointer;
+    // cursor: pointer;
     z-index: 9;
     -webkit-transform: translateZ(0);
     position: absolute;
@@ -196,7 +196,9 @@ body {
         }
      a.btn, .btn {
        padding: .382em 1em;
-       font-size: 1rem;
+       font-size: 0.9em;    
+       font-family: "IntroSemiBold";
+    
        height:auto;
        }
    }

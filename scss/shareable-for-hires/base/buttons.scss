@@ -32,13 +32,13 @@ $yellow:  #fcd800;
 html {
 a.btn, .btn {
     padding: 1.182em 1.7em;
-    font-size: .9rem;
+    font-size: 0.9rem;
     box-sizing: border-box;
     font-weight: 700;
     box-shadow: 0 0 0 1px rgba(255,255,255,.1), 0 2px 4px 0 rgba(14,30,37,.12);
     cursor: pointer;
     display: inline-block;
-    font-family: "Intro";
+    // font-family: "Intro";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;  
     line-height: 1.618em;
@@ -90,25 +90,25 @@ a.btn, .btn {
 }
 
 
-header.retailActive {
-.btn-outline-yellow,a.btn-outline-yellow:not([href]):not([tabindex]) {
-        @include btn-primary($iceblue);
-        border-radius: 45px;
-        text-transform: initial !important;
+// header.retailActive {
+// .btn-outline-yellow,a.btn-outline-yellow:not([href]):not([tabindex]) {
+//         @include btn-primary($iceblue);
+//         border-radius: 45px;
+//         text-transform: initial !important;
 
-    }
-.btn-yellow, a.btn-yellow:not([href]):not([tabindex]) {
-        @include btn-primary($iceblue);
-        background-color:$iceblue;
-        border-radius:45px;
-        // text-transform: none;
-        color:#fff !important;
-        text-transform: initial !important;
-        &:hover {
-            color:#333;
-        } 
-}
-}
+//     }
+// .btn-yellow, a.btn-yellow:not([href]):not([tabindex]) {
+//         @include btn-primary($iceblue);
+//         background-color:$iceblue;
+//         border-radius:45px;
+//         // text-transform: none;
+//         color:#fff !important;
+//         text-transform: initial !important;
+//         &:hover {
+//             color:#333;
+//         } 
+// }
+// }
 
 // overides
 // .site-footer {

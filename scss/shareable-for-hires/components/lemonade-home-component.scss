@@ -1,56 +1,6 @@
 $iceblue: #0b92b0;
-
-html {
-    ::selection {
-        background: $iceblue; /* WebKit/Blink Browsers */
-        color:#fff;
-      }
-      ::-moz-selection {
-        background: $iceblue; /* Gecko Browsers */
-        color:#fff;
-      }
-    p {
-        font-size: 1.2em;
-    }
-    ul li {
-       list-style:none;
-    }
-    section {
-        padding-bottom: 1.2236em;
-        text-align: center;
-    }
-    a.btn, .btn {
-        text-transform: none;
-        font-family:intro;
-    }
-    
-    .h1,.h2,.h3,.h4,h1,h2,h3,h4,h5,h6 {
-        + p {
-            margin-top: .5em;
-            margin-bottom: 1.0em;
-        }
-
-        // color: #0e1e25;
-        // font-weight: 500;
-   
-        margin: 1.618em auto 1em;
-    } 
-    blockquote,ol,p,ul {
-        margin: 1em auto 0;
-        padding: 0
-    }
-
-    h2.feature-sub-heading {
-        font-size: 2.5rem;
-        font-weight: 800;
-    }
-
-}
-
 .benefits-card {
-
     text-align: center;
-
     svg {
         max-width: 200px;
         max-height: 180px;
@@ -107,7 +57,6 @@ html {
     
     //benefits section 
     li::before {
-    
         border-radius: 50%;
         color: #fff;
         content: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26.903 24'%3e%3cpath d='M10.193 22L2.41 14.21l3.135-2.775 4.596 4.581L23.284 2l2.909 2.806-16 17.194z'/%3e%3c/svg%3e");

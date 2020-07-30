@@ -1,4 +1,50 @@
 $iceblue: #0FC3EA; 
+.text-center {
+    text-align:center;
+}
+::selection {
+    background: $iceblue; /* WebKit/Blink Browsers */
+    color:#fff;
+  }
+::-moz-selection {
+    background: $iceblue; /* Gecko Browsers */
+    color:#fff;
+}
+p {
+    font-size: 1.2em;
+}
+ul li {
+   list-style:none;
+}
+section {
+    padding-bottom: 1.2236em;
+    // text-align: center;
+}
+a.btn, .btn {
+    text-transform: none;
+    font-family:'Intro';
+}
+
+// .h1,.h2,.h3,.h4,h1,h2,h3,h4,h5,h6 {
+//     + p {
+//         margin-top: .5em;
+//         margin-bottom: 1.0em;
+//     }
+
+//     // color: #0e1e25;
+//     // font-weight: 500;
+
+//     margin: 1.618em auto 1em;
+// } 
+// blockquote,ol,p,ul {
+//     margin: 1em auto 0;
+//     padding: 0
+// }
+
+h2.feature-sub-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
 
 a {
     color: #017494;
@@ -29,27 +75,28 @@ html {
         margin: 1em auto 0;
         padding: 0
     }
-  section {
-   p {
-        max-width: 37.577em;
-        font-size: 1.2em;
-    }
-}
-    
+//   section {
+//    p {
+//         max-width: 47.577em;
+//         font-size: 1.2em;
+//     }
+// }
+   
+    section.callout {
+        p {
+             max-width: 37.577em;
+             font-size: 1.2em;
+         }
+        }
     // ul {
     //     list-style: none
     // }
-
-
 
 .h1,h1 {
         font-size: 1.618em;
         font-weight: 800;
         line-height: 1.333;
         margin-bottom:0.5em;
-       
-      
-
         @media (min-width: 32em) {
                 font-size:calc(1.618em + 1vw);
                 line-height: 1.2
@@ -70,15 +117,15 @@ html {
         font-size: 1.618em;
         font-weight: 600;
         line-height: 1.333;
-    @media (min-width: 60em) {
-            font-size:2em;
-            font-weight: 500
+    // @media (min-width: 60em) {
+    //         font-size:2em;
+    //         font-weight: 500
     
-    }
+    // }
 }
     .h3,h3 {
         font-size: 1.3em;
-        line-height: 1.333;
+        line-height: 1.333; 
         font-family:"IntroBold";
         // text-transform:uppercase;
     }
@@ -89,8 +136,6 @@ html {
 
   
     }
-    
-
 //temporary blog article reset hacks
 .iframe-container {
     overflow: hidden;

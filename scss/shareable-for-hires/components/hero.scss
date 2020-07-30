@@ -1,5 +1,12 @@
 html {
 .hero {
+    background-image: url('https://res.cloudinary.com/dvrhnvuqs/image/upload/v1595440826/shareable-for-hires/nanny-.jpg');
+    background-position: inherit;
+    background-size: cover;
+    z-index: -1;
+    &.dark-bg {
+        color:#fff !important;
+    }
     .h1 {
         
         margin: 1.618em auto 0.5em;
@@ -97,9 +104,10 @@ html {
 }
 
 .hero-w-dark-bg {
-    background:#000;
+    background:#fff;
+    
 }
-.hero-text { 
-color:#fff;
-}
+// .hero-text { 
+// color:#fff;
+// }
 }
