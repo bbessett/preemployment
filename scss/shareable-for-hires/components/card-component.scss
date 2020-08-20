@@ -1,13 +1,30 @@
 
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../assets/variables";
+@import "../../../node_modules/rfs/scss";
 
 $iceblue: #0FC3EA; 
 
+// :root {
+//     --title-font-size: rfs(2.125rem);
+//     --card-padding: rfs(3rem);
+//     --card-margin: rfs(2rem);
+//     // $card-border-radius:  @include rfs(4rem, --border-radius);
+//     --card-box-shadow: rfs(0 0 2rem rgba(0, 0, 0, .25));
+//   }
+    //   // box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    //   box-shadow: 0 2px 40px rgba(14,30,37,.16);
+    //   padding:20px;
+    //   background:#fff;
+    //   border-radius:6px;
     
 .column-boxes {
+    overflow: hidden;
     text-align: left;
     background-color: #f8f8f8;
     padding-top:20px;
-    padding-bottom:60px;
+    padding-bottom:60px; 
  
 .column-boxes--lead-text 
 {
@@ -21,12 +38,15 @@ $iceblue: #0FC3EA;
      margin-bottom:0;
  }   
  h3.h2 {
-    font-size: 2.318em;
-    font-weight: 400 !important;
-     font-family: "Intro";
-     margin-top:0.2em;
-     text-align:center;
-     max-width: 34em;
+     font-family: "Intro", sans-serif;
+    // font-size: 2.318em;
+    // font-weight: 400 !important;
+    //  font-family: "Intro";
+    //  margin-top:0.2em;
+    //  @media (min-width: 48em) {
+    //  text-align:center;
+    //  max-width: 34em;
+    //  }
      small {
         font-size:70%;
      }
@@ -37,18 +57,27 @@ $iceblue: #0FC3EA;
     background: #0295BE;
     }
 .column-boxes--card {
+    @include font-size(1rem);
     // box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
-    box-shadow: 0 2px 40px rgba(14,30,37,.16);
-    padding:20px;
+    // box-shadow: 0 2px 40px rgba(14,30,37,.16);
+ 
+    // padding:20px;
+    @include rfs(0 0 2rem rgba(black, .25), box-shadow);
+    @include rfs(0.5rem, border-radius);
+    @include padding(1rem);
+    @include margin-bottom(1rem);
     background:#fff;
-    border-radius:6px;
+    // border-radius:--card-border-radius;
     display: flex;
     flex-direction: column;
-    margin-bottom:2.5em;
+    // margin-bottom:2.5em;
+img {
+    max-width: 100%;
+}
 p {
     flex: auto;
     padding: 0 15px;
-    font-size:1em;
+    @include font-size(1rem);
 }
 }
 a.column-boxes--link {

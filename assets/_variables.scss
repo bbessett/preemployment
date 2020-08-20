@@ -35,6 +35,11 @@ $tu-transparent-medium-gray:			rgba(0,0,0,.34) !default; /*#A9A9A9*/
 $tu-transparent-dark-gray:				rgba(0,0,0,.56) !default; /*#707070*/
 
 
+$enable-negative-margins:     false !default;
+$enable-deprecation-messages: true !default;
+$enable-important-utilities:  true !default;
+$enable-responsive-font-sizes: true !default;
+$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
 //
 // Color system
 //
@@ -173,9 +178,11 @@ $enable-transitions:                          true !default;
 $enable-prefers-reduced-motion-media-query:   true !default;
 $enable-hover-media-query:                    false !default; // Deprecated, no longer affects any compiled CSS
 $enable-grid-classes:                         true !default;
+$enable-pointer-cursor-for-buttons:           true !default;
 $enable-print-styles:                         true !default;
+$enable-responsive-font-sizes:                true !default;
 $enable-validation-icons:                     true !default;
-
+$enable-deprecation-messages:                 true !default;
 
 // Spacing
 //
@@ -185,7 +192,6 @@ $enable-validation-icons:                     true !default;
 
 $spacer: 1rem !default;
 $spacers: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
 $spacers: map-merge(
   (
     0: 0,
@@ -200,7 +206,6 @@ $spacers: map-merge(
 
 // This variable affects the `.h-*` and `.w-*` classes.
 $sizes: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
 $sizes: map-merge(
   (
     25: 25%,
@@ -211,6 +216,7 @@ $sizes: map-merge(
   ),
   $sizes
 );
+
 
 
 // Body
@@ -245,44 +251,36 @@ $paragraph-margin-bottom:   1rem !default;
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
 
-$grid-breakpoints: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
-$grid-breakpoints: map-merge(
-  (
-	xs: 0,
-	sm: 576px,
-	md: 768px,
-	lg: 992px,
-	xl: 1200px,
-	hd: 1920px,
-	qd: 2560px,
-	rt: 3840px
-	),
-	$grid-breakpoints
-  );
-  
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
 @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
-@include _assert-starts-at-zero($grid-breakpoints);
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
 
 
+ 
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
-$container-max-widths: map-merge(
-  (
-	sm: 540px,
-	md: 720px,
-	lg: 960px,
-	xl: 1176px,
-	hd: 1800px,
-	qd: 2340px,
-	rt: 3600px
-	),
-	$container-max-widths
-  );
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px  
+) !default;
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
@@ -293,7 +291,7 @@ $container-max-widths: map-merge(
 
 $grid-columns:                12 !default;
 $grid-gutter-width:           30px !default;
-
+$grid-row-columns:            6 !default;
 
 // Components
 //
@@ -330,26 +328,25 @@ $embed-responsive-aspect-ratios: join(
   (
     (21 9),
     (16 9),
-    (3 4),
+    (4 3),
     (1 1),
   ),
   $embed-responsive-aspect-ratios
 );
 
-// Fonts
+// Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Intro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:            Intro,"Trebuchet MS",Helvetica,Arial,sans-serif !default;
-$font-family-caps:            IntroCaps,"Trebuchet MS",Helvetica,Arial,sans-serif !default; //TU specific variable
+$font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                ($font-size-base * .875) !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
@@ -359,7 +356,6 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
-$line-height-computed:	floor(($font-size-base * $line-height-base)) !default; // ~22px - Legacy Bootstrap Variable name
 
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
@@ -369,10 +365,10 @@ $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;
-$headings-font-family:        inherit !default;
+$headings-font-family:        null !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
-$headings-color:              inherit !default;
+$headings-color:              null !default;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
@@ -385,7 +381,7 @@ $display3-weight:             300 !default;
 $display4-weight:             300 !default;
 $display-line-height:         $headings-line-height !default;
 
-$lead-font-size:              ($font-size-base * 1.25) !default;
+$lead-font-size:              $font-size-base * 1.25 !default;
 $lead-font-weight:            300 !default;
 
 $small-font-size:             80% !default;
@@ -394,7 +390,7 @@ $text-muted:                  $gray-600 !default;
 
 $blockquote-small-color:      $gray-600 !default;
 $blockquote-small-font-size:  $small-font-size !default;
-$blockquote-font-size:        ($font-size-base * 1.25) !default;
+$blockquote-font-size:        $font-size-base * 1.25 !default;
 
 $hr-border-color:             rgba($black, .1) !default;
 $hr-border-width:             $border-width !default;

@@ -1,18 +1,41 @@
 // ToolBox Files
-@import "../assets/bootstrap/functions";
-// @import "../assets/bootstrap/mixins";
+
+// $enable-responsive-font-sizes: true;
+   
+// @import "../assets/bootstrap/functions";
+// // @import "../assets/bootstrap/mixins";
+// @import "../node_modules/rfs/scss";
+
+// // @import "../node_modules/bootstrap/scss/functions";
+// // @import "../node_modules/bootstrap/scss/variables";
+// @import "../assets/variables";
+// @import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/functions";
+// @import "../node_modules/bootstrap/scss/variables";
 @import "../assets/variables";
-@import "shareable-for-hires/base/fonts";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/utilities/spacing"; 
+@import "../node_modules/bootstrap/scss/utilities/text";   
+@import "../node_modules/bootstrap/scss/images";
+
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+
+
+
 @import "shareable-for-hires/base/icons";
- 
+@import "shareable-for-hires/base/fonts";
+
 // Rental Sreening Files
-@import "shareable-for-hires/base/reset.scss";
-@import "shareable-for-hires/base/typography.scss";
-@import "shareable-for-hires/layout/header.scss";
-@import "shareable-for-hires/layout/sidenav.scss";
+
+@import "shareable-for-hires/base/typography";
+@import "shareable-for-hires/layout/header";
+@import "shareable-for-hires/layout/sidenav";
+// @import "shareable-for-hires/layout/grid.scss";
 @import "shareable-for-hires/layout/grid.scss";
 @import "shareable-for-hires/base/videoModal-default.scss";
-@import "shareable-for-hires/components/global-component-overides.scss";
 @import "shareable-for-hires/base/buttons.scss";
 @import "shareable-for-hires/layout/footer.scss"; 
-
+@import "shareable-for-hires/components/global-component-overides.scss";

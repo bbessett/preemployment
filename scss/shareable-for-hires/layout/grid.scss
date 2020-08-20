@@ -2750,23 +2750,23 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  .tu-pageWrapper.tu-sideNavFlag .tu-contentWrapper {
-    padding: 0 80px;
-  }
-
-//   .row {
-//     margin-right: -20px;
-//     margin-left: -20px;
+// @media (min-width: 1200px) {
+//   .tu-pageWrapper.tu-sideNavFlag .tu-contentWrapper {
+//     padding: 0 80px;
 //   }
 
-  .container,
-  [class*=col-],
-  [class^=col-] {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-}
+// //   .row {
+// //     margin-right: -20px;
+// //     margin-left: -20px;
+// //   }
+
+//   .container,
+//   [class*=col-],
+//   [class^=col-] {
+//     padding-right: 20px;
+//     padding-left: 20px;
+//   }
+// }
 
 @media (min-width: 1920px) {
 //   .row {
@@ -2950,4 +2950,6 @@ body {
       }
     }
   }
+
+
   

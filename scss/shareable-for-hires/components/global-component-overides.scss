@@ -1,10 +1,18 @@
 
-.component-hero-short .hero-bg {
-    position: absolute;
-    top: 0;
-    height: 295px;
-    width: 100%;
-    background-size: auto;
+html {
+    .component-hero-short {
+    .hero-bg {
+    // position: absolute;
+    // top: 0;
+    // height: 295px;
+    // width: 100%;
+    background-size: cover;
+    @media (max-width: 600px) {
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
     background-position: left center;
     z-index: 2;
+}
+}
 }

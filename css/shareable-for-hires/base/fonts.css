@@ -1,1 +1,33 @@
-@font-face{font-family:'Intro';font-display:swap;src:url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_4_0.woff2") format("woff2"),url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_4_0.woff") format("woff")}@font-face{font-family:'IntroBold';src:url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_0_0.woff2") format("woff2"),url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_0_0.woff") format("woff");font-display:swap}@font-face{font-family:'IntroLight';font-display:swap;src:url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_2_0.woff2") format("woff2"),url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_2_0.woff") format("woff")}@font-face{font-family:'IntroSemiBold';src:url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_6_0.woff2") format("woff2"),url("https://assets.transunion.com/resources/font/font/font-intro/2C3BD6_6_0.woff") format("woff");font-display:swap}@font-face{font-family:"tu-icon-font";src:url("https://assets.transunion.com/resources/font/font-intro/tu-icon-font.woff2") format("woff2"),url("https://assets.transunion.com/resources/font/font/font-intro/tu-icon-font.woff") format("woff");font-weight:normal;font-style:normal;font-display:block}
+@font-face {
+  font-family: 'Intro';
+  font-display: swap;
+  src: url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_4_0.woff2") format("woff2"), url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_4_0.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'IntroBold';
+  src: url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_0_0.woff2") format("woff2"), url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_0_0.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IntroLight';
+  font-display: swap;
+  src: url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_2_0.woff2") format("woff2"), url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_2_0.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'IntroSemiBold';
+  src: url("https://assets.transunion.com/resources/font/font-intro/2C3BD6_6_0.woff2") format("woff2"), url("https://assets.transunion.com/resources/font/font/font-intro/2C3BD6_6_0.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "tu-icon-font";
+  src: url("https://assets.transunion.com/resources/font/font-intro/tu-icon-font.woff2") format("woff2"), url("https://assets.transunion.com/resources/font/font/font-intro/tu-icon-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic2hhcmVhYmxlLWZvci1oaXJlcy9iYXNlL2ZvbnRzLmNzcyIsInNvdXJjZXMiOlsic2hhcmVhYmxlLWZvci1oaXJlcy9iYXNlL2ZvbnRzLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiQGZvbnQtZmFjZSB7XHJcbiAgICBmb250LWZhbWlseTogJ0ludHJvJztcclxuICAgIGZvbnQtZGlzcGxheTpzd2FwO3NyYzogdXJsKFwiaHR0cHM6Ly9hc3NldHMudHJhbnN1bmlvbi5jb20vcmVzb3VyY2VzL2ZvbnQvZm9udC1pbnRyby8yQzNCRDZfNF8wLndvZmYyXCIpIGZvcm1hdChcIndvZmYyXCIpLHVybChcImh0dHBzOi8vYXNzZXRzLnRyYW5zdW5pb24uY29tL3Jlc291cmNlcy9mb250L2ZvbnQtaW50cm8vMkMzQkQ2XzRfMC53b2ZmXCIpIGZvcm1hdChcIndvZmZcIilcclxufVxyXG4gXHJcbkBmb250LWZhY2Uge1xyXG4gICAgZm9udC1mYW1pbHk6ICdJbnRyb0JvbGQnO1xyXG4gICAgc3JjOiB1cmwoXCJodHRwczovL2Fzc2V0cy50cmFuc3VuaW9uLmNvbS9yZXNvdXJjZXMvZm9udC9mb250LWludHJvLzJDM0JENl8wXzAud29mZjJcIikgZm9ybWF0KFwid29mZjJcIiksdXJsKFwiaHR0cHM6Ly9hc3NldHMudHJhbnN1bmlvbi5jb20vcmVzb3VyY2VzL2ZvbnQvZm9udC1pbnRyby8yQzNCRDZfMF8wLndvZmZcIikgZm9ybWF0KFwid29mZlwiKTtcclxuICAgIGZvbnQtZGlzcGxheTpzd2FwfSBcclxuXHJcbkBmb250LWZhY2Uge1xyXG4gICAgZm9udC1mYW1pbHk6ICdJbnRyb0xpZ2h0JztcclxuICAgIGZvbnQtZGlzcGxheTpzd2FwO1xyXG4gICAgc3JjOiB1cmwoXCJodHRwczovL2Fzc2V0cy50cmFuc3VuaW9uLmNvbS9yZXNvdXJjZXMvZm9udC9mb250LWludHJvLzJDM0JENl8yXzAud29mZjJcIikgZm9ybWF0KFwid29mZjJcIiksdXJsKFwiaHR0cHM6Ly9hc3NldHMudHJhbnN1bmlvbi5jb20vcmVzb3VyY2VzL2ZvbnQvZm9udC1pbnRyby8yQzNCRDZfMl8wLndvZmZcIikgZm9ybWF0KFwid29mZlwiKVxyXG59XHJcblxyXG4vLyBAZm9udC1mYWNlIHtcclxuLy8gICAgIGZvbnQtZmFtaWx5OiAnSW50cm9DYXBzJztcclxuLy8gICAgIHNyYzogdXJsKC4uL2ZvbnQvMkNBOTYzLTQtMC5lb3QpO1xyXG4vLyAgICAgc3JjOiB1cmwoLi4vZm9udC8yQ0E5NjMtNC0wLmVvdD8jaWVmaXgpIGZvcm1hdChcImVtYmVkZGVkLW9wZW50eXBlXCIpLHVybCguLi9mb250LzJDQTk2My00LTAud29mZikgZm9ybWF0KFwid29mZlwiKSx1cmwoLi4vZm9udC8yQ0E5NjMtNC0wLndvZmYyKSBmb3JtYXQoXCJ3b2ZmMlwiKSx1cmwoLi4vZm9udC8yQ0E5NjMtNC0wLnR0ZikgZm9ybWF0KFwidHJ1ZXR5cGVcIiksdXJsKC4uL2ZvbnQvMkNBOTYzLTQtMC5zdmcjd2YpIGZvcm1hdChcInN2Z1wiKTtcclxuLy8gICAgIGZvbnQtd2VpZ2h0OiAzMDA7XHJcbi8vICAgICBmb250LXN0eWxlOiBub3JtYWxcclxuLy8gfVxyXG5cclxuQGZvbnQtZmFjZSB7XHJcbiAgICBmb250LWZhbWlseTogJ0ludHJvU2VtaUJvbGQnO1xyXG4gICAgc3JjOiB1cmwoXCJodHRwczovL2Fzc2V0cy50cmFuc3VuaW9uLmNvbS9yZXNvdXJjZXMvZm9udC9mb250LWludHJvLzJDM0JENl82XzAud29mZjJcIikgZm9ybWF0KFwid29mZjJcIiksdXJsKFwiaHR0cHM6Ly9hc3NldHMudHJhbnN1bmlvbi5jb20vcmVzb3VyY2VzL2ZvbnQvZm9udC9mb250LWludHJvLzJDM0JENl82XzAud29mZlwiKSBmb3JtYXQoXCJ3b2ZmXCIpO1xyXG4gICAgZm9udC1kaXNwbGF5OnN3YXB9XHJcblxyXG5AZm9udC1mYWNlIHtcclxuICAgIGZvbnQtZmFtaWx5OiBcInR1LWljb24tZm9udFwiO1xyXG4gICAgc3JjOiB1cmwoXCJodHRwczovL2Fzc2V0cy50cmFuc3VuaW9uLmNvbS9yZXNvdXJjZXMvZm9udC9mb250LWludHJvL3R1LWljb24tZm9udC53b2ZmMlwiKSBmb3JtYXQoXCJ3b2ZmMlwiKSx1cmwoXCJodHRwczovL2Fzc2V0cy50cmFuc3VuaW9uLmNvbS9yZXNvdXJjZXMvZm9udC9mb250L2ZvbnQtaW50cm8vdHUtaWNvbi1mb250LndvZmZcIikgZm9ybWF0KFwid29mZlwiKTtcclxuICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7IFxyXG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gICAgZm9udC1kaXNwbGF5OmJsb2NrfVxyXG4iXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsVUFBVTtFQUNOLFdBQVcsRUFBRSxPQUFPO0VBQ3BCLFlBQVksRUFBQyxJQUFJO0VBQUMsR0FBRyxFQUFFLCtFQUErRSxDQUFDLGVBQWUsRUFBQyw4RUFBOEUsQ0FBQyxjQUFjOzs7QUFHeE4sVUFBVTtFQUNOLFdBQVcsRUFBRSxXQUFXO0VBQ3hCLEdBQUcsRUFBRSwrRUFBK0UsQ0FBQyxlQUFlLEVBQUMsOEVBQThFLENBQUMsY0FBYztFQUNsTSxZQUFZLEVBQUMsSUFBSTs7O0FBRXJCLFVBQVU7RUFDTixXQUFXLEVBQUUsWUFBWTtFQUN6QixZQUFZLEVBQUMsSUFBSTtFQUNqQixHQUFHLEVBQUUsK0VBQStFLENBQUMsZUFBZSxFQUFDLDhFQUE4RSxDQUFDLGNBQWM7OztBQVd0TSxVQUFVO0VBQ04sV0FBVyxFQUFFLGVBQWU7RUFDNUIsR0FBRyxFQUFFLCtFQUErRSxDQUFDLGVBQWUsRUFBQyxtRkFBbUYsQ0FBQyxjQUFjO0VBQ3ZNLFlBQVksRUFBQyxJQUFJOzs7QUFFckIsVUFBVTtFQUNOLFdBQVcsRUFBRSxjQUFjO0VBQzNCLEdBQUcsRUFBRSxpRkFBaUYsQ0FBQyxlQUFlLEVBQUMscUZBQXFGLENBQUMsY0FBYztFQUMzTSxXQUFXLEVBQUUsTUFBTTtFQUNuQixVQUFVLEVBQUUsTUFBTTtFQUNsQixZQUFZLEVBQUMsS0FBSyJ9 */

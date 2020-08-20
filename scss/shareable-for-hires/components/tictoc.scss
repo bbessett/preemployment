@@ -1,0 +1,36 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../assets/variables";
+@import "../../../node_modules/rfs/scss";
+
+#tictoc-services {
+img {
+    width:100%;
+    @include rfs(0 0 2rem rgba(black, .25), box-shadow);
+}
+.tictoc {
+    @include padding(3.5rem);
+    @include padding-right(2rem);
+    @include padding-left(2rem);
+
+    .tictoc-text {
+
+        @include padding-top(1rem);
+
+    }
+}
+// @media (prefers-reduced-motion: no-preference) {
+//     [data-animate-on-scroll-element] {
+//         opacity: 0
+//     }
+
+//     [data-animate-on-scroll=animated] [data-animate-on-scroll-element] {
+//         animation-fill-mode: forwards;
+//         animation-name: var(--animation-on-scroll-name,slideUpBounce);
+//         animation-timing-function: var(--animation-on-scroll-timing-function,ease-in-out);
+//         animation-duration: var(--animation-on-scroll-duration,1000ms);
+//         animation-delay: var(--animation-on-scroll-delay,0)
+//     }
+// }
+
+}

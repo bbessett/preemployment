@@ -2,7 +2,7 @@
 //
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
-
+$theme-colors: map-remove($theme-colors, "info", "light", "dark");
 // Color system
 
 $white:    #fff !default;
@@ -28,7 +28,7 @@ $grays: map-merge(
     "500": $gray-500,
     "600": $gray-600,
     "700": $gray-700,
-    "800": $gray-800,
+    "800": $gray-800, 
     "900": $gray-900
   ),
   $grays

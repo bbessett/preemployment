@@ -1,12 +1,21 @@
 // ToolBox Files
-@import "../../../assets/bootstrap/functions";
-@import "../../../assets/bootstrap/mixins";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../assets/variables";
 
 //@import "../tu-main-com.min.css";
 
 /* Carousel Feature */
-
+.component-hero-short .hero-bg {
+    // position: absolute;
+    // top: inherit;
+    // height: 295px;
+    // width: 100%;
+    // background-size: cover;
+    background-position: center !important;
+    // z-index: 2;
+  }
+  
 .featureCarousel {
     @include media-breakpoint-up(md) {
         padding-top: 30px;
