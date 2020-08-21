@@ -1,3 +1,4 @@
+@import "../../../node_modules/rfs/scss";
 $iceblue: #0b92b0;
 
 html {
@@ -107,7 +108,7 @@ html {
 
         a.btn {
             padding: 1.282em 3.8em;
-            font-size: 0.9rem;
+            @include font-size(1.1rem);
             text-transform: unset;
 
             @media (max-width: 58em) {
