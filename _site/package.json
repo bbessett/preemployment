@@ -1,24 +1,47 @@
 {
   "name": "preemployment",
-  "version": "1.0.0",
-  "description": "shareable for hires ",
-  "main": "index.js",
+  "version": "1.0.3",
+  "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
     "test": "npm run scss-compile",
-    "sass": "node-sass -w scss -o css/"
+    "sass": "node-sass -w scss -o css/",
+    "debug": "DEBUG=* npx eleventy"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^4.5.2",
-    "node-sass": "^4.13.1",
-    "rfs": "^9.0.3"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate"
   },
+  "author": {
+    "name": "bb",
+    "email": "",
+    "url": ""
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate/issues"
+  },
+  "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
   "devDependencies": {
+    "@11ty/eleventy": "^0.11.0-beta.3",
+    "luxon": "^1.22.2",
+    "markdown-it": "^10.0.0",
+    "markdown-it-anchor": "^5.2.7",
     "gulp": "^4.0.2",
     "gulp-livereload": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-sourcemaps-support": "0.0.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy-navigation": "^0.1.5",
+    "clean-css": "^4.2.1",
+    "html-minifier": "^4.0.0",
+    "uglify-es": "^3.3.9",
+    "bootstrap": "^4.5.2",
+    "node-sass": "^4.13.1",
+    "rfs": "^9.0.3"
   }
+
 }
