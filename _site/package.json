@@ -36,12 +36,11 @@
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.5",
+    "bootstrap": "^4.5.2",
     "clean-css": "^4.2.1",
     "html-minifier": "^4.0.0",
-    "uglify-es": "^3.3.9",
-    "bootstrap": "^4.5.2",
     "node-sass": "^4.13.1",
-    "rfs": "^9.0.3"
+    "rfs": "^9.0.3",
+    "uglify-es": "^3.3.9"
   }
-
 }

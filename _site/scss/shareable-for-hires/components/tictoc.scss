@@ -8,7 +8,7 @@ img {
     width:100%;
     @include rfs(0 0 2rem rgba(black, .25), box-shadow);
 }
-.tictoc {
+.tictoc { 
     @include padding(3.5rem);
     @include padding-right(2rem);
     @include padding-left(2rem);
@@ -17,7 +17,7 @@ img {
 
         @include padding-top(1rem);
 
-    }
+    } 
 }
 // @media (prefers-reduced-motion: no-preference) {
 //     [data-animate-on-scroll-element] {

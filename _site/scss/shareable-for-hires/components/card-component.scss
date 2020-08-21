@@ -152,3 +152,29 @@ a.column-boxes--link {
         width: 1.618em;
     }
 }
+
+.site-footer-faq {
+&.column-boxes {
+
+    .column-boxes--card {
+        box-shadow:none;
+        h3 {
+            @include font-size(1.5rem);
+            @include padding(1rem);
+    
+        }  
+        p {
+            line-height:1.7em;
+            @include font-size(1.1rem);
+            padding:0;
+            @include padding-right(1.2rem);
+            @include padding-left(1.2rem); 
+
+        }
+    }
+    .column-boxes--card:hover {
+            @include rfs(0 0 2rem rgba(black, .25), box-shadow);
+    }
+}
+
+}
